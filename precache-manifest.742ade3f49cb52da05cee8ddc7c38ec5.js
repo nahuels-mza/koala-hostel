@@ -36,7 +36,7 @@ self.__precacheManifest = [
     "url": "/koala-hostel/static/media/koala3.35aac14f.png"
   },
   {
-    "revision": "a6d2e50a670c5118d32b5e987ed5ac55",
+    "revision": "8a4b4fb366bb1003244088e63d5fdb41",
     "url": "/koala-hostel/index.html"
   }
 ];

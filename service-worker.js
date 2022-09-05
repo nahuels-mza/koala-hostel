@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/koala-hostel/precache-manifest.c9b6a27cba10cd9eaf803d5a04ad4981.js"
+  "/koala-hostel/precache-manifest.742ade3f49cb52da05cee8ddc7c38ec5.js"
 );
 
 workbox.clientsClaim();
