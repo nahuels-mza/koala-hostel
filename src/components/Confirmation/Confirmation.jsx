@@ -6,7 +6,7 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import ThumbUpAltIcon from "@mui/icons-material/ThumbUpAlt";
 
 const Confirmation = () => {
-  const { classes }= useConfirmationStyles();
+  const { classes } = useConfirmationStyles();
   // TODO ADD FORMAT HERE
   const whatsMessage = // eslint-disable-next-line
     "Hola Agos confirmo mi asistencia para el cumple%0a \
@@ -17,15 +17,20 @@ const Confirmation = () => {
 
   // FROM https://mailto.vercel.app/
   const emailMessage = `mailto:bloin.lourdes@gmail.com?cc=nahuelcalderon@gmail.com&subject=${encodeURIComponent(
-    "Confirmo asistencia al cumple de Agos",
+    "Confirmo asistencia al cumple de Agos"
   )}&body=Cantidad de Adultos:%0a \
   Cantidad de Niños (de 3 a 10): %0a \
   Menu especial: Veggie/Celiaco %0a \
   Tienes alguna alergia o restricción alimentaria?`;
 
   return (
-    <Box component="section" className={classes.container} width='100%' height='200px'>
-      <Typography variant="h4" color='#575756eb'>
+    <Box
+      component="section"
+      className={classes.container}
+      width="100%"
+      height="200px"
+    >
+      <Typography variant="h4" color="#575756eb">
         Confirmar Asistencia
       </Typography>
       <Box flexDirection="row" className={classes.confirmation} margin="10px 0">

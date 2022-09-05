@@ -13,10 +13,16 @@ const Spotify = () => {
       className={style.container}
       display="flex"
       flexDirection="column"
-      height='200px'
+      height="200px"
       padding={1}
     >
-      <Typography variant="h5" textAlign="center" color="#1c7d4199" mt={4} mb={1}>
+      <Typography
+        variant="h5"
+        textAlign="center"
+        color="#1c7d4199"
+        mt={4}
+        mb={1}
+      >
         Preparate para disfrutar de la Fiesta!
       </Typography>
 

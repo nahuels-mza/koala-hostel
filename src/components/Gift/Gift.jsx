@@ -1,9 +1,9 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 import { Box, Button, Typography } from "@mui/material";
-import CardGiftcardIcon from "@mui/icons-material/CardGiftcard";
-import useGiftStyles from "./Gift.module";
+
 import GiftDialog from "./Dialog";
+import { BedWithService } from "../../utils/constant";
 
 GiftDialog.propTypes = {
   onClose: PropTypes.func.isRequired,
@@ -12,10 +12,11 @@ GiftDialog.propTypes = {
 
 export default function GiftDialogDemo() {
   const [open, setOpen] = React.useState(false);
-  const { classes }= useGiftStyles();
+  const [room, setRoom] = React.useState();
 
-  const handleClickOpen = () => {
+  const handleClickOpen = (item) => {
     setOpen(true);
+    setRoom(item);
   };
 
   const handleClose = () => {
@@ -24,22 +25,35 @@ export default function GiftDialogDemo() {
 
   return (
     <>
-      <GiftDialog open={open} onClose={handleClose} />
-      <Box component='section' display="flex" alignItems="center" justifyContent='center' width='100%' height='200px' marginTop={3} sx={{backgroundColor: '#dcecef99'}}>
-        <CardGiftcardIcon className={classes.gifIcon} />
-        <Button
-          sx={{
-            border: "3px solid rgba(25, 118, 210, 0.5)",
-            "&:hover": { border: "3px solid rgba(25, 118, 210, 0.5)" },
-          }}
-          variant="outlined"
-          onClick={handleClickOpen}
-        >
-          <Typography sx={{ fontWeight: 600 }}>
-            Si me queres hacer un obsequio
-          </Typography>
-        </Button>
-        <CardGiftcardIcon className={classes.gifIcon} />
+      {open && <GiftDialog open={open} onClose={handleClose} room={room} />}
+      <Box
+        component="section"
+        display="flex"
+        alignItems="center"
+        justifyContent="center"
+        width="100%"
+        height="200px"
+        marginTop={3}
+        sx={{ backgroundColor: "#dcecef99" }}
+      >
+        <Typography sx={{ fontWeight: 1200 }}>Nuestras Habitaciones</Typography>
+        {/* <CardGiftcardIcon className={classes.gifIcon} /> */}
+        {BedWithService.map((item) => {
+          return (
+            <Button
+              sx={{
+                border: "3px solid rgba(25, 118, 210, 0.5)",
+                "&:hover": { border: "3px solid rgba(25, 118, 210, 0.5)" },
+              }}
+              variant="outlined"
+              onClick={() => handleClickOpen(item)}
+            >
+              <Typography sx={{ fontWeight: 300 }}>{item.label}</Typography>
+            </Button>
+          );
+        })}
+
+        {/* <CardGiftcardIcon className={classes.gifIcon} /> */}
       </Box>
     </>
   );

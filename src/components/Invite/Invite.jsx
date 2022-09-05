@@ -4,7 +4,7 @@ import photo from "../../assets/mainPic.jpeg";
 import useInviteStyles from "./Invite.module";
 
 const Invite = () => {
-  const { classes }= useInviteStyles();
+  const { classes } = useInviteStyles();
 
   return (
     <>
@@ -18,27 +18,22 @@ const Invite = () => {
       </Box>
 
       <Box component="div" className={classes.textContainer}>
-        <Box className={classes.nameContainer}>
-          <Typography variant="h2" textAlign="center" className={classes.name}>
-            AGOS
-          </Typography>
-        </Box>
         <Typography
           variant="h2"
           textAlign="center"
           className={`${classes.title} ${classes.font}`}
         >
-          Save the Date
+          Bienvenidos a Koala hostel
         </Typography>
-        <Box className={classes.dateContainer}>
-          <Typography variant="h4" textAlign="center" className={classes.date}>
-            08 | 10 | 22
-          </Typography>
-        </Box>
-
+        <Typography className={classes.container}>
+          <p>
+            Somos un hostel Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Fusce sollicitudin blandit ligula, rhoncus tempus elit
+            tincidunt ornare. Etiam auctor hendrerit massa, blandit egestas dui.
+            Phasellus ultricies non tellus vitae scelerisque.
+          </p>
+        </Typography>
       </Box>
-
-      {/* </Box> */}
     </>
   );
 };
