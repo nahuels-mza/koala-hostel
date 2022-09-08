@@ -29,11 +29,12 @@ const Confirmation = () => {
       className={classes.container}
       width="100%"
       height="200px"
+      position="absolute"
+      bottom="0"
+      left="0"
     >
-      <Typography variant="h4" color="#575756eb">
-        Confirmar Asistencia
-      </Typography>
-      <Box flexDirection="row" className={classes.confirmation} margin="10px 0">
+
+      {/* <Box flexDirection="row" className={classes.confirmation} margin="10px 0"> */}
         <Link target="_blank" href="https://forms.gle/mvkm2yPdj5CqsqQ28">
           <ThumbUpAltIcon className={classes.icon} fontSize="large" />
         </Link>
@@ -47,7 +48,7 @@ const Confirmation = () => {
           <EmailIcon className={classes.icon} fontSize="large" />
         </Link>
       </Box>
-    </Box>
+    // </Box>
   );
 };
 

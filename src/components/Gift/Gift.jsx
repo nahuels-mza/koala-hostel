@@ -27,7 +27,7 @@ export default function GiftDialogDemo() {
     <>
       {open && <GiftDialog open={open} onClose={handleClose} room={room} />}
       <Box
-        component="section"
+        // component="section"
         display="flex"
         alignItems="center"
         justifyContent="center"
@@ -36,10 +36,14 @@ export default function GiftDialogDemo() {
         marginTop={3}
         sx={{ backgroundColor: "#dcecef99" }}
       >
-        <Typography sx={{ fontWeight: 1200 }}>Nuestras Habitaciones</Typography>
-        {/* <CardGiftcardIcon className={classes.gifIcon} /> */}
+        <Box
+        display= "flex"
+        flexDirection= "column">
+        <Typography sx={{ fontWeight: 1200 }}><p>Nuestras Habitaciones</p></Typography>
+        </Box>
         {BedWithService.map((item) => {
           return (
+            <Box>
             <Button
               sx={{
                 border: "3px solid rgba(25, 118, 210, 0.5)",
@@ -50,10 +54,11 @@ export default function GiftDialogDemo() {
             >
               <Typography sx={{ fontWeight: 300 }}>{item.label}</Typography>
             </Button>
+            </Box>
           );
         })}
 
-        {/* <CardGiftcardIcon className={classes.gifIcon} /> */}
+
       </Box>
     </>
   );
