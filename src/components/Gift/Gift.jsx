@@ -36,29 +36,27 @@ export default function GiftDialogDemo() {
         marginTop={3}
         sx={{ backgroundColor: "#dcecef99" }}
       >
-        <Box
-        display= "flex"
-        flexDirection= "column">
-        <Typography sx={{ fontWeight: 1200 }}><p>Nuestras Habitaciones</p></Typography>
+        <Box display="flex" flexDirection="column">
+          <Typography sx={{ fontWeight: 1200 }}>
+            <p>Nuestras Habitaciones</p>
+          </Typography>
         </Box>
         {BedWithService.map((item) => {
           return (
             <Box>
-            <Button
-              sx={{
-                border: "3px solid rgba(25, 118, 210, 0.5)",
-                "&:hover": { border: "3px solid rgba(25, 118, 210, 0.5)" },
-              }}
-              variant="outlined"
-              onClick={() => handleClickOpen(item)}
-            >
-              <Typography sx={{ fontWeight: 300 }}>{item.label}</Typography>
-            </Button>
+              <Button
+                sx={{
+                  border: "3px solid rgba(25, 118, 210, 0.5)",
+                  "&:hover": { border: "3px solid rgba(25, 118, 210, 0.5)" },
+                }}
+                variant="outlined"
+                onClick={() => handleClickOpen(item)}
+              >
+                <Typography sx={{ fontWeight: 300 }}>{item.label}</Typography>
+              </Button>
             </Box>
           );
         })}
-
-
       </Box>
     </>
   );

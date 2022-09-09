@@ -1,6 +1,6 @@
 import React from "react";
 import Location from "../Location/Location";
-// import Confirmation from "../Confirmation/Confirmation";
+import Confirmation from "../Confirmation/Confirmation";
 import Gift from "../Gift/Gift";
 import useStyles from "./MainLayout.module";
 import Invite from "../Invite/Invite";
@@ -14,7 +14,7 @@ const MainLayout = () => {
     <Box component="div" className={classes.container}>
       <Invite />
       <Location />
-      {/* <Confirmation /> */}
+      <Confirmation />
       <Gift />
       <Carousel />
     </Box>
