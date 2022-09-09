@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "aaf84a8df19f47f519aa",
+    "revision": "80f49a0399b38e1032d9",
     "url": "/koala-hostel/static/css/main.6669f9ed.chunk.css"
   },
   {
-    "revision": "aaf84a8df19f47f519aa",
-    "url": "/koala-hostel/static/js/main.b352c3e0.chunk.js"
+    "revision": "80f49a0399b38e1032d9",
+    "url": "/koala-hostel/static/js/main.2c73ccb2.chunk.js"
   },
   {
-    "revision": "77fba415ed5b23afcb9f",
-    "url": "/koala-hostel/static/js/runtime~main.c4958dac.js"
+    "revision": "b6f2fd8cc4807eb3dd90",
+    "url": "/koala-hostel/static/js/runtime~main.1471b786.js"
   },
   {
-    "revision": "10700aa8b8b4d4564f0e",
-    "url": "/koala-hostel/static/js/2.86a41b32.chunk.js"
+    "revision": "bcd45b7a6db30c481c52",
+    "url": "/koala-hostel/static/js/2.69d37275.chunk.js"
   },
   {
-    "revision": "662c5ab8ae1bc547d5be",
-    "url": "/koala-hostel/static/js/3.ad757066.chunk.js"
+    "revision": "5d275d583ee4cd478040",
+    "url": "/koala-hostel/static/js/3.6b9d1ac5.chunk.js"
   },
   {
     "revision": "39a744a8d2e801c064baae57e01edff1",
@@ -36,7 +36,7 @@ self.__precacheManifest = [
     "url": "/koala-hostel/static/media/koala3.35aac14f.png"
   },
   {
-    "revision": "8a4b4fb366bb1003244088e63d5fdb41",
+    "revision": "4f9beded36bf0aeec6a76fe033ae1021",
     "url": "/koala-hostel/index.html"
   }
 ];
