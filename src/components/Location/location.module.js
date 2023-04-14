@@ -1,7 +1,7 @@
 import { makeStyles } from "tss-react/mui";
 
 const useLocationStyles = makeStyles()((theme) => ({
-  container: {
+  containerImage: {
     position: "relative",
     bottom: 0,
     width: "100%",
@@ -11,6 +11,9 @@ const useLocationStyles = makeStyles()((theme) => ({
     alignItems: "center",
     display: "flex",
     flexDirection: "column",
+    // justify:"center",
+    // justifyContent: 'center',
+
   },
   locationTitle: {
     border: "solid 1px #5757568f",
@@ -29,20 +32,14 @@ const useLocationStyles = makeStyles()((theme) => ({
       fontSize: "2rem !important",
     },
   },
-  imageContainer: {
-    backgroundSize: "cover !important",
-    backgroundPosition: "0% 18% !important",
+  container: {
     position: "relative",
-    backgroundRepeat: "no-repeat !important",
+    width:"100%",
+      height:"250px",
     [theme.breakpoints.down("sm")]: {
       height: "9rem !important",
-      backgroundPosition: "0% 5% !important",
-      backgroundSize: "contain !important",
+
     },
-  },
-  parallax: {
-    willChange: "contents",
-    overflow: "hidden",
   },
   linkContainer: {
     [theme.breakpoints.down("sm")]: {

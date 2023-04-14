@@ -1,3 +1,4 @@
+
 const Service = {
   wifi: "Free wi-fi",
   air: "Air Conditional ",
@@ -11,17 +12,17 @@ const Service = {
 
 const BedWithService = [
   {
-    label: "Bed 1",
+    label: "Litrera",
     description: "Cama en habitación compartida mixta de 4 camas",
     services: [Service.wifi, Service.air],
   },
   {
-    label: "Bed 2",
+    label: "Litrera Full Service",
     description: "Cama en habitación compartida de 4 camas",
-    services: [Service],
+    services: [Object.values(Service)],
   },
   {
-    label: "Bed 3",
+    label: "Cama Individual  ",
     description: "Cama individual en habitación compartida",
     services: [Service.heat, Service.fan, Service.plug],
   },

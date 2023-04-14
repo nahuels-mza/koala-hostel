@@ -6,6 +6,7 @@ import {
   Typography,
   Dialog,
 } from "@mui/material";
+import Divider from "@mui/material/Divider";
 import BedIcon from "@mui/icons-material/Bed";
 import useGiftStyles from "./Gift.module";
 
@@ -32,9 +33,23 @@ const GiftDialog = (props) => {
                 {`${room.description}:`}
               </Typography>
             }
-            secondary={`${room.services}`}
           />
         </ListItem>
+        <Divider />
+        <List>
+          <ListItem key={room.description}>
+            <ListItemText
+              secondary={
+                <Typography style={{ color: "black" }} variant='overline'>
+                  {room.services.map((s) => {
+                    return "\n"+s;
+                  })}
+
+                </Typography>
+              }
+            />
+          </ListItem>
+        </List>
       </List>
     </Dialog>
   );

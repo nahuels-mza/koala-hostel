@@ -1,23 +1,21 @@
 import React from "react";
 import useLocationStyles from "./location.module";
 import { Box, Link, Typography } from "@mui/material";
-import PetsIcon from "@mui/icons-material/Pets";
-// import background from "../../assets/locationBackground.png";
+
+import photo from "../../assets/location.png";
+
 
 const Location = () => {
   const { classes } = useLocationStyles();
   return (
     <Box
       component="div"
-      className={classes.imageContainer}
+      className={classes.containerImage}
       padding={4}
       sx={{
-        // background: `url(${background}) center`,
-        backgroundColor: "#b9daf27d",
+         backgroundImage: `url(${photo})`,
+         backgroundColor: "#b9daf27d",
       }}
-      background-size="cover"
-      width="100%"
-      height="250px"
     >
       <Link
         target="_blank"
@@ -33,7 +31,6 @@ const Location = () => {
           Donde encontrarnos
         </Typography>
         <Box display="flex" justifyContent="center" marginY={2}>
-          <PetsIcon className={`${classes.icon}`} fontSize="large" />
         </Box>
       </Link>
     </Box>

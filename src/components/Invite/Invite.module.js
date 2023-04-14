@@ -8,25 +8,7 @@ const useInviteStyles = makeStyles()((theme) => ({
     justifyContent: "center",
     alignItems: "center",
   },
-  imageContainer: {
-    width: "100%",
-    // height: "500px",
-    margin: "auto",
-    [theme.breakpoints.down("sm")]: {
-      height: "auto",
-    },
-  },
-  parallax: {
-    minHeight: "100vh",
-    filter: "grayscale(80%)",
-    backgroundAttachment: "fixed",
-    backgroundPosition: "0% 25%",
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-    [theme.breakpoints.down("sm")]: {
-      backgroundPosition: "30%",
-    },
-  },
+
   image: {
     objectPosition: "0% 20% !important",
     margin: "auto",
@@ -72,7 +54,7 @@ const useInviteStyles = makeStyles()((theme) => ({
   title: {
     fontFamily: "Brusher !important",
     fontSize: "5rem !important",
-    background: "-webkit-linear-gradient(45deg, #09009f, #9500ffa6 80%)",
+    background: "-webkit-linear-gradient(45deg, #046259, #5ac4cdeb 80%)",
     "-webkit-background-clip": "text",
     "-webkit-text-fill-color": "transparent",
     [theme.breakpoints.down("sm")]: {

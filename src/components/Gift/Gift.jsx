@@ -27,27 +27,27 @@ export default function GiftDialogDemo() {
     <>
       {open && <GiftDialog open={open} onClose={handleClose} room={room} />}
       <Box
-        // component="section"
+        component="section"
         display="flex"
         alignItems="center"
         justifyContent="center"
         width="100%"
-        height="200px"
+        // height="200px"
+
         marginTop={3}
-        sx={{ backgroundColor: "#dcecef99" }}
+        sx={{ backgroundColor: "#dcecef99", borderRadius:3}}
       >
-        <Box display="flex" flexDirection="column">
-          <Typography sx={{ fontWeight: 1200 }}>
-            <p>Nuestras Habitaciones</p>
-          </Typography>
-        </Box>
+        <Typography sx={{ fontWeight: 1200 }}>
+          <p>Nuestras Habitaciones</p>
+        </Typography>
+
         {BedWithService.map((item) => {
           return (
             <Box>
               <Button
                 sx={{
-                  border: "3px solid rgba(25, 118, 210, 0.5)",
-                  "&:hover": { border: "3px solid rgba(25, 118, 210, 0.5)" },
+                  border: "1.5px solid",
+                  "&:hover": { border: "5px solid" },
                 }}
                 variant="outlined"
                 onClick={() => handleClickOpen(item)}
