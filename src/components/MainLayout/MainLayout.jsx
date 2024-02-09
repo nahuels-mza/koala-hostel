@@ -5,7 +5,7 @@ import Gift from "../Gift/Gift";
 import useStyles from "./MainLayout.module";
 import Invite from "../Invite/Invite";
 import { Box } from "@mui/material";
-import Carousel from "../Carousel/Carousel";
+import CarouselDinamyc from "../Carousel/Carrousel";
 import photo from "../../assets/mainPic.jpeg";
 
 const MainLayout = () => {
@@ -41,7 +41,7 @@ const MainLayout = () => {
           />
         </Box>
       <Gift />
-      <Carousel />
+      <CarouselDinamyc />
     </Box>
   );
 };
