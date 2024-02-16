@@ -30,16 +30,15 @@ const Confirmation = () => {
         <Button
           sx={{ height: 40 }}
           href={`https://wa.me/5492616089132?text=${whatsMessage}`}
-
         >
           <WhatsAppIcon className={classes.icon} fontSize="large" />
         </Button>
       </Fab>
-      <Fab>
+      {/* <Fab>
         <Button href={emailMessage}>
           <EmailIcon className={classes.icon} fontSize="large" />
         </Button>
-      </Fab>
+      </Fab> */}
     </Box>
   );
 };

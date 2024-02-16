@@ -1,4 +1,3 @@
-
 const Service = {
   wifi: "Free wi-fi",
   air: "Air Conditional ",

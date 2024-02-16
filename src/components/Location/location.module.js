@@ -13,7 +13,6 @@ const useLocationStyles = makeStyles()((theme) => ({
     flexDirection: "column",
     // justify:"center",
     // justifyContent: 'center',
-
   },
   locationTitle: {
     border: "solid 1px #5757568f",
@@ -34,11 +33,10 @@ const useLocationStyles = makeStyles()((theme) => ({
   },
   container: {
     position: "relative",
-    width:"100%",
-      height:"250px",
+    width: "100%",
+    height: "250px",
     [theme.breakpoints.down("sm")]: {
       height: "9rem !important",
-
     },
   },
   linkContainer: {

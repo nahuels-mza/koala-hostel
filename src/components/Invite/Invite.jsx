@@ -8,7 +8,6 @@ const Invite = () => {
 
   return (
     <>
-
       <Box component="div" className={classes.textContainer}>
         <Typography
           variant="h2"

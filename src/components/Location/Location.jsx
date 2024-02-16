@@ -4,7 +4,6 @@ import { Box, Link, Typography } from "@mui/material";
 
 import photo from "../../assets/location.png";
 
-
 const Location = () => {
   const { classes } = useLocationStyles();
   return (
@@ -13,8 +12,8 @@ const Location = () => {
       className={classes.containerImage}
       padding={4}
       sx={{
-         backgroundImage: `url(${photo})`,
-         backgroundColor: "#b9daf27d",
+        backgroundImage: `url(${photo})`,
+        backgroundColor: "#b9daf27d",
       }}
     >
       <Link
@@ -30,8 +29,7 @@ const Location = () => {
         >
           Donde encontrarnos
         </Typography>
-        <Box display="flex" justifyContent="center" marginY={2}>
-        </Box>
+        <Box display="flex" justifyContent="center" marginY={2}></Box>
       </Link>
     </Box>
   );
