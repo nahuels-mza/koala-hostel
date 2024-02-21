@@ -32,11 +32,11 @@ const CarouselDinamyc = () => {
       interval={3000}
       timeout={1000}
       animation="slide"
+      indicators="false"
       indicatorIconButtonProps={{
         style: {
-          padding: "1px",
           width: `${imageWidth}px`,
-          height: `${imageHeight}px`,
+
           objectFit: "contain",
         },
       }}

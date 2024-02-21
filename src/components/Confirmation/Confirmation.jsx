@@ -1,7 +1,7 @@
 import React from "react";
 import useConfirmationStyles from "./Confirmation.module";
 import { Box, Button } from "@mui/material";
-import EmailIcon from "@mui/icons-material/Email";
+// import EmailIcon from "@mui/icons-material/Email";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 import Fab from "@mui/material/Fab";
@@ -12,9 +12,9 @@ const Confirmation = () => {
   const whatsMessage = "Hola Koala Hostel mi Nombre es";
 
   // FROM https://mailto.vercel.app/
-  const emailMessage = `mailto:matias_daszkal@hotmail.com?subject=${encodeURIComponent(
-    "Consulta Reserva"
-  )}&body= ${whatsMessage} `;
+  // const emailMessage = `mailto:matias_daszkal@hotmail.com?subject=${encodeURIComponent(
+  //   "Consulta Reserva"
+  // )}&body= ${whatsMessage} `;
 
   return (
     <Box
