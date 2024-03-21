@@ -70,15 +70,15 @@ export default function ItemDialogDemo() {
                 <Button
                   sx={{
                     border: "1.5px solid",
-                    title:"item.label"
+                    title: "item.label",
                   }}
                   variant="outlined "
                   onClick={() => handleClickOpen(item)}
                   size="medium"
-                  startIcon={<BedIcon />} 
+                  startIcon={<BedIcon />}
                   title="details"
                 >
-                 {item.label} 
+                  {item.label}
                 </Button>
               </ImageListItem>
             </Paper>

@@ -10,4 +10,4 @@ FROM development as dev-envs
 
 ENV NODE_ENV production
 RUN npm ci --only=production
-CMD [ "npm", "start" ]
+ENTRYPOINT [ "npm start" ]
