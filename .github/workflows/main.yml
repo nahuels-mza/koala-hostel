@@ -4,9 +4,12 @@ on:
     branches:
       - main
 
+env:
+  AWS_EC2_METADATA_DISABLED : true
+
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18
 
     steps:
       - name: Checkout
