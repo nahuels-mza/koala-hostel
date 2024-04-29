@@ -1,6 +1,6 @@
 import { makeStyles } from "tss-react/mui";
 
-const useGiftStyles = makeStyles()((theme) => ({
+const useitemStyles = makeStyles()((theme) => ({
   gifIcon: {
     fontSize: "2rem !important",
     margin: "0 12px",
@@ -25,4 +25,4 @@ const useGiftStyles = makeStyles()((theme) => ({
   },
 }));
 
-export default useGiftStyles;
+export default useitemStyles;
