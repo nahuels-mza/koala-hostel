@@ -14,7 +14,7 @@ const Invite = () => {
           textAlign="center"
           className={`${classes.title} ${classes.font}`}
         >
-          Bienvenidos a Koala hostel
+          Acacias Turismo Mendoza
         </Typography>
       </Box>
     </>

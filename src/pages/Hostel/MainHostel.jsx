@@ -1,15 +1,15 @@
 import React from "react";
-import Location from "../Location/Location";
-import Confirmation from "../Confirmation/Confirmation";
-// import Item from "../Items/Item";
-import Invite from "../Invite/Invite";
-import useStyles from "./MainLayout.module";
+import { Outlet } from 'react-router-dom';
 import { Box } from "@mui/material";
-// import CarouselDinamyc from "../Carousel/Carrousel";
-import TitlebarBelowImageList from "../Items/ImageList";
+import Location from "../../components/Location/Location";
+import Confirmation from "../../components/Confirmation/Confirmation";
+import Invite from "../../components/Invite/Invite";
+import TitlebarBelowImageList from "../../components/Items/ImageList";
+import CustomDateRangePicker from "../../components/Date/Date";
+import useStyles from "../MainLayout/MainLayout.module";
 import photo from "../../assets/mainPic.jpeg";
 
-const MainLayout = () => {
+const MainHostel = () => {
   const { classes } = useStyles();
 
   return (
@@ -19,6 +19,7 @@ const MainLayout = () => {
           className={classes.parallax}
           sx={{ backgroundImage: `url(${photo})` }}
         />
+        <CustomDateRangePicker />
       </Box>
 
       <Box
@@ -56,9 +57,10 @@ const MainLayout = () => {
       </Box>
 
       <TitlebarBelowImageList />
-
+      <Outlet />
     </Box>
+
   );
 };
 
-export default MainLayout;
+export default MainHostel;

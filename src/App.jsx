@@ -1,5 +1,5 @@
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import MainLayout from "./components/MainLayout/MainLayout";
+import MainLayout from "./pages/MainLayout/MainLayout";
 import "./index.css";
 import React from "react";
 

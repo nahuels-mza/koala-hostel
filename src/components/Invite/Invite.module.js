@@ -24,7 +24,7 @@ const useInviteStyles = makeStyles()((theme) => ({
     display: "flex",
     justifyContent: "space-between",
     // backgroundColor: "black",
-    borderTop: "2px solid black",
+    // borderTop: "2px solid black",
     color: "inherit",
     // mixBlendMode: "hard-light",
     flexDirection: "column",
