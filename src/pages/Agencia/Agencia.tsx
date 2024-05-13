@@ -1,6 +1,6 @@
 import React from "react";
 import { Outlet } from 'react-router-dom';
-import { Box, Button } from "@mui/material";
+import { Box } from "@mui/material";
 import Location from "../../components/Location/Location";
 
 import Invite from "../../components/Invite/Invite";
@@ -18,9 +18,7 @@ const AgenciaPage = () => {
       <Box className={classes.imageContainer}>
         <Location />
         <Box className={classes.container}>
-          <Button href="/hostel" variant="contained" color="primary" size="large" disableElevation>
-            HOSTEL
-          </Button>
+
         </Box>
 
       </Box>

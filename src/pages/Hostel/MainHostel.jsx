@@ -1,7 +1,7 @@
 import React from "react";
 import { Outlet } from 'react-router-dom';
 import { Box } from "@mui/material";
-import Location from "../../components/Location/Location";
+// import Location from "../../components/Location/Location";
 import Confirmation from "../../components/Confirmation/Confirmation";
 import Invite from "../../components/Invite/Invite";
 import TitlebarBelowImageList from "../../components/Items/ImageList";
