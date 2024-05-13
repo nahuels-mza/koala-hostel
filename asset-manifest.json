@@ -1,19 +1,22 @@
 {
-  "main.css": "/koala-hostel/static/css/main.6669f9ed.chunk.css",
-  "main.js": "/koala-hostel/static/js/main.2c73ccb2.chunk.js",
-  "main.js.map": "/koala-hostel/static/js/main.2c73ccb2.chunk.js.map",
-  "runtime~main.js": "/koala-hostel/static/js/runtime~main.1471b786.js",
-  "runtime~main.js.map": "/koala-hostel/static/js/runtime~main.1471b786.js.map",
-  "static/js/2.69d37275.chunk.js": "/koala-hostel/static/js/2.69d37275.chunk.js",
-  "static/js/2.69d37275.chunk.js.map": "/koala-hostel/static/js/2.69d37275.chunk.js.map",
-  "static/js/3.6b9d1ac5.chunk.js": "/koala-hostel/static/js/3.6b9d1ac5.chunk.js",
-  "static/js/3.6b9d1ac5.chunk.js.map": "/koala-hostel/static/js/3.6b9d1ac5.chunk.js.map",
-  "index.html": "/koala-hostel/index.html",
-  "precache-manifest.534bfc12deac0bac5b08e428d56e1778.js": "/koala-hostel/precache-manifest.534bfc12deac0bac5b08e428d56e1778.js",
-  "service-worker.js": "/koala-hostel/service-worker.js",
-  "static/css/main.6669f9ed.chunk.css.map": "/koala-hostel/static/css/main.6669f9ed.chunk.css.map",
-  "static/media/koala1.png": "/koala-hostel/static/media/koala1.8093e4cf.png",
-  "static/media/koala2.png": "/koala-hostel/static/media/koala2.1a2f49e2.png",
-  "static/media/koala3.png": "/koala-hostel/static/media/koala3.35aac14f.png",
-  "static/media/mainPic.jpeg": "/koala-hostel/static/media/mainPic.39a744a8.jpeg"
+  "files": {
+    "main.css": "/static/css/main.e6c13ad2.css",
+    "main.js": "/static/js/main.7ed8ccd5.js",
+    "static/js/488.52cad0f2.chunk.js": "/static/js/488.52cad0f2.chunk.js",
+    "static/media/location.png": "/static/media/location.5f98845eb44c86cc8351.png",
+    "static/media/mainPic.jpeg": "/static/media/mainPic.20a51db564e49b459097.jpeg",
+    "static/media/koala3.jpeg": "/static/media/koala3.3cd3883a1512fdd9e0d1.jpeg",
+    "static/media/koala1.jpeg": "/static/media/koala1.a839d6645c727a92c36e.jpeg",
+    "static/media/koala4.jpg": "/static/media/koala4.43f5877651e48379c14e.jpg",
+    "static/media/koala2.jpeg": "/static/media/koala2.9913edcd8827e27e2638.jpeg",
+    "static/media/acacia.png": "/static/media/acacia.f9835de3972da09b9001.png",
+    "index.html": "/index.html",
+    "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
+    "main.7ed8ccd5.js.map": "/static/js/main.7ed8ccd5.js.map",
+    "488.52cad0f2.chunk.js.map": "/static/js/488.52cad0f2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.7ed8ccd5.js"
+  ]
 }
