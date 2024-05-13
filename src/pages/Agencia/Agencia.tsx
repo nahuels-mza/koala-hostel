@@ -7,24 +7,26 @@ import Invite from "../../components/Invite/Invite";
 import useStyles from "../MainLayout/MainLayout.module";
 
 
-const HomePage = () => {
+const AgenciaPage = () => {
   const { classes } = useStyles();
 
   return (
-    <Box component="div" className={classes.container}>
+    <Box component="div" className={classes.parallax}>
       <Box component="section" height="100%" className={classes.container}>
         <Invite />
       </Box>
-      <Box className={classes.container}>
+      <Box className={classes.imageContainer}>
         <Location />
-        <Button href="/hostel" variant="contained" color="primary" size="large" disableElevation>
-          HOSTEL
-        </Button>
-        <Outlet />
+        <Box className={classes.container}>
+          <Button href="/hostel" variant="contained" color="primary" size="large" disableElevation>
+            HOSTEL
+          </Button>
+        </Box>
 
       </Box>
+      <Outlet />
     </Box>
   );
 };
 
-export default HomePage;
+export default AgenciaPage;

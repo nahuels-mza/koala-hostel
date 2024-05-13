@@ -19,12 +19,11 @@ const Confirmation = () => {
   return (
     <Box
       sx={{ "& > :not(style)": { m: 1 } }}
-      alignSelf="flex-end"
+
       position="fixed"
       bottom="0"
-      flexDirection="column"
       zIndex="100"
-      flex="1"
+      right="0"
     >
       <Fab>
         <Button

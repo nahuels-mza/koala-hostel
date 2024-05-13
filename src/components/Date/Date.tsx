@@ -12,28 +12,45 @@ import { Box, Button, Typography } from '@mui/material';
 
 export default function ControlledComponent() {
     const today = dayjs(new Date())
-    const [value, setValue] = React.useState<Dayjs | null>(null);
+
 
     return (
-        <Box alignItems="center" flexDirection={'inherit'}>
+        <Box
+            sx={{
+                "background-color": "floralwhite",
+            }}
+            padding={2}
+        >
             <Typography
                 variant="h5"
                 textAlign="center"> Seleccione su Estadia
             </Typography>
-            <LocalizationProvider dateAdapter={AdapterDayjs}>
-                <DemoContainer components={['DatePicker', 'DatePicker']}>
-                    <MobileDatePicker label="Llegada" defaultValue={dayjs(today)} />
-                    <MobileDatePicker
-                        label="Salida"
-                        defaultValue={dayjs(today)}
-                        value={value}
-                        onChange={(newValue) => setValue(newValue)}
-                    />
-                </DemoContainer>
-            </LocalizationProvider>
-            <Button href="/reserve" variant="contained" color="primary" size="large" disableElevation>
-                Reserve
-            </Button>
-        </Box>
+            <Box alignItems="center"
+                justifyContent="space-between"
+                width="35%"
+                margin="auto"
+                display={'flex'}>
+                <LocalizationProvider dateAdapter={AdapterDayjs}>
+                    <DemoContainer components={['DatePicker', 'DatePicker']}>
+                        <MobileDatePicker
+                            label="Llegada"
+                            defaultValue={dayjs(today)}
+                            disablePast
+                            maxDate={dayjs().add(2, 'month')}
+                        />
+                        <MobileDatePicker
+                            label="Salida"
+                            defaultValue={dayjs().add(7, 'day')}
+                            disablePast
+                            maxDate={dayjs().add(2, 'month')}
+
+                        />
+                    </DemoContainer>
+                </LocalizationProvider>
+                <Button href="/reserve" variant="contained" color="primary" size="large" disableElevation>
+                    Reserve
+                </Button>
+            </Box>
+        </Box >
     );
 }

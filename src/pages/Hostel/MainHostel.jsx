@@ -13,51 +13,28 @@ const MainHostel = () => {
   const { classes } = useStyles();
 
   return (
-    <Box component="div" className={classes.container}>
-      <Box component="section" height="100%" className={classes.imageContainer}>
-        <Box
-          className={classes.parallax}
-          sx={{ backgroundImage: `url(${photo})` }}
-        />
+    <Box component="div"
+      className={classes.parallax}
+      sx={{ backgroundImage: `url(${photo})` }}
+    >
+      <Box className={classes.imageContainer}>
+        <Invite />
+      </Box>
+
+      <Box className={classes.imageContainer}>
         <CustomDateRangePicker />
       </Box>
 
-      <Box
-        component="section"
-        height="100px"
-        className={classes.imageContainer}
-      >
-        <Box
-          className={classes.parallax}
-          sx={{ backgroundImage: `url(${photo})` }}
-        />
-      </Box>
-      <Location />
-      <Invite />
-      <Box
-        component="section"
-        height="100px"
-        className={classes.imageContainer}
-      >
-        <Box
-          className={classes.parallax}
-          sx={{ backgroundImage: `url(${photo})` }}
-        />
+      {/* <Location /> */}
+
+
+      <Box className={classes.imageContainer}>
+        <TitlebarBelowImageList />
       </Box>
       <Confirmation />
-      <Box
-        component="section"
-        height="100px"
-        className={classes.imageContainer}
-      >
-        <Box
-          className={classes.parallax}
-          sx={{ backgroundImage: `url(${photo})` }}
-        />
-      </Box>
-
-      <TitlebarBelowImageList />
       <Outlet />
+
+
     </Box>
 
   );

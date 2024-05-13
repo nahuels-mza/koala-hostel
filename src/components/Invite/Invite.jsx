@@ -8,13 +8,21 @@ const Invite = () => {
 
   return (
     <>
-      <Box component="div" className={classes.textContainer}>
+      <Box component="div" className={classes.container}>
         <Typography
           variant="h2"
           textAlign="center"
-          className={`${classes.title} ${classes.font}`}
+          className={` ${classes.font}`}
         >
           Acacias Turismo Mendoza
+        </Typography>
+
+        <Typography
+          variant="h6"
+          textAlign="center"
+          className={` ${classes.font}`}
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc finibus iaculis orci sed pulvinar. Praesent porttitor diam id risus facilisis.
         </Typography>
       </Box>
     </>

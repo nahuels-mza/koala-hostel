@@ -3,7 +3,6 @@ import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
 import { hostelImages } from '../../utils/constant';
-import { Button } from '@mui/material';
 import PropTypes from "prop-types";
 import ItemDialog from "./Dialog";
 
@@ -13,8 +12,6 @@ ItemDialog.propTypes = {
 };
 
 export default function TitlebarBelowImageList() {
-    const imageHeight = window.screen.height * 0.75;
-    const imageWidth = window.screen.width * 0.75;
     const [open, setOpen] = React.useState(false);
     const [item, setItem] = React.useState();
 
@@ -29,29 +26,26 @@ export default function TitlebarBelowImageList() {
         <>
             {open && <ItemDialog open={open} onClose={handleClose} item={item} />}
 
-            <ImageList sx={{ width: imageWidth, height: imageHeight }}>
+            <ImageList sx={{ width: "100%", height: "70%" }}>
                 {hostelImages.map((item) => (
-                    <Button
-                        variant="outlined "
-                        onClick={() => handleClickOpen(item)}
+                    <ImageListItem key={item.img} rows={2} style={{ cursor: "pointer" }}
+                        onClick={() => handleClickOpen(item)}>
 
-                        sx={{
+                        <img
+                            srcSet={item.img}
+                            src={item.img}
+                            alt={item.title}
+                            loading="lazy"
+                            height="50px"
 
-                        }}
-                    >
-                        <ImageListItem key={item.img}>
-                            <img
-                                srcSet={item.img}
-                                src={item.img}
-                                alt={item.title}
-                                loading="lazy"
-                            />
-                            <ImageListItemBar
-                                key={item.img}
-                                title={item.title}
-                            />
-                        </ImageListItem>
-                    </Button>
+                        />
+                        <ImageListItemBar
+                            key={item.img}
+                            title={item.title}
+
+                        />
+
+                    </ImageListItem>
                 ))}
             </ImageList>
         </>

@@ -1,5 +1,5 @@
-import image1 from "../../src/assets/koala1.png";
-import image2 from "../../src/assets/koala2.png";
+import image1 from "../../src/assets/koala1.jpeg";
+import image2 from "../../src/assets/koala2.jpeg";
 import image3 from "../../src/assets/koala3.jpeg";
 import image4 from "../../src/assets/koala4.jpg";
 

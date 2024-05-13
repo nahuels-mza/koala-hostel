@@ -4,7 +4,7 @@ import App from "./App"
 import ErrorPage from "./pages/error";
 import Reserve from "./pages/Reservation/reservation";
 import MainHostel from "./pages/Hostel/MainHostel";
-import HomePage from "./pages/HomePage/HomePage";
+import AgenciaPage from "./pages/Agencia/Agencia";
 
 const router = createBrowserRouter([
     {
@@ -13,8 +13,8 @@ const router = createBrowserRouter([
         element: <App />,
         children: [
             {
-                path: "",
-                element: <HomePage />
+                path: "agencia",
+                element: <AgenciaPage />
 
             },
             {

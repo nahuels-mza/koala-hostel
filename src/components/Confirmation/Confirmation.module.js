@@ -5,7 +5,7 @@ const useConfirmationStyles = makeStyles()((theme) => ({
   container: {
     position: "relative",
     bottom: 0,
-    backgroundColor: "#b9daf252",
+    backgroundColor: "#ffff",
     minHeight: "200px",
     justifyContent: "center",
     alignItems: "center",
@@ -15,7 +15,7 @@ const useConfirmationStyles = makeStyles()((theme) => ({
 
   icon: {
     cursor: "pointer",
-    color: "#895b89",
+    color: "#128C7E",
     fontSize: "3rem !important",
     margin: "1rem",
   },
