@@ -39,28 +39,24 @@ const BedWithService = [
 const hostelImages = [
   {
     img: image1,
-    title: "Bodegas",
+    title: "Habitaciones individuales",
     description: LorenImpsu
   },
   {
     img: image2,
-    title: "Alta Montaña",
+    title: "Habitaciones compartidas ",
     description: LorenImpsu
   },
   {
     img: image3,
-    title: "Circuito Turistico Ciudad de Mendoza",
+    title: "Habitaciones familiares",
     description: LorenImpsu
   },
-  {
-    img: image4,
-    title: "San Rafael ",
-    description: LorenImpsu
-  },
+
 ];
 
 
-const testData = [
+const imageData = [
   {
     img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
     title: 'Breakfast',
@@ -123,4 +119,29 @@ const testData = [
   },
 ];
 
-export { BedWithService, hostelImages, testData };
+const commentData =[
+  {
+    img: 'https://picsum.photos/200/300',
+    title: 'Breakfast',
+
+  },
+  {
+    img: 'https://source.unsplash.com/random',
+    title: 'Burger',
+  },
+  {
+    img: 'https://source.unsplash.com/random/?city,night',
+    title: 'Camera',
+  },
+  {
+    img: 'https://source.unsplash.com/random/?city,day',
+    title: 'Coffee',
+  },
+  {
+    img: image4,
+    title: "Habitaciones familiares",
+    description: LorenImpsu
+  }
+
+]
+export { BedWithService, hostelImages, imageData, commentData };

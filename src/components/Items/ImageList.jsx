@@ -26,7 +26,7 @@ export default function TitlebarBelowImageList() {
         <>
             {open && <ItemDialog open={open} onClose={handleClose} item={item} />}
 
-            <ImageList sx={{ width: "100%", height: "70%" }}>
+            <ImageList cols={3} sx={{ width: "100%", height: "70%" }}>
                 {hostelImages.map((item) => (
                     <ImageListItem key={item.img} rows={2} style={{ cursor: "pointer" }}
                         onClick={() => handleClickOpen(item)}>

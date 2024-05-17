@@ -1,13 +1,15 @@
 import React from "react";
 import { Outlet } from 'react-router-dom';
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 // import Location from "../../components/Location/Location";
 import Confirmation from "../../components/Confirmation/Confirmation";
 import Invite from "../../components/Invite/Invite";
 import TitlebarBelowImageList from "../../components/Items/ImageList";
 import CustomDateRangePicker from "../../components/Date/Date";
+import CarouselDinamyc from "../../components/Carousel/Carousel";
+import CommentCarousel from "../../components/Carousel/CommentCarousel";
 import useStyles from "../MainLayout/MainLayout.module";
-import photo from "../../assets/mainPic.jpeg";
+// import photo from "../../assets/mainPic.jpeg";
 
 const MainHostel = () => {
   const { classes } = useStyles();
@@ -15,7 +17,7 @@ const MainHostel = () => {
   return (
     <Box component="div"
       className={classes.parallax}
-      sx={{ backgroundImage: `url(${photo})` }}
+    // sx={{ backgroundImage: `url(${photo})` }}
     >
       <Box className={classes.imageContainer}>
         <Invite />
@@ -30,6 +32,21 @@ const MainHostel = () => {
 
       <Box className={classes.imageContainer}>
         <TitlebarBelowImageList />
+      </Box>
+
+      <Box className={classes.imageContainer} >
+        <Typography
+          variant="h5"
+          textAlign="center"> Nuestros Servicios
+        </Typography>
+        <Box display='grid' className={classes.imageContainer} flexDirection={'column'} gridAutoFlow={'column'}>
+
+          <CarouselDinamyc />
+
+
+          <CommentCarousel />
+
+        </Box>
       </Box>
       <Confirmation />
       <Outlet />

@@ -1,38 +1,41 @@
 import React from "react";
 import Carousel from "react-material-ui-carousel";
 
-import { hostelImages } from "../../utils/constant";
+import { commentData } from "../../utils/constant";
+const CommentCarousel = () => {
 
-const CarouselDinamyc = () => {
-  // const { classes } = useCarouselStyles();
 
 
   const imageHeight = window.screen.height * 0.4;
-  const imageWidth = window.screen.width * 0.2;
+  const imageWidth = window.screen.width * 0.4;
+  const imageWidthProp = window.screen.width * 0.01;
+
   return (
     <Carousel
       autoPlay={true}
       height={imageHeight}
-      interval={3000}
+      interval={5000}
       timeout={1000}
       animation="slide"
       indicators="false"
       indicatorIconButtonProps={{
         style: {
-          width: `${imageWidth}px`,
-
+          width: `${imageWidthProp}px`,
           objectFit: "contain",
         },
       }}
+      sx={{
+        textAlign: 'center'
+      }}
     >
-      {hostelImages.map((item, i) => (
+      {commentData.map((item, i) => (
         <img
           key={i}
           src={`${item.img}`}
           srcSet={`${item.img}`}
           alt={item.title}
           loading="lazy"
-          width="100%"
+          width={imageWidth}
           height={imageHeight}
         />
       ))}
@@ -40,4 +43,5 @@ const CarouselDinamyc = () => {
   );
 };
 
-export default CarouselDinamyc;
+
+export default CommentCarousel;
