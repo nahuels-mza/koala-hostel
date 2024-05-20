@@ -1,10 +1,10 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 
-import useInviteStyles from "./Invite.module";
+import useTitleStyles from "./MainTitle.module";
 
-const Invite = () => {
-  const { classes } = useInviteStyles();
+const Title = () => {
+  const { classes } = useTitleStyles();
 
   return (
     <>
@@ -29,4 +29,4 @@ const Invite = () => {
   );
 };
 
-export default Invite;
+export default Title;

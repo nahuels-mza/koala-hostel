@@ -2,20 +2,23 @@ import * as React from 'react';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
-import { hostelImages } from '../../utils/constant';
-import PropTypes from "prop-types";
+
 import ItemDialog from "./Dialog";
 
-ItemDialog.propTypes = {
-    onClose: PropTypes.func.isRequired,
-    open: PropTypes.bool.isRequired,
-};
+interface IImageListingProps {
+    images: {
+        img: string;
+        title: string;
+        description: string;
+    }[]
+    column: number
+}
 
-export default function TitlebarBelowImageList() {
+export default function ImageListing(props: IImageListingProps) {
     const [open, setOpen] = React.useState(false);
     const [item, setItem] = React.useState();
 
-    const handleClickOpen = (item) => {
+    const handleClickOpen = (item: any) => {
         setOpen(true);
         setItem(item);
     };
@@ -26,8 +29,8 @@ export default function TitlebarBelowImageList() {
         <>
             {open && <ItemDialog open={open} onClose={handleClose} item={item} />}
 
-            <ImageList cols={3} sx={{ width: "100%", height: "70%" }}>
-                {hostelImages.map((item) => (
+            <ImageList cols={props.column} sx={{ width: "100%", height: "70%" }}>
+                {props.images.map((item) => (
                     <ImageListItem key={item.img} rows={2} style={{ cursor: "pointer" }}
                         onClick={() => handleClickOpen(item)}>
 

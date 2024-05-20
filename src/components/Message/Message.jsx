@@ -1,13 +1,13 @@
 import React from "react";
-import useConfirmationStyles from "./Confirmation.module";
+import useMessageStyles from "./Message.module";
 import { Box, Button } from "@mui/material";
 // import EmailIcon from "@mui/icons-material/Email";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 import Fab from "@mui/material/Fab";
 
-const Confirmation = () => {
-  const { classes } = useConfirmationStyles();
+const Message = () => {
+  const { classes } = useMessageStyles();
   // TODO ADD FORMAT HERE
   const whatsMessage = "Hola Koala Hostel mi Nombre es";
 
@@ -42,4 +42,4 @@ const Confirmation = () => {
   );
 };
 
-export default Confirmation;
+export default Message;

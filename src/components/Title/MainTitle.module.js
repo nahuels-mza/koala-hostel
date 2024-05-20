@@ -1,6 +1,6 @@
 import { makeStyles } from "tss-react/mui";
 
-const useInviteStyles = makeStyles()((theme) => ({
+const useTitleStyles = makeStyles()((theme) => ({
   container: {
     display: "flex",
     flexDirection: "column",
@@ -38,7 +38,7 @@ const useInviteStyles = makeStyles()((theme) => ({
       // padding: "50px 10px 20px",
     },
   },
-  confirmation: {
+  Message: {
     "& svg": {
       fill: "#b247a49e",
     },
@@ -106,4 +106,4 @@ const useInviteStyles = makeStyles()((theme) => ({
   },
 }));
 
-export default useInviteStyles;
+export default useTitleStyles;

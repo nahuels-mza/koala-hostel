@@ -2,12 +2,13 @@ import React from "react";
 import { Outlet } from 'react-router-dom';
 import { Box, Typography } from "@mui/material";
 // import Location from "../../components/Location/Location";
-import Confirmation from "../../components/Confirmation/Confirmation";
-import Invite from "../../components/Invite/Invite";
-import TitlebarBelowImageList from "../../components/Items/ImageList";
+import Message from "../../components/Message/Message";
+import Title from "../../components/Title/MainTitle";
+import ImageListing from "../../components/Items/ImageList";
 import CustomDateRangePicker from "../../components/Date/Date";
 import CarouselDinamyc from "../../components/Carousel/Carousel";
 import CommentCarousel from "../../components/Carousel/CommentCarousel";
+import { hostelImages } from '../../utils/constant';
 import useStyles from "../MainLayout/MainLayout.module";
 // import photo from "../../assets/mainPic.jpeg";
 
@@ -20,7 +21,7 @@ const MainHostel = () => {
     // sx={{ backgroundImage: `url(${photo})` }}
     >
       <Box className={classes.imageContainer}>
-        <Invite />
+        <Title />
       </Box>
 
       <Box className={classes.imageContainer}>
@@ -31,7 +32,7 @@ const MainHostel = () => {
 
 
       <Box className={classes.imageContainer}>
-        <TitlebarBelowImageList />
+        <ImageListing images={hostelImages} column={3} />
       </Box>
 
       <Box className={classes.imageContainer} >
@@ -48,7 +49,7 @@ const MainHostel = () => {
 
         </Box>
       </Box>
-      <Confirmation />
+      <Message />
       <Outlet />
 
 

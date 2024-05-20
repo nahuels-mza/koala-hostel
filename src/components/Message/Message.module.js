@@ -1,7 +1,7 @@
 import { makeStyles } from "tss-react/mui";
 // import { padding } from "@mui/system";
 
-const useConfirmationStyles = makeStyles()((theme) => ({
+const useMessageStyles = makeStyles()((theme) => ({
   container: {
     position: "relative",
     bottom: 0,
@@ -19,11 +19,11 @@ const useConfirmationStyles = makeStyles()((theme) => ({
     fontSize: "3rem !important",
     margin: "1rem",
   },
-  confirmation: {
+  Message: {
     "& svg": {
       fill: "#ab83ab",
     },
   },
 }));
 
-export default useConfirmationStyles;
+export default useMessageStyles;
