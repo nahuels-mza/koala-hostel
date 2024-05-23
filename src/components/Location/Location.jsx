@@ -8,6 +8,7 @@ const Location = () => {
   const { classes } = useLocationStyles();
   return (
     <Box
+      id='location_section'
       component="div"
       className={classes.containerImage}
       padding={4}
@@ -29,7 +30,7 @@ const Location = () => {
         >
           Donde encontrarnos
         </Typography>
-        <Box display="flex" justifyContent="center" marginY={2}></Box>
+        <Box display="flex" justifyContent="center" marginY={2} />
       </Link>
     </Box>
   );

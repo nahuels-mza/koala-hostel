@@ -5,6 +5,8 @@ import { Box } from "@mui/material";
 import Message from "../../components/Message/Message";
 import ImageListing from "../../components/Items/ImageList";
 import Title from "../../components/Title/MainTitle";
+import CommentCarousel from "../../components/Carousel/CommentCarousel";
+import Location from "../../components/Location/Location";
 import { commentData } from '../../utils/constant';
 import useStyles from "../MainLayout/MainLayout.module";
 
@@ -24,8 +26,14 @@ const AgenciaPage = () => {
         <Box component="section" height="100%" className={classes.container}>
           <Title />
         </Box>
-        <Box className={classes.parallax}>
+        <Box className={classes.imageContainer}>
           <ImageListing images={commentData} column={4} />
+        </Box>
+        <Box className={classes.imageContainer}>
+          <CommentCarousel />
+        </Box>
+        <Box className={classes.imageContainer}  >
+          <Location />
         </Box>
         <Outlet />
       </Box>
