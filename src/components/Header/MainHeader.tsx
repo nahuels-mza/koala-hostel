@@ -11,7 +11,7 @@ import { Button, Link, Menu } from '@mui/material';
 import Logo from '../../assets/acacia.png'
 
 export default function Header() {
-    // let page = window.location.href
+
     const options = [{
 
         "name": "Quienes somos",
@@ -43,7 +43,7 @@ export default function Header() {
 
                         />
                     </Button>
-                    <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} align='center'>
+                    <Typography variant="h3" component="div" sx={{ flexGrow: 1 }} align='center'>
                         Acacias
                     </Typography>
                     <div>

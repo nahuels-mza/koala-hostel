@@ -5,6 +5,7 @@ export default function Reserve() {
   const end = "";
   const base_url =
     "https://bananadesk.com/booking-engine/panda-hostel-mendoza/";
+  // eslint-disable-next-line
   const fetchUsersForPage = async () => {
     try {
       const response = await fetch(

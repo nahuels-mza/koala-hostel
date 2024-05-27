@@ -6,24 +6,22 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 
 import { ownerData } from "../../utils/constant";
-import useIdentityStyles from "./Idntity.module";
+import useIdentityStyles from "./Identity.module";
 import acacia from "../../assets/acacia.png";
 
 const Identity = () => {
-  const style = useIdentityStyles();
-
-
+  const { classes } = useIdentityStyles();
   return (
-    <Box id="ourselves" component="section" className={style.classes.container}>
+    <Box id="ourselves" component="section" className={classes.container}>
       {ownerData.map((item) => (
-        <Card variant="outlined" className={style.classes.card}>
+        <Card variant="outlined" className={classes.card}>
           <CardMedia
             component="img"
             // height="140"
             image={acacia}
             alt={item.name}
           />
-          <CardContent className={style.classes.card}>
+          <CardContent className={classes.card}>
 
             <Typography gutterBottom variant="h3" >
               {item.name}
