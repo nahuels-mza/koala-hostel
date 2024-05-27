@@ -1,5 +1,5 @@
 import React from "react";
-import { Outlet } from 'react-router-dom';
+import { Outlet } from "react-router-dom";
 import { Box } from "@mui/material";
 
 import Message from "../../components/Message/Message";
@@ -7,9 +7,9 @@ import ImageListing from "../../components/Items/ImageList";
 import Title from "../../components/Title/MainTitle";
 import CommentCarousel from "../../components/Carousel/CommentCarousel";
 import Location from "../../components/Location/Location";
-import { commentData } from '../../utils/constant';
+import Identity from "../../components/Identity/Identity";
+import { commentData } from "../../utils/constant";
 import useStyles from "../MainLayout/MainLayout.module";
-
 
 const AgenciaPage = () => {
   const { classes } = useStyles();
@@ -32,8 +32,11 @@ const AgenciaPage = () => {
         <Box className={classes.imageContainer}>
           <CommentCarousel />
         </Box>
-        <Box className={classes.imageContainer}  >
+        <Box className={classes.imageContainer}>
           <Location />
+        </Box>
+        <Box className={classes.imageContainer}>
+          <Identity />
         </Box>
         <Outlet />
       </Box>

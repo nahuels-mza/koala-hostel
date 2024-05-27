@@ -8,7 +8,7 @@ const Location = () => {
   const { classes } = useLocationStyles();
   return (
     <Box
-      id='location_section'
+      id="location_section"
       component="div"
       className={classes.containerImage}
       padding={4}

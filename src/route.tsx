@@ -2,7 +2,7 @@ import * as React from "react";
 import { createBrowserRouter } from "react-router-dom";
 import App from "./App"
 import ErrorPage from "./pages/error";
-import Reserve from "./pages/Reservation/reservation";
+import Reserve from "./pages/Reservation/Reservation";
 import MainHostel from "./pages/Hostel/MainHostel";
 import AgenciaPage from "./pages/Agencia/Agencia";
 
