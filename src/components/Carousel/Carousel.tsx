@@ -4,23 +4,19 @@ import Carousel from "react-material-ui-carousel";
 import { imageData } from "../../utils/constant";
 
 const CarouselDinamyc = () => {
-  // const { classes } = useCarouselStyles();
+  const imageHeight = window.screen.height * 0.25;
+  const imageWidth = window.screen.width * 0.5;
 
-
-  const imageHeight = window.screen.height * 0.4;
-  const imageWidth = window.screen.width * 0.4;
-  const imageWidthProp = window.screen.width * 0.01;
   return (
     <Carousel
       autoPlay={true}
       height={imageHeight}
       interval={3000}
-      timeout={1000}
       animation="slide"
-      indicators="false"
+      indicators={false}
       indicatorIconButtonProps={{
         style: {
-          width: `${imageWidthProp}px`,
+          // width: `${imageWidthProp}px`,
           objectFit: "contain",
         },
       }}

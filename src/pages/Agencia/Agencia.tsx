@@ -27,9 +27,9 @@ const AgenciaPage = () => {
           <Title />
         </Box>
         <Box className={classes.imageContainer}>
-          <ImageListing images={commentData} column={4} />
+          <ImageListing images={commentData} column={2} />
         </Box>
-        <Box className={classes.imageContainer}>
+        <Box className={classes.imageContainer} display="grid" maxWidth={"50%"}>
           <CommentCarousel />
         </Box>
         <Box className={classes.imageContainer}>

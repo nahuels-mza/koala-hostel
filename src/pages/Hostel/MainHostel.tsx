@@ -1,7 +1,7 @@
 import React from "react";
 import { Outlet } from 'react-router-dom';
 import { Box, Typography } from "@mui/material";
-// import Location from "../../components/Location/Location";
+
 import Message from "../../components/Message/Message";
 import Title from "../../components/Title/MainTitle";
 import ImageListing from "../../components/Items/ImageList";
@@ -28,9 +28,6 @@ const MainHostel = () => {
         <CustomDateRangePicker />
       </Box>
 
-      {/* <Location /> */}
-
-
       <Box className={classes.imageContainer}>
         <ImageListing images={hostelImages} column={3} />
       </Box>
@@ -40,13 +37,10 @@ const MainHostel = () => {
           variant="h5"
           textAlign="center"> Nuestros Servicios
         </Typography>
-        <Box display='grid' className={classes.imageContainer} flexDirection={'column'} gridAutoFlow={'column'}>
-
+        <Box display='grid' className={classes.imageContainer}
+          flexDirection={'column'} gridAutoFlow={'column'}>
           <CarouselDinamyc />
-
-
           <CommentCarousel />
-
         </Box>
       </Box>
       <Message />

@@ -29,23 +29,20 @@ export default function ImageListing(props: IImageListingProps) {
         <>
             {open && <ItemDialog open={open} onClose={handleClose} item={item} />}
 
-            <ImageList cols={props.column} sx={{ width: "100%", height: "70%" }}>
+            <ImageList cols={props.column} sx={{ width: "100%", maxHeight: "100%" }}>
                 {props.images.map((item) => (
                     <ImageListItem key={item.img} rows={2} style={{ cursor: "pointer" }}
                         onClick={() => handleClickOpen(item)}>
-
                         <img
                             srcSet={item.img}
                             src={item.img}
                             alt={item.title}
                             loading="lazy"
-                            height="50px"
 
                         />
                         <ImageListItemBar
                             key={item.img}
                             title={item.title}
-
                         />
 
                     </ImageListItem>

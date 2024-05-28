@@ -1,11 +1,10 @@
 import { makeStyles } from "tss-react/mui";
-const imageWidthProp = window.screen.width * 0.3;
-const imageHeightProp = window.screen.height * 0.5;
+const imageWidthProp = window.screen.width * 0.4;
+const imageHeightProp = window.screen.height * 0.3;
 const useIdentityStyles = makeStyles()((theme) => ({
   container: {
     width: "100%",
-    height: imageHeightProp,
-    // backgroundColor: "#0cbfdb",
+    height: "100%",
     justifyContent: "center",
     alignItems: "center",
     display: "flex",
@@ -14,7 +13,8 @@ const useIdentityStyles = makeStyles()((theme) => ({
   },
   card: {
     maxWidth: imageWidthProp,
-    maxHeight: '80%',
+    height: imageHeightProp,
+    // maxHeight: cardHeightProp,
     overflow: "auto"
   },
 }));

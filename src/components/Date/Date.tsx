@@ -27,9 +27,10 @@ export default function ControlledComponent() {
             </Typography>
             <Box alignItems="center"
                 justifyContent="space-between"
-                width="35%"
+                textAlign="center"
                 margin="auto"
-                display={'flex'}>
+                display={'flex'}
+                sx={{ "text-align-last": "center", "justifyContent": "center" }}>
                 <LocalizationProvider dateAdapter={AdapterDayjs}>
                     <DemoContainer components={['DatePicker', 'DatePicker']}>
                         <MobileDatePicker
@@ -47,6 +48,10 @@ export default function ControlledComponent() {
                         />
                     </DemoContainer>
                 </LocalizationProvider>
+            </Box>
+            <Box alignItems="center"
+                textAlign="center"
+                padding={2}>
                 <Button href="/reserve" variant="contained" color="primary" size="large" disableElevation>
                     Reserve
                 </Button>

@@ -17,13 +17,12 @@ const Identity = () => {
         <Card variant="outlined" className={classes.card}>
           <CardMedia
             component="img"
-            // height="140"
             image={acacia}
             alt={item.name}
           />
           <CardContent className={classes.card}>
 
-            <Typography gutterBottom variant="h3" >
+            <Typography gutterBottom variant="h5" >
               {item.name}
             </Typography>
             <Typography variant="body1" color="text.secondary" >

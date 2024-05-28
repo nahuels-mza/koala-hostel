@@ -91,46 +91,46 @@ const imageData = [
     title: "Basketball",
     description: "@tjdragotta",
   },
-  {
-    img: "https://images.unsplash.com/photo-1518756131217-31eb79b20e8f",
-    title: "Fern",
-    description: "@katie_wasserman",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1597645587822-e99fa5d45d25",
-    title: "Mushrooms",
-    description: "@silverdalex",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1567306301408-9b74779a11af",
-    title: "Tomato basil",
-    description: "@shelleypauls",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1471357674240-e1a485acb3e1",
-    title: "Sea star",
-    description: "@peterlaster",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1589118949245-7d38baf380d6",
-    title: "Bike",
-    description: "@southside_customs",
-  },
+  // {
+  //   img: "https://images.unsplash.com/photo-1518756131217-31eb79b20e8f",
+  //   title: "Fern",
+  //   description: "@katie_wasserman",
+  // },
+  // {
+  //   img: "https://images.unsplash.com/photo-1597645587822-e99fa5d45d25",
+  //   title: "Mushrooms",
+  //   description: "@silverdalex",
+  // },
+  // {
+  //   img: "https://images.unsplash.com/photo-1567306301408-9b74779a11af",
+  //   title: "Tomato basil",
+  //   description: "@shelleypauls",
+  // },
+  // {
+  //   img: "https://images.unsplash.com/photo-1471357674240-e1a485acb3e1",
+  //   title: "Sea star",
+  //   description: "@peterlaster",
+  // },
+  // {
+  //   img: "https://images.unsplash.com/photo-1589118949245-7d38baf380d6",
+  //   title: "Bike",
+  //   description: "@southside_customs",
+  // },
 ];
 
 const commentData = [
   {
-    img: "https://picsum.photos/200/300",
+    img: "https://picsum.photos/400/300",
     title: "Breakfast",
     description: LorenImpsu,
   },
   {
-    img: "https://source.unsplash.com/random",
+    img: "https://picsum.photos/400/300",
     title: "Burger",
     description: LorenImpsu,
   },
   {
-    img: "https://source.unsplash.com/random/?city,night",
+    img: "https://images.unsplash.com/photo-1516802273409-68526ee1bdd6",
     title: "Camera",
     description: LorenImpsu,
   },
@@ -152,7 +152,7 @@ const ownerData = [
   },
   {
     name: "Nahuel",
-    descriptions: "as",
+    descriptions: "asjhda",
   },
 ];
 
