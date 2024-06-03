@@ -5,9 +5,10 @@ import { Box, Typography } from "@mui/material";
 import Message from "../../components/Message/Message";
 import Title from "../../components/Title/MainTitle";
 import ImageListing from "../../components/Items/ImageList";
-import CustomDateRangePicker from "../../components/Date/Date";
+import Location from "../../components/Location/Location";
 import CarouselDinamyc from "../../components/Carousel/Carousel";
 import CommentCarousel from "../../components/Carousel/CommentCarousel";
+
 import { hostelImages } from '../../utils/constant';
 import useStyles from "../MainLayout/MainLayout.module";
 // import photo from "../../assets/mainPic.jpeg";
@@ -24,24 +25,30 @@ const MainHostel = () => {
         <Title />
       </Box>
 
-      <Box className={classes.imageContainer}>
-        <CustomDateRangePicker />
-      </Box>
 
       <Box className={classes.imageContainer}>
         <ImageListing images={hostelImages} column={3} />
       </Box>
 
+      <Box className={classes.imageContainer}>
+        <Location />
+      </Box>
       <Box className={classes.imageContainer} >
         <Typography
           variant="h5"
           textAlign="center"> Nuestros Servicios
         </Typography>
-        <Box display='grid' className={classes.imageContainer}
-          flexDirection={'column'} gridAutoFlow={'column'}>
-          <CarouselDinamyc />
-          <CommentCarousel />
+
+        <Box className={classes.imageContainer}
+          flexDirection={'row'} gridAutoFlow={'column'}>
+          <CarouselDinamyc width="50%" height="50%" />
         </Box>
+
+        <Box className={classes.imageContainer}
+          flexDirection={'row'} gridAutoFlow={'row'} width={"50%"} height={"50%"}>
+          <CommentCarousel width="50%" height="50%" />
+        </Box>
+
       </Box>
       <Message />
       <Outlet />

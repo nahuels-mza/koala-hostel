@@ -6,8 +6,8 @@ import Message from "../../components/Message/Message";
 import ImageListing from "../../components/Items/ImageList";
 import Title from "../../components/Title/MainTitle";
 import CommentCarousel from "../../components/Carousel/CommentCarousel";
-import Location from "../../components/Location/Location";
 import Identity from "../../components/Identity/Identity";
+
 import { commentData } from "../../utils/constant";
 import useStyles from "../MainLayout/MainLayout.module";
 
@@ -29,11 +29,8 @@ const AgenciaPage = () => {
         <Box className={classes.imageContainer}>
           <ImageListing images={commentData} column={2} />
         </Box>
-        <Box className={classes.imageContainer} display="grid" maxWidth={"50%"}>
-          <CommentCarousel />
-        </Box>
-        <Box className={classes.imageContainer}>
-          <Location />
+        <Box className={classes.imageContainer} display="grid" width={"50%"}>
+          <CommentCarousel width="50%" height="25%" />
         </Box>
         <Box className={classes.imageContainer}>
           <Identity />

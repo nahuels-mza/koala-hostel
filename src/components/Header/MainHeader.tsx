@@ -8,7 +8,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import { Button, Link, Menu } from '@mui/material';
 
-import Logo from '../../assets/logo.png'
+import Logo from '../../assets/mini-logo.png'
 
 export default function Header() {
 

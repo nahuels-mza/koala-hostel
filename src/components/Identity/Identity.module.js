@@ -9,12 +9,10 @@ const useIdentityStyles = makeStyles()((theme) => ({
     alignItems: "center",
     display: "flex",
     flexDirection: "row",
-
   },
   card: {
     maxWidth: imageWidthProp,
     height: imageHeightProp,
-    // maxHeight: cardHeightProp,
     overflow: "auto"
   },
 }));
