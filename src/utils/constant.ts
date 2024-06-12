@@ -2,41 +2,57 @@ import image1 from "../../src/assets/koala1.jpeg";
 import image2 from "../../src/assets/koala2.jpeg";
 import image3 from "../../src/assets/koala3.jpeg";
 import image4 from "../../src/assets/koala4.jpg";
+import habitacion1 from "../../src/assets/habitacion1.png";
+import habitacion2 from "../../src/assets/habitacion2.png";
 
 const LorenImpsu =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt nisl vitae purus lobortis, quis scelerisque diam tincidunt. Donec eu risus urna. Sed quis enim vitae orci tristique imperdiet eget sed lectus. Suspendisse placerat mi id blandit accumsan. Integer sodales neque nisl, mollis consectetur sapien fringilla vitae. Etiam est sapien, fermentum id quam a, tincidunt vestibulum odio. Nullam dapibus porta elit, vel vestibulum nisl dictum eu. Quisque tincidunt vitae enim eget mollis. Aenean tincidunt massa mauris, sit amet porta libero auctor nec. Phasellus id tincidunt eros, vitae gravida turpis. Nam mattis eget turpis vitae aliquam.Suspendisse mattis ex a velit posuere posuere.In vitae justo scelerisque nulla tincidunt vehicula.Ut vulputate iaculis consequat.Donec in mauris euismod, tempus dolor sed, pretium elit.Curabitur in dui ultrices, tristique leo eu, feugiat tortor.Etiam at auctor dui.Ut fermentum pulvinar turpis, finibus vulputate metus eleifend in.Curabitur posuere eu magna vitae commodo.Pellentesque quis dapibus lectus.Nam elementum dolor vel iaculis consectetur.Praesent feugiat porta velit pulvinar faucibus.Suspendisse sed iaculis metus.Morbi blandit a sem et varius.";
 
-const LorenImpsu2 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere odio eget odio tempor, non."
+const LorenImpsu2 =
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere odio eget odio tempor, non.";
 
-const Service = {
-  wifi: "Free wi-fi",
-  air: "Air Conditional ",
-  bath: "Bathtub",
-  smoke: "No Smoking",
-  bedClothes: "Ropa de cama",
-  heat: "Calefaccion",
-  fan: "Ventilador",
-  plug: "Plugs near bed",
+const service = {
+  wifi: { description: "Free wi-fi", icon: "wifi_outlines_icon" },
+  air: { description: "Air Conditional ", icon: "ac_unit_outlines_icon" },
+  bath: { description: "Bathtub", icon: "bathroom_outlines_icon" },
+  smoke: { description: "No Smoking", icon: "smoke_free_outlines_icon" },
+  bedClothes: { description: "Ropa de cama", icon: "bed_outlined_icon" },
+  heat: {
+    description: "Calefaccion",
+    icon: "local_fire_department_outlined_icon",
+  },
+  fan: { description: "Ventilador", icon: "filter_vintage_outlined_icon" },
+  plug: { description: "Plugs near bed", icon: "power_outlined_icon" },
 };
 
-const BedWithService = [
+const bedWithService = [
   {
     label: "Litrera",
     description: "Cama en habitación compartida mixta de 4 camas",
-    services: [Service.wifi, Service.air],
+    services: [service.wifi, service.air],
     image: image3,
+    imageDetail: habitacion2,
   },
   {
     label: "Litrera Full Service",
     description: "Cama en habitación compartida de 4 camas",
-    services: [Object.values(Service)],
+    services: [
+      service.wifi,
+      service.air,
+      service.bath,
+      service.smoke,
+      service.bedClothes,
+      service.fan,
+    ],
     image: image3,
+    imageDetail: habitacion1,
   },
   {
     label: "Cama Individual",
     description: "Cama individual en habitación compartida",
-    services: [Service.heat, Service.fan, Service.plug],
+    services: [service.heat, service.fan, service.plug],
     image: image3,
+    imageDetail: habitacion1,
   },
 ];
 
@@ -58,7 +74,7 @@ const hostelImages = [
   },
 ];
 
-const imageData = [
+const agenciaImages = [
   {
     img: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
     title: "SAN JUAN",
@@ -159,4 +175,4 @@ const ownerData = [
   },
 ];
 
-export { BedWithService, hostelImages, imageData, commentData, ownerData };
+export { bedWithService, hostelImages, agenciaImages, commentData, ownerData };

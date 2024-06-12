@@ -1,7 +1,7 @@
 import React from "react";
 import Carousel from "react-material-ui-carousel";
 
-import { imageData } from "../../utils/constant";
+import { agenciaImages } from "../../utils/constant";
 
 interface ICommentCarouselDinamycPropos {
   height: string
@@ -26,7 +26,7 @@ const CommentCarousel = (props: ICommentCarouselDinamycPropos) => {
         textAlign: 'center',
       }}
     >
-      {imageData.map((item, i) => (
+      {agenciaImages.map((item, i) => (
         <img
           key={i}
           src={`${item.img}`}

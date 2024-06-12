@@ -6,6 +6,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import router from "./route";
+import 'material-icons/iconfont/material-icons.css';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

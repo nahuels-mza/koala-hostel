@@ -5,6 +5,7 @@ import ErrorPage from "./pages/error";
 import Reserve from "./pages/Reservation/Reservation";
 import MainHostel from "./pages/Hostel/MainHostel";
 import AgenciaPage from "./pages/Agencia/Agencia";
+import BedroomPage from "./pages/Bedrooms/Bedroom";
 
 const router = createBrowserRouter([
     {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
             {
                 path: "reserve",
                 element: <Reserve />
+            },
+            {
+                path: "bedrooms",
+                element: <BedroomPage />
             }
         ]
     },
