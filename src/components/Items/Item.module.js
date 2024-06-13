@@ -9,11 +9,20 @@ const useitemStyles = makeStyles()((theme) => ({
       margin: "0 8px",
     },
   },
-  accountText: {
+  dialogTitle: {
     marginRight: "12px",
     [theme.breakpoints.down("sm")]: {
       marginRight: "5px",
     },
+    fontFamily:"Times",
+    fontSize:"1.5rem"
+  },
+  dialogText:{
+    marginRight: "12px",
+    [theme.breakpoints.down("sm")]: {
+      marginRight: "5px",
+    },
+
   },
   displayNone: {
     zIndex: "-10",

@@ -1,5 +1,5 @@
 import React from "react";
-import { Outlet } from 'react-router-dom';
+import { Outlet } from "react-router-dom";
 import { Box, Typography } from "@mui/material";
 
 import Message from "../../components/Message/Message";
@@ -9,7 +9,7 @@ import Location from "../../components/Location/Location";
 import CarouselDinamyc from "../../components/Carousel/Carousel";
 import CommentCarousel from "../../components/Carousel/CommentCarousel";
 
-import { hostelImages } from '../../utils/constant';
+import { hostelImages } from "../../utils/constant";
 import useStyles from "../MainLayout/MainLayout.module";
 // import photo from "../../assets/mainPic.jpeg";
 
@@ -17,14 +17,14 @@ const MainHostel = () => {
   const { classes } = useStyles();
 
   return (
-    <Box component="div"
+    <Box
+      component="div"
       className={classes.parallax}
-    // sx={{ backgroundImage: `url(${photo})` }}
+      // sx={{ backgroundImage: `url(${photo})` }}
     >
       <Box className={classes.imageContainer}>
         <Title />
       </Box>
-
 
       <Box className={classes.imageContainer}>
         <ImageListing images={hostelImages} column={3} />
@@ -33,29 +33,36 @@ const MainHostel = () => {
       <Box className={classes.imageContainer}>
         <Location />
       </Box>
-      <Box className={classes.imageContainer} >
-        <Typography
-          variant="h5"
-          textAlign="center"> Nuestros Servicios
+      <Box className={classes.imageContainer}>
+        <Typography variant="h3" textAlign="center">
+          {" "}
+          Lo que se puede hacer
         </Typography>
-
-        <Box className={classes.imageContainer}
-          flexDirection={'row'} gridAutoFlow={'column'}>
+        <Box
+          className={classes.imageContainer}
+          flexDirection={"row"}
+          gridAutoFlow={"column"}
+        >
           <CarouselDinamyc width="50%" height="50%" />
         </Box>
 
-        <Box className={classes.imageContainer}
-          flexDirection={'row'} gridAutoFlow={'row'} width={"50%"} height={"50%"}>
+        <Typography variant="h3" textAlign="center">
+          {" "}
+          Lo que se dice de nosotros
+        </Typography>
+        <Box
+          className={classes.imageContainer}
+          flexDirection={"row"}
+          gridAutoFlow={"row"}
+          width={"50%"}
+          height={"50%"}
+        >
           <CommentCarousel width="50%" height="50%" />
         </Box>
-
       </Box>
       <Message />
       <Outlet />
-
-
     </Box>
-
   );
 };
 

@@ -11,7 +11,7 @@ import Identity from "../../components/Identity/Identity";
 import { commentData } from "../../utils/constant";
 import useStyles from "../MainLayout/MainLayout.module";
 
-const AgenciaPage = () => {
+export default function AgenciaPage() {
   const { classes } = useStyles();
   // const photo = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSxu09DcOYlXb66MDzNqt0FaOSvd0pMp99FiiYVVgCJA&s'
 
@@ -39,6 +39,4 @@ const AgenciaPage = () => {
       </Box>
     </Box>
   );
-};
-
-export default AgenciaPage;
+}

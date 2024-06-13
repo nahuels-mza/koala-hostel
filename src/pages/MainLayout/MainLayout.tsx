@@ -11,10 +11,22 @@ const MainLayout = () => {
     <Box>
       <Header />
       <Outlet />
-      <Button href="/hostel" variant="contained" color="primary" size="large" disableElevation>
+      <Button
+        href="/hostel"
+        variant="contained"
+        color="primary"
+        size="large"
+        disableElevation
+      >
         HOSTEL
       </Button>
-      <Button href="/agencia" variant="contained" color="secondary" size="large" disableElevation>
+      <Button
+        href="/agencia"
+        variant="contained"
+        color="secondary"
+        size="large"
+        disableElevation
+      >
         AGENCIA
       </Button>
       <Footer />

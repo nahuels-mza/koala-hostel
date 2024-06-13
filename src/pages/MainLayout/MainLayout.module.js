@@ -16,7 +16,7 @@ const useStyles = makeStyles()((theme) => ({
     [theme.breakpoints.down("sm")]: {
       height: "auto",
     },
-    padding: 2
+    padding: 2,
   },
   parallax: {
     minHeight: "100vh",

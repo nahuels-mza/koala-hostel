@@ -34,7 +34,7 @@ const ItemDialog = (props: IItemDialogProps) => {
             primary={
               <Typography
                 style={{ color: "black" }}
-                className={classes.accountText}
+                className={classes.dialogTitle}
               >
                 {`${item.title}:`}
               </Typography>
@@ -47,7 +47,7 @@ const ItemDialog = (props: IItemDialogProps) => {
             primary={
               <Typography
                 style={{ color: "black" }}
-                className={classes.accountText}
+                className={classes.dialogText}
               >
                 {`${item.description}:`}
               </Typography>
@@ -55,8 +55,8 @@ const ItemDialog = (props: IItemDialogProps) => {
           />
         </ListItem>
         <Divider />
-        <Button href="/reserve" variant="contained" color="primary" size="large" disableElevation>
-          Reserve
+        <Button href="/bedrooms" variant="contained" color="primary" size="large" disableElevation>
+          See More Details
         </Button>
       </List>
     </Dialog>
