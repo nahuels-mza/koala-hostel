@@ -12,23 +12,19 @@ interface IImageListingProps {
         description: string;
     }[]
     column: number
+    destination: string
 }
 
 export default function ImageListing(props: IImageListingProps) {
-    const [open, setOpen] = React.useState(false);
-    const [item, setItem] = React.useState();
+
 
     const handleClickOpen = (item: any) => {
-        setOpen(true);
-        setItem(item);
+        window.location.href = props.destination
+
     };
-    const handleClose = () => {
-        setOpen(false);
-    };
+
     return (
         <>
-            {open && <ItemDialog open={open} onClose={handleClose} item={item} />}
-
             <ImageList cols={props.column} sx={{ width: "100%", maxHeight: "100%" }}>
                 {props.images.map((item) => (
                     <ImageListItem key={item.img} rows={2} style={{ cursor: "pointer" }}
@@ -38,13 +34,11 @@ export default function ImageListing(props: IImageListingProps) {
                             src={item.img}
                             alt={item.title}
                             loading="lazy"
-
                         />
                         <ImageListItemBar
                             key={item.img}
                             title={item.title}
                         />
-
                     </ImageListItem>
                 ))}
             </ImageList>

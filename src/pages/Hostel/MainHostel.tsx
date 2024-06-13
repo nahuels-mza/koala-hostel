@@ -20,24 +20,20 @@ const MainHostel = () => {
     <Box
       component="div"
       className={classes.parallax}
-      // sx={{ backgroundImage: `url(${photo})` }}
+    // sx={{ backgroundImage: `url(${photo})` }}
     >
       <Box className={classes.imageContainer}>
         <Title />
       </Box>
 
       <Box className={classes.imageContainer}>
-        <ImageListing images={hostelImages} column={3} />
+        <ImageListing images={hostelImages} column={3} destination="/bedrooms" />
       </Box>
 
       <Box className={classes.imageContainer}>
         <Location />
       </Box>
       <Box className={classes.imageContainer}>
-        <Typography variant="h3" textAlign="center">
-          {" "}
-          Lo que se puede hacer
-        </Typography>
         <Box
           className={classes.imageContainer}
           flexDirection={"row"}
@@ -45,11 +41,6 @@ const MainHostel = () => {
         >
           <CarouselDinamyc width="50%" height="50%" />
         </Box>
-
-        <Typography variant="h3" textAlign="center">
-          {" "}
-          Lo que se dice de nosotros
-        </Typography>
         <Box
           className={classes.imageContainer}
           flexDirection={"row"}

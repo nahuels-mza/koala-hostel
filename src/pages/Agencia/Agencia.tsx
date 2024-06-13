@@ -27,7 +27,7 @@ export default function AgenciaPage() {
           <Title />
         </Box>
         <Box className={classes.imageContainer}>
-          <ImageListing images={commentData} column={2} />
+          <ImageListing images={commentData} column={2} destination="/destinations" />
         </Box>
         <Box className={classes.imageContainer} display="grid" width={"50%"}>
           <CommentCarousel width="50%" height="25%" />
