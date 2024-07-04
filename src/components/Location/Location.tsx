@@ -1,5 +1,5 @@
 import React from "react";
-import useLocationStyles from "./Location.module";
+import useLocationStyles from "./location.module";
 import { Box, Link, Typography } from "@mui/material";
 
 import photo from "../../assets/location.png";
