@@ -1,8 +1,6 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 
-import useTitleStyles from "./MainTitle.module";
-
 interface IMainTitleProps {
   title: String;
   subtitle: String
@@ -10,7 +8,6 @@ interface IMainTitleProps {
 
 
 export default function Title(props: IMainTitleProps) {
-  const classes = useTitleStyles();
 
   return (
     <>
