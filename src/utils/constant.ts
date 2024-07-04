@@ -28,14 +28,14 @@ const service = {
 const bedWithService = [
   {
     label: "Litrera",
-    description: "Cama en habitación compartida mixta de 4 camas",
+    description: LorenImpsu2,
     services: [service.wifi, service.air],
     image: image3,
     imageDetail: habitacion2,
   },
   {
     label: "Litrera Full Service",
-    description: "Cama en habitación compartida de 4 camas",
+    description: LorenImpsu,
     services: [
       service.wifi,
       service.air,
@@ -175,4 +175,4 @@ const ownerData = [
   },
 ];
 
-export { bedWithService, hostelImages, agenciaImages, commentData, ownerData };
+export { bedWithService, hostelImages, agenciaImages, commentData, ownerData, LorenImpsu };

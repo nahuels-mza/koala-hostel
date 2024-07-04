@@ -11,8 +11,7 @@ const useLocationStyles = makeStyles()((theme) => ({
     alignItems: "center",
     display: "flex",
     flexDirection: "column",
-    // justify:"center",
-    // justifyContent: 'center',
+    justify:"center",
   },
   locationTitle: {
     border: "solid 1px #5757568f",

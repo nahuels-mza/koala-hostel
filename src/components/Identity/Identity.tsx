@@ -12,26 +12,31 @@ import acacia from "../../assets/acacia.png";
 const Identity = () => {
   const { classes } = useIdentityStyles();
   return (
-    <Box id="ourselves" component="section" className={classes.container}>
-      {ownerData.map((item) => (
-        <Card variant="outlined" className={classes.card}>
-          <CardMedia
-            component="img"
-            image={acacia}
-            alt={item.name}
-          />
-          <CardContent className={classes.card}>
+    <Box>
+      <Typography variant="h3" textAlign="center">
+        Quienes somos
+      </Typography>
+      <Box id="ourselves" component="section" className={classes.container}>
+        {ownerData.map((item) => (
+          <Card variant="outlined" className={classes.card}>
+            <CardMedia
+              component="img"
+              image={acacia}
+              alt={item.name}
+            />
+            <CardContent className={classes.card}>
 
-            <Typography gutterBottom variant="h5" >
-              {item.name}
-            </Typography>
-            <Typography variant="body1" color="text.secondary" >
-              {item.descriptions}
-            </Typography>
+              <Typography gutterBottom variant="h5" >
+                {item.name}
+              </Typography>
+              <Typography variant="body1" color="text.secondary" >
+                {item.descriptions}
+              </Typography>
 
-          </CardContent>
-        </Card>
-      ))}
+            </CardContent>
+          </Card>
+        ))}
+      </Box>
     </Box>
   );
 };

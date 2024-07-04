@@ -8,7 +8,7 @@ import Title from "../../components/Title/MainTitle";
 import CommentCarousel from "../../components/Carousel/CommentCarousel";
 import Identity from "../../components/Identity/Identity";
 
-import { commentData } from "../../utils/constant";
+import { commentData, LorenImpsu } from "../../utils/constant";
 import useStyles from "../MainLayout/MainLayout.module";
 
 export default function AgenciaPage() {
@@ -24,7 +24,7 @@ export default function AgenciaPage() {
         /> */}
         <Message />
         <Box component="section" height="100%" className={classes.container}>
-          <Title />
+          <Title title={"Acacias Agencia de Turismo"} subtitle={LorenImpsu} />
         </Box>
         <Box className={classes.imageContainer}>
           <ImageListing images={commentData} column={2} destination="/destinations" />

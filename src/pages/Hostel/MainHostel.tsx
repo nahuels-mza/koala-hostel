@@ -1,6 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 
 import Message from "../../components/Message/Message";
 import Title from "../../components/Title/MainTitle";
@@ -23,7 +23,7 @@ const MainHostel = () => {
     // sx={{ backgroundImage: `url(${photo})` }}
     >
       <Box className={classes.imageContainer}>
-        <Title />
+        <Title title={"Acacias Hostel"} subtitle={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."} />
       </Box>
 
       <Box className={classes.imageContainer}>

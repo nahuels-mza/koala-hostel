@@ -1,5 +1,5 @@
 import React from "react";
-import useLocationStyles from "./location.module";
+import useLocationStyles from "./Location.module";
 import { Box, Link, Typography } from "@mui/material";
 
 import photo from "../../assets/location.png";
@@ -28,9 +28,9 @@ const Location = () => {
           textAlign="center"
           className={classes.locationTitle}
         >
-          Donde encontrarnos
+          Donde estamos
         </Typography>
-        <Box display="flex" justifyContent="center" marginY={2} />
+
       </Link>
     </Box>
   );
