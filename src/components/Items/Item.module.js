@@ -14,15 +14,14 @@ const useitemStyles = makeStyles()((theme) => ({
     [theme.breakpoints.down("sm")]: {
       marginRight: "5px",
     },
-    fontFamily:"Times",
-    fontSize:"1.5rem"
+    fontFamily: "Times",
+    fontSize: "1.5rem",
   },
-  dialogText:{
+  dialogText: {
     marginRight: "12px",
     [theme.breakpoints.down("sm")]: {
       marginRight: "5px",
     },
-
   },
   displayNone: {
     zIndex: "-10",

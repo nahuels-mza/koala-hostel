@@ -20,7 +20,6 @@ const useStyles = makeStyles()((theme) => ({
   },
   parallax: {
     minHeight: "100vh",
-    // filter: "grayscale(80%)",
     backgroundAttachment: "fixed",
     backgroundPosition: "0% 25%",
     backgroundRepeat: "no-repeat",

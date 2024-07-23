@@ -8,26 +8,54 @@ import ImageListing from "../../components/Items/ImageList";
 import Location from "../../components/Location/Location";
 import CarouselDinamyc from "../../components/Carousel/Carousel";
 import CommentCarousel from "../../components/Carousel/CommentCarousel";
+import BookDateRange from "../../components/Date/Date";
 
 import { hostelImages } from "../../utils/constant";
-import useStyles from "../MainLayout/MainLayout.module";
+import useStylesHostelPage from "./MainHostel.module";
+
 // import photo from "../../assets/mainPic.jpeg";
 
 const MainHostel = () => {
-  const { classes } = useStyles();
+  const { classes } = useStylesHostelPage();
+
+  const isMobile = () => {
+    return "ontouchstart" in window || navigator.maxTouchPoints > 0;
+  };
+
+  React.useEffect(() => {
+    const header = document.querySelector("#pageHeader");
+
+
+    window.addEventListener("scroll", () => {
+      const currentScroll = window.pageYOffset;
+      if (currentScroll > 76) {
+        header?.classList.add(classes.isSticky);
+        header?.classList.remove(classes.pageHeader);
+      } else {
+        header?.classList.remove(classes.isSticky);
+        header?.classList.add(classes.pageHeader);
+      }
+    });
+  },);
 
   return (
-    <Box
-      component="div"
-      className={classes.parallax}
-    // sx={{ backgroundImage: `url(${photo})` }}
-    >
+    <Box component="div" className={classes.parallax}>
+      <Box id="pageHeader">
+        <BookDateRange />
+      </Box>
       <Box className={classes.imageContainer}>
-        <Title title={"Acacias Hostel"} subtitle={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."} />
+        <Title
+          title={"Acacias Hostel"}
+          subtitle={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
+        />
       </Box>
 
       <Box className={classes.imageContainer}>
-        <ImageListing images={hostelImages} column={3} destination="/bedrooms" />
+        <ImageListing
+          images={hostelImages}
+          column={isMobile() ? 1 : 3}
+          destination="/bedrooms"
+        />
       </Box>
 
       <Box className={classes.imageContainer}>

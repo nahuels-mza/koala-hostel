@@ -1,61 +1,62 @@
-import * as React from 'react';
+import * as React from "react";
 
-import dayjs from 'dayjs';
+import dayjs from "dayjs";
 
-import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
-import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+import { DemoContainer } from "@mui/x-date-pickers/internals/demo";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 
-import { MobileDatePicker } from '@mui/x-date-pickers/MobileDatePicker';
+import { MobileDatePicker } from "@mui/x-date-pickers/MobileDatePicker";
 
-import { Box, Button, Typography } from '@mui/material';
+import { Box, Button } from "@mui/material";
 
-export default function ControlledComponent() {
-    const today = dayjs(new Date())
-
+export default function BookDateRange() {
+    const today = dayjs(new Date());
 
     return (
         <Box
             sx={{
-                "background-color": "floralwhite",
+                backgroundColor: "floralwhite",
+                placeContent: "center",
+
             }}
-            padding={2}
+            component={"section"}
+            flexDirection={"row"}
+            display={"flex"}
+            alignItems="center"
         >
-            <Typography
-                variant="h5"
-                textAlign="center"> Seleccione su Estadia
-            </Typography>
-            <Box alignItems="center"
-                justifyContent="space-between"
-                textAlign="center"
-                margin="auto"
-                display={'flex'}
-                sx={{ "text-align-last": "center", "justifyContent": "center" }}>
+            <Box
+                padding={0.5}
+                sx={{ "text-align-last": "center", justifyContent: "center" }}
+            >
                 <LocalizationProvider dateAdapter={AdapterDayjs}>
-                    <DemoContainer components={['DatePicker', 'DatePicker']}>
+                    <DemoContainer components={["DatePicker", "DatePicker"]}>
                         <MobileDatePicker
                             label="Llegada"
                             defaultValue={dayjs(today)}
                             disablePast
-                            maxDate={dayjs().add(2, 'month')}
+                            maxDate={dayjs().add(2, "month")}
                         />
                         <MobileDatePicker
                             label="Salida"
-                            defaultValue={dayjs().add(7, 'day')}
+                            defaultValue={dayjs().add(7, "day")}
                             disablePast
-                            maxDate={dayjs().add(2, 'month')}
-
+                            maxDate={dayjs().add(2, "month")}
                         />
                     </DemoContainer>
                 </LocalizationProvider>
             </Box>
-            <Box alignItems="center"
-                textAlign="center"
-                padding={2}>
-                <Button href="/reserve" variant="contained" color="primary" size="large" disableElevation>
-                    Reserve
+            <Box padding={1}>
+                <Button
+                    href="/reserve"
+                    variant="contained"
+                    color="primary"
+                    size="large"
+                    disableElevation
+                >
+                    Book
                 </Button>
             </Box>
-        </Box >
+        </Box>
     );
 }
