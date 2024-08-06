@@ -1,8 +1,9 @@
 import React from "react";
 import useMessageStyles from "./Message.module";
 import { Box, Button } from "@mui/material";
-// import EmailIcon from "@mui/icons-material/Email";
+
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import Instagram from "@mui/icons-material/Instagram";
 
 import Fab from "@mui/material/Fab";
 
@@ -11,14 +12,9 @@ const Message = () => {
   // TODO ADD FORMAT HERE
   const whatsMessage = "Hola Koala Hostel mi Nombre es";
 
-  // FROM https://mailto.vercel.app/
-  // const emailMessage = `mailto:matias_daszkal@hotmail.com?subject=${encodeURIComponent(
-  //   "Consulta Reserva"
-  // )}&body= ${whatsMessage} `;
-
   return (
     <Box
-      sx={{ "& > :not(style)": { m: 1 } }}
+      // sx={{ "& > :not(style)": { m: 1 } }}
 
       position="fixed"
       bottom="0"
@@ -27,17 +23,19 @@ const Message = () => {
     >
       <Fab>
         <Button
-          sx={{ height: 40 }}
+
           href={`https://wa.me/5492616089132?text=${whatsMessage}`}
         >
-          <WhatsAppIcon className={classes.icon} fontSize="large" />
+          <WhatsAppIcon className={classes.iconWasp} />
         </Button>
       </Fab>
-      {/* <Fab>
-        <Button href={emailMessage}>
-          <EmailIcon className={classes.icon} fontSize="large" />
+      <Fab>
+        <Button
+          href="https://www.instagram.com/"
+        >
+          <Instagram className={classes.iconInsta} />
         </Button>
-      </Fab> */}
+      </Fab>
     </Box>
   );
 };
