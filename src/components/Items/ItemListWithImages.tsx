@@ -16,73 +16,77 @@ interface IImageListingProps {
     }[]
 }
 export default function ItemListingWithImages(props: IImageListingProps) {
+    const isMobile = () => {
+        return "ontouchstart" in window || navigator.maxTouchPoints > 0;
+    };
+    const imageSize = isMobile() ? "180px" : "450px"
+    const imagePosition = isMobile() ? 'center' : 'left'
 
     return (
-        <Box component="section">
+        <Box component="section" >
             {props.imagesListing.map((item) => (
-                <Grid item display="flex" flexDirection="column" id="everyitem" >
-                    <Grid container display="flex" flexDirection="column" id="services" xs={2} md={8} >
+                <Grid item display="flex" flexDirection="column" id="everyitem" marginBottom={"80px"}>
+                    <Grid container display="flex" flexDirection="column" id="services" xs={"auto"} >
                         <Typography variant="h4">{item.label}</Typography>
                         <Grid item xs={16} textAlign="left" id="itemdescription">
-                            <Typography variant="subtitle1">{item.description}</Typography>
+                            <Typography variant="subtitle2">{item.description}</Typography>
                         </Grid>
-                        <Grid item display="flex" flexDirection="row" id="listicon">
-                            <List
-                                sx={{
-                                    width: "100%",
-                                    maxWidth: 360,
-                                    bgcolor: "background.paper",
-                                }}
-                            >
-                                <Typography variant="h4">Services</Typography>
+                        <Grid container display="flex" flexDirection="column" id="details">
+                            <Grid item id="listicon">
+                                <List
+                                    sx={{
+                                        width: "100%",
+                                        maxWidth: 360,
+                                        bgcolor: "background.paper",
+                                    }}
+                                >
+                                    <Typography variant="h4">Services</Typography>
 
-                                {item.services.map((service: any) => (
-                                    <ListItem>
-                                        <ListItemAvatar>
-                                            <Avatar>
-                                                <Icon>{service.icon}</Icon>
-                                            </Avatar>
-                                        </ListItemAvatar>
-                                        <ListItemText primary={service.description} />
-                                    </ListItem>
-                                ))}
-                            </List>
+                                    {item.services.map((service: any) => (
+                                        <ListItem>
+                                            <ListItemAvatar>
+                                                <Avatar>
+                                                    <Icon>{service.icon}</Icon>
+                                                </Avatar>
+                                            </ListItemAvatar>
+                                            <ListItemText primary={service.description} />
+                                        </ListItem>
+                                    ))}
+                                </List>
 
-                        </Grid>
-
-                        <Grid container display="flex" flexDirection="row" id="images" xs={2} md={8} height={"20%"}>
-                            <Grid
-                                item
-                                justifyContent="center"
-                                // rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}
-                                id="imagetext"
-
-                            >
-                                <img
+                            </Grid>
+                            <Grid sx={{ flexGrow: 1, justifyContent: imagePosition, marginLeft: "4px" }} m={2} container id="images">
+                                <Box
+                                    component="img"
                                     src={item.image}
-                                    srcSet={`${item.image}`}
+                                    srcSet={item.image}
                                     alt={item.label}
                                     loading="lazy"
-                                    width="50%"
-                                    height="50%"
+                                    width={imageSize}
+                                    height={imageSize}
+
 
                                 />
-                                <img
+                                <Box
+                                    component="img"
                                     src={item.imageDetail}
                                     srcSet={`${item.imageDetail}`}
                                     alt={item.label}
                                     loading="lazy"
-                                    width="50%"
-                                    height="50%"
+                                    sx={{
+                                        marginLeft: 2
+                                    }}
+                                    width={imageSize}
+                                    height={imageSize}
                                 />
-
                             </Grid>
-
                         </Grid>
+
                     </Grid>
                 </Grid>
-            ))}
+            ))
+            }
 
-        </Box>
+        </Box >
     );
 }
