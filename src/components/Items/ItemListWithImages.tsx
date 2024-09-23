@@ -5,6 +5,7 @@ import ListItemText from "@mui/material/ListItemText";
 import ListItemAvatar from "@mui/material/ListItemAvatar";
 import Avatar from "@mui/material/Avatar";
 import { Icon } from "@mui/material";
+import { isMobile } from "../../utils/constant";
 
 interface IImageListingProps {
     imagesListing: {
@@ -16,9 +17,6 @@ interface IImageListingProps {
     }[]
 }
 export default function ItemListingWithImages(props: IImageListingProps) {
-    const isMobile = () => {
-        return "ontouchstart" in window || navigator.maxTouchPoints > 0;
-    };
     const imageSize = isMobile() ? "180px" : "450px"
     const imagePosition = isMobile() ? 'center' : 'left'
 

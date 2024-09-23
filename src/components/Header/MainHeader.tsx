@@ -15,7 +15,7 @@ export default function Header() {
     const options = [{
 
         "name": "Quienes somos",
-        "id": "#ourselves"
+        "id": "/ourselves"
     }, {
         "name": "Donde encontrarnos",
         "id": "#location_section"

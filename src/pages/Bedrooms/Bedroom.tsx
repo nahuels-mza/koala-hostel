@@ -1,4 +1,4 @@
-import { Box, Grid } from "@mui/material";
+import { Box } from "@mui/material";
 import Title from "../../components/Title/MainTitle";
 import ItemListingWithImages from "../../components/Items/ItemListWithImages";
 import { bedWithService } from "../../utils/constant";

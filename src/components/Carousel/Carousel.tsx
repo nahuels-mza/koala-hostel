@@ -13,7 +13,7 @@ const CarouselDinamyc = (props: ICarouselDinamycPropos) => {
   return (
     <Box component="section" >
       <Typography variant="h3" textAlign="center">
-        Lo que se puede hacer
+        Things to do
       </Typography>
       <Carousel
         autoPlay={true}
@@ -27,7 +27,7 @@ const CarouselDinamyc = (props: ICarouselDinamycPropos) => {
           },
         }}
         sx={{
-          textAlign: 'center'
+          textAlign: 'center',
         }}
       >
         {commentData.map((item, i) => (
@@ -35,8 +35,8 @@ const CarouselDinamyc = (props: ICarouselDinamycPropos) => {
             sx={{ cursor: "pointer", pl: 2, pr: 2 }}
           >
             <Typography variant="h6" textAlign="center"
-              maxHeight="150px" width={props.width}
-              sx={{ overflow: "auto", height: "100%" }}>
+              maxHeight="initial" width={props.width}
+              sx={{ overflow: "auto" }}>
               {item.description}
             </Typography>
 

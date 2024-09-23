@@ -6,6 +6,7 @@ import Reserve from "./pages/Reservation/Reservation";
 import MainHostel from "./pages/Hostel/MainHostel";
 import AgenciaPage from "./pages/Agencia/Agencia";
 import BedroomPage from "./pages/Bedrooms/Bedroom";
+import FoundersPage from "./pages/Founders/Founders";
 
 const router = createBrowserRouter([
     {
@@ -29,7 +30,11 @@ const router = createBrowserRouter([
             {
                 path: "bedrooms",
                 element: <BedroomPage />
-            }
+            },
+            {
+                path: "ourselves",
+                element: <FoundersPage />
+            },
         ]
     },
 ])

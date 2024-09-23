@@ -11,16 +11,13 @@ import CommentCarousel from "../../components/Carousel/CommentCarousel";
 import BookDateRange from "../../components/Date/Date";
 
 import { hostelImages } from "../../utils/constant";
+import { isMobile } from "../../utils/constant";
 import useStylesHostelPage from "./MainHostel.module";
 
 // import photo from "../../assets/mainPic.jpeg";
 
 const MainHostel = () => {
   const { classes } = useStylesHostelPage();
-
-  const isMobile = () => {
-    return "ontouchstart" in window || navigator.maxTouchPoints > 0;
-  };
 
   React.useEffect(() => {
     const header = document.querySelector("#pageHeader");
