@@ -31,7 +31,7 @@ const CarouselDinamyc = (props: ICarouselDinamycPropos) => {
         }}
       >
         {commentData.map((item, i) => (
-          <Box component="section" display="flex" flexDirection="row"
+          <Box component="section" display="flex" flexDirection="row" key={i}
             sx={{ cursor: "pointer", pl: 2, pr: 2 }}
           >
             <Typography variant="h6" textAlign="center"
@@ -42,8 +42,8 @@ const CarouselDinamyc = (props: ICarouselDinamycPropos) => {
 
             <img
               key={i}
-              src={`${item.img}`}
-              srcSet={`${item.img}`}
+              src={item.img}
+              srcSet={item.img}
               alt={item.title}
               loading="lazy"
               width={props.width}

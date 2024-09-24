@@ -7,17 +7,10 @@ export default function BedroomPage() {
     return (
         <Box component="section">
             <Title title={"Nuestras Habitaciones"} subtitle={"Mayor Comodidad"} />
-            {/* <Grid
-                id="pageparent"
-                container
-                spacing={3}
-                sx={{
-                    margin: "auto",
-                    flexGrow: 1,
-                }}
-            > */}
-            <ItemListingWithImages imagesListing={bedWithService} />
-            {/* </Grid> */}
+            <Box pl={"20px"} pr={"20px"}>
+                <ItemListingWithImages imagesListing={bedWithService} />
+            </Box>
+
         </Box>
     );
 }

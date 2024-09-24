@@ -17,8 +17,11 @@ export default function Header() {
         "name": "Quienes somos",
         "id": "/ourselves"
     }, {
-        "name": "Donde encontrarnos",
-        "id": "#location_section"
+        "name": "Nuestra Agencia",
+        "id": "/agencia"
+    }, {
+        "name": "Nuestro Hostel",
+        "id": "/hostel"
     }
     ]
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -34,10 +37,10 @@ export default function Header() {
         <Box sx={{ flexGrow: 1 }} component='header'>
             <AppBar position="static" >
                 <Toolbar>
-                    <Button href={window.location.href}>
+                    <Button href={'/hostel'}>
                         <Box
                             component="img"
-                            sx={{ height: 64, href: '/' }}
+                            sx={{ height: 64 }}
                             src={Logo}
                             color={'inherit'}
 
@@ -65,8 +68,9 @@ export default function Header() {
                             onClose={handleClose}
 
                         >
+
                             {options.map((option) => (
-                                <MenuItem key={option.name} selected={option.name === ''} onClick={handleClose}>
+                                <MenuItem disabled={window.location.pathname.includes(option.id)} key={option.name} selected={option.name === ''} onClick={handleClose}>
                                     <Link href={option.id} color="inherit" underline="none">
                                         {option.name}
                                     </Link>

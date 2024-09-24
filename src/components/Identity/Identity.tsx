@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Grid } from "@mui/material";
+import { Box } from "@mui/material";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
@@ -19,7 +19,7 @@ const Identity = () => {
 
       {ownerData.map((item) => (
 
-        <Card variant="outlined" >
+        <Card variant="outlined" key={item.name}>
           <CardMedia
             className={classes.imageCard}
             component="img"
