@@ -17,14 +17,14 @@ interface IImageListingProps {
     }[]
 }
 export default function ItemListingWithImages(props: IImageListingProps) {
-    const imageSize = isMobile() ? "180px" : "450px"
+    const imageSize = isMobile() ? "200px" : "450px"
     const imagePosition = isMobile() ? 'center' : 'left'
 
     return (
         <Box component="section" >
             {props.imagesListing.map((item) => (
                 <Grid item display="flex" flexDirection="column" id="everyitem" marginBottom={"80px"}>
-                    <Grid container display="flex" flexDirection="column" id="services" xs={"auto"} >
+                    <Grid container display="flex" flexDirection="column" id="services" >
                         <Typography variant="h4">{item.label}</Typography>
                         <Grid item xs={16} textAlign="left" id="itemdescription">
                             <Typography variant="subtitle2">{item.description}</Typography>
@@ -72,7 +72,8 @@ export default function ItemListingWithImages(props: IImageListingProps) {
                                     alt={item.label}
                                     loading="lazy"
                                     sx={{
-                                        marginLeft: 2
+                                        marginLeft: 2,
+                                        marginRight: 2
                                     }}
                                     width={imageSize}
                                     height={imageSize}
