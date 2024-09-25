@@ -21,7 +21,7 @@ export default function Header() {
         "id": "/agencia"
     }, {
         "name": "Nuestro Hostel",
-        "id": "/hostel"
+        "id": "/"
     }
     ]
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -37,7 +37,7 @@ export default function Header() {
         <Box sx={{ flexGrow: 1 }} component='header'>
             <AppBar position="static" >
                 <Toolbar>
-                    <Button href={'/hostel'}>
+                    <Button href={'/'}>
                         <Box
                             component="img"
                             sx={{ height: 64 }}
@@ -70,7 +70,7 @@ export default function Header() {
                         >
 
                             {options.map((option) => (
-                                <MenuItem disabled={window.location.pathname.includes(option.id)} key={option.name} selected={option.name === ''} onClick={handleClose}>
+                                <MenuItem disabled={window.location.pathname === option.id} key={option.name} selected={option.name === ''} onClick={handleClose}>
                                     <Link href={option.id} color="inherit" underline="none">
                                         {option.name}
                                     </Link>
