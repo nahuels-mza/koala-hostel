@@ -70,7 +70,10 @@ export default function Header() {
                         >
 
                             {options.map((option) => (
-                                <MenuItem disabled={window.location.pathname === option.id} key={option.name} selected={option.name === ''} onClick={handleClose}>
+                                <MenuItem disabled={window.location.pathname === option.id}
+                                    key={option.name} selected={option.name === ''}
+                                    onClick={handleClose}
+                                    sx={{ backgroundColor: theme => theme.palette.secondary.main }}>
                                     <Link href={option.id} color="inherit" underline="none">
                                         {option.name}
                                     </Link>

@@ -1,6 +1,6 @@
 import { makeStyles } from "tss-react/mui";
 
-const useStyles = makeStyles()((theme) => ({
+const useStylesAgencia = makeStyles()((theme) => ({
   container: {
     width: "100%",
     display: "flex",
@@ -30,4 +30,4 @@ const useStyles = makeStyles()((theme) => ({
   },
 }));
 
-export default useStyles;
+export default useStylesAgencia;

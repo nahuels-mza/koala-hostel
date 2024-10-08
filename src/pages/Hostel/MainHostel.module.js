@@ -2,13 +2,15 @@ import { makeStyles } from "tss-react/mui";
 
 const useStylesHostelPage = makeStyles()((theme) => ({
   container: {
-    width: "100%",
+    width: "75%",
     display: "flex",
-    flexDirection: "row",
+    flexDirection: "column",
     alignItems: "center",
     [theme.breakpoints.down("sm")]: {
       width: "100% !important",
     },
+    paddingLeft: 30,
+    paddingRight: 30
   },
   imageContainer: {
     width: "100%",
@@ -16,7 +18,6 @@ const useStylesHostelPage = makeStyles()((theme) => ({
     [theme.breakpoints.down("sm")]: {
       height: "auto",
     },
-    padding: 2,
   },
   parallax: {
     minHeight: "100vh",

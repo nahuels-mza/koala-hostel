@@ -7,7 +7,7 @@ import Title from "../../components/Title/MainTitle";
 import ImageListing from "../../components/Items/ImageList";
 import Location from "../../components/Location/Location";
 import CarouselDinamyc from "../../components/Carousel/Carousel";
-import CommentCarousel from "../../components/Carousel/CommentCarousel";
+// import CommentCarousel from "../../components/Carousel/CommentCarousel";
 import BookDateRange from "../../components/Date/Date";
 
 import { hostelImages } from "../../utils/constant";
@@ -47,26 +47,44 @@ const MainHostel = () => {
         />
       </Box>
 
-      <Box className={classes.imageContainer}>
-        <ImageListing
-          images={hostelImages}
-          column={isMobile() ? 1 : 3}
-          destination="/bedrooms"
-        />
-      </Box>
-
-      <Box className={classes.imageContainer}>
-        <Location />
-      </Box>
-      <Box className={classes.imageContainer}>
+      <Box className={classes.container} id="contentContainer"
+        sx={{
+          border: "green",
+          borderStyle: "dotted"
+        }}>
         <Box
           className={classes.imageContainer}
           flexDirection={"row"}
           gridAutoFlow={"column"}
-        >
-          <CarouselDinamyc width="50%" height="50%" />
+          sx={{
+            border: "pink",
+            borderStyle: "dotted"
+          }}>
+          <CarouselDinamyc />
         </Box>
-        <Box
+
+
+        <Box className={classes.imageContainer} id="image"
+          sx={{
+            border: "brown",
+            borderStyle: "double"
+          }}>
+          <ImageListing
+            images={hostelImages}
+            column={isMobile() ? 1 : 3}
+            destination="/bedrooms"
+          />
+        </Box>
+
+        <Box className={classes.imageContainer} id="location"
+          sx={{
+            border: "blue",
+            borderStyle: "groove"
+          }}>
+          <Location />
+        </Box>
+
+        {/* <Box
           className={classes.imageContainer}
           flexDirection={"row"}
           gridAutoFlow={"row"}
@@ -74,7 +92,7 @@ const MainHostel = () => {
           height={"50%"}
         >
           <CommentCarousel width="50%" height="50%" />
-        </Box>
+        </Box> */}
       </Box>
       <Message />
       <Outlet />

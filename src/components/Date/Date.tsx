@@ -16,9 +16,8 @@ export default function BookDateRange() {
     return (
         <Box
             sx={{
-                backgroundColor: "floralwhite",
+                backgroundColor: theme => theme.palette.secondary.main,
                 placeContent: "center",
-
             }}
             component={"section"}
             flexDirection={"row"}

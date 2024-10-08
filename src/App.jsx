@@ -4,8 +4,16 @@ import "./index.css";
 import React from "react";
 
 const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#145357'
+    },
+    secondary: {
+      main: '#FEF8EC'
+    }
+  },
   typography: {
-    fontFamily: ["Arial"].join(","),
+    fontFamily: ["Arial", "Open Sans"].join(","),
   },
 });
 

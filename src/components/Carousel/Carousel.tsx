@@ -4,12 +4,12 @@ import { Box, Typography } from "@mui/material";
 
 import { commentData } from "../../utils/constant";
 
-interface ICarouselDinamycPropos {
-  height: string
-  width: string
-}
+// interface ICarouselDinamycPropos {
+//   height: string
+//   width: string
+// }
 
-const CarouselDinamyc = (props: ICarouselDinamycPropos) => {
+const CarouselDinamyc = () => {
   return (
     <Box component="section" >
       <Typography variant="h3" textAlign="center">
@@ -32,10 +32,15 @@ const CarouselDinamyc = (props: ICarouselDinamycPropos) => {
       >
         {commentData.map((item, i) => (
           <Box component="section" display="flex" flexDirection="row" key={i}
-            sx={{ cursor: "pointer", pl: 2, pr: 2 }}
+            sx={{
+              cursor: "pointer",
+              pl: 2,
+              pr: 2,
+              height: "25%"
+            }}
           >
             <Typography variant="h6" textAlign="center"
-              maxHeight="initial" width={props.width}
+              maxHeight="initial" width="50%"
               sx={{ overflow: "auto" }}>
               {item.description}
             </Typography>
@@ -46,7 +51,7 @@ const CarouselDinamyc = (props: ICarouselDinamycPropos) => {
               srcSet={item.img}
               alt={item.title}
               loading="lazy"
-              width={props.width}
+              width="50%"
             />
           </Box>
         ))}
