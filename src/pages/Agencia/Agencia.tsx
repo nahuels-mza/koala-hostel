@@ -15,7 +15,7 @@ export default function AgenciaPage() {
   const { classes } = useStylesAgencia();
   // const photo = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSxu09DcOYlXb66MDzNqt0FaOSvd0pMp99FiiYVVgCJA&s'
 
-  const itemList = isMobile() ? 2 : 4
+  const itemList = isMobile ? 2 : 4
   return (
     <Box component="div" className={classes.parallax}>
       <Box component="section" height="100%" className={classes.imageContainer}>

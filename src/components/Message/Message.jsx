@@ -14,8 +14,7 @@ const Message = () => {
 
   return (
     <Box
-      // sx={{ "& > :not(style)": { m: 1 } }}
-
+      sx={{ backgroundColor: theme => theme.palette.secondary.main }}
       position="fixed"
       bottom="0"
       zIndex="100"
@@ -23,7 +22,6 @@ const Message = () => {
     >
       <Fab>
         <Button
-
           href={`https://wa.me/5492616089132?text=${whatsMessage}`}
         >
           <WhatsAppIcon className={classes.iconWasp} />

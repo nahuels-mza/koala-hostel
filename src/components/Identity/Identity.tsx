@@ -12,7 +12,7 @@ import { isMobile } from "../../utils/constant";
 
 const Identity = () => {
   const { classes } = useIdentityStyles();
-  const flexDir = isMobile() ? "column" : "row"
+  const flexDir = isMobile ? "column" : "row"
 
   return (
     <Box className={classes.container} display="flex" flexDirection={flexDir} id="identityPanel" >

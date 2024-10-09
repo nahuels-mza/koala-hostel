@@ -176,7 +176,6 @@ const ownerData = [
 ];
 
 
-const isMobile = () => {
-  return "ontouchstart" in window || navigator.maxTouchPoints > 0;
-};
+const isMobile = "ontouchstart" in window || navigator.maxTouchPoints > 0;
+
 export { bedWithService, hostelImages, agenciaImages, commentData, ownerData, LorenImpsu, isMobile };

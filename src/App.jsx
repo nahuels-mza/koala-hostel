@@ -13,7 +13,7 @@ const theme = createTheme({
     }
   },
   typography: {
-    fontFamily: ["Arial", "Open Sans"].join(","),
+    fontFamily: ["Open Sans"].join(","),
   },
 });
 

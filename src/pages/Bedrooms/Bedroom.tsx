@@ -7,7 +7,7 @@ export default function BedroomPage() {
     return (
         <Box component="section">
             <Title title={"Nuestras Habitaciones"} subtitle={"Mayor Comodidad"} />
-            <Box pl={"20px"} pr={"20px"}>
+            <Box sx={{ textAlign: "-webkit-center" }}>
                 <ItemListingWithImages imagesListing={bedWithService} />
             </Box>
 

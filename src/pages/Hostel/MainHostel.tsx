@@ -71,7 +71,7 @@ const MainHostel = () => {
           }}>
           <ImageListing
             images={hostelImages}
-            column={isMobile() ? 1 : 3}
+            column={isMobile ? 1 : 3}
             destination="/bedrooms"
           />
         </Box>

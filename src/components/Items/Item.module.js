@@ -31,6 +31,11 @@ const useitemStyles = makeStyles()((theme) => ({
     whiteSpace: "nowrap",
     width: "-webkit-fill-available",
   },
+  detailsBedroom:{
+    width: "75%",
+    flexGrow: 1,
+    height: "90%"
+  }
 }));
 
 export default useitemStyles;
