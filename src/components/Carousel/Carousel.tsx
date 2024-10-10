@@ -13,7 +13,7 @@ const CarouselDinamyc = () => {
   return (
     <Box component="section" >
       <Typography variant="h3" textAlign="center">
-        Things to do
+        Our Services
       </Typography>
       <Carousel
         autoPlay={true}
@@ -27,31 +27,37 @@ const CarouselDinamyc = () => {
           },
         }}
         sx={{
-          textAlign: 'center',
+          textAlign: 'right',
         }}
+
       >
         {commentData.map((item, i) => (
-          <Box component="section" display="flex" flexDirection="row" key={i}
+          <Box component="section" display="flex" flexDirection="row" key={i + "carrousel"}
             sx={{
               cursor: "pointer",
-              pl: 2,
-              pr: 2,
-              height: "25%"
+              pl: 0.2,
+              pr: 0.2,
             }}
           >
-            <Typography variant="h6" textAlign="center"
-              maxHeight="initial" width="50%"
-              sx={{ overflow: "auto" }}>
+            <Typography key={i + "text"}
+              sx={{
+                overflow: "auto",
+                width: "70%",
+                height: "480px",
+                fontVariant: "h4",
+                textAlign: "left"
+              }}>
               {item.description}
             </Typography>
 
             <img
-              key={i}
+              key={i + "image"}
               src={item.img}
               srcSet={item.img}
               alt={item.title}
               loading="lazy"
-              width="50%"
+              width="60%"
+              height="480px"
             />
           </Box>
         ))}

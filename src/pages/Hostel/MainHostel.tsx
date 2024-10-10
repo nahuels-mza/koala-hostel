@@ -36,7 +36,7 @@ const MainHostel = () => {
   },);
 
   return (
-    <Box component="div" className={classes.parallax}>
+    <Box component="div" className={classes.parallax} sx={{ textAlign: "-webkit-center" }} id="hostel ">
       <Box id="pageHeader">
         <BookDateRange />
       </Box>
@@ -47,28 +47,21 @@ const MainHostel = () => {
         />
       </Box>
 
-      <Box className={classes.container} id="contentContainer"
-        sx={{
-          border: "green",
-          borderStyle: "dotted"
-        }}>
+      <Box className={classes.container} id="contentContainer">
         <Box
           className={classes.imageContainer}
           flexDirection={"row"}
           gridAutoFlow={"column"}
+          id="carrousel"
           sx={{
-            border: "pink",
-            borderStyle: "dotted"
+            width: "100%",
+            height: "50%"
           }}>
           <CarouselDinamyc />
         </Box>
 
 
-        <Box className={classes.imageContainer} id="image"
-          sx={{
-            border: "brown",
-            borderStyle: "double"
-          }}>
+        <Box className={classes.imageContainer} id="image">
           <ImageListing
             images={hostelImages}
             column={isMobile ? 1 : 3}
@@ -78,8 +71,7 @@ const MainHostel = () => {
 
         <Box className={classes.imageContainer} id="location"
           sx={{
-            border: "blue",
-            borderStyle: "groove"
+            width: "100%"
           }}>
           <Location />
         </Box>

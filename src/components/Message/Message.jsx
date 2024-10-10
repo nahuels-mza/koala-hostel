@@ -14,7 +14,6 @@ const Message = () => {
 
   return (
     <Box
-      sx={{ backgroundColor: theme => theme.palette.secondary.main }}
       position="fixed"
       bottom="0"
       zIndex="100"
@@ -29,7 +28,7 @@ const Message = () => {
       </Fab>
       <Fab>
         <Button
-          href="https://www.instagram.com/"
+          href="https://www.instagram.com/hostel.plaza"
         >
           <Instagram className={classes.iconInsta} />
         </Button>

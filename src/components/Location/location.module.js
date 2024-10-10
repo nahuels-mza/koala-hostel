@@ -4,7 +4,7 @@ const useLocationStyles = makeStyles()((theme) => ({
   containerImage: {
     position: "relative",
     bottom: 0,
-    width: "100%",
+    // width: "100%",
     backgroundColor: "#e6e6e699",
     minHeight: "400px",
     justifyContent: "center",

@@ -11,7 +11,6 @@ const Location = () => {
       id="location_section"
       component="div"
       className={classes.containerImage}
-      padding={4}
       sx={{
         backgroundImage: `url(${photo})`,
         backgroundColor: "#b9daf27d",

@@ -81,8 +81,8 @@ const agenciaImages = [
     description: "@bkristastucchio",
   },
   {
-    img: "https://images.unsplash.com/photo-1551782450-a2132b4ba21d",
-    title: "BODEGAS",
+    img: "https://001e6926.rocketcdn.me/wp-content/uploads/elementor/thumbs/Gastronomia-en-bodegas-q9zp70jjnj8fa4r5u3tsf5hskepvx20va3kv7g226g.jpg",
+    title: "Bodegas y Gastronomia",
     description: "@rollelflex_graphy726",
   },
   {
@@ -140,12 +140,12 @@ const agenciaImages = [
 const commentData = [
   {
     img: "https://picsum.photos/400/300",
-    title: "Breakfast",
+    title: "Ciudad",
     description: LorenImpsu2,
   },
   {
-    img: "https://picsum.photos/400/300",
-    title: "Burger",
+    img: "https://001e6926.rocketcdn.me/wp-content/uploads/elementor/thumbs/Gastronomia-en-bodegas-q9zp70jjnj8fa4r5u3tsf5hskepvx20va3kv7g226g.jpg",
+    title: "Bodegas",
     description: LorenImpsu2,
   },
   {
