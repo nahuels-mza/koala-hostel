@@ -65,7 +65,7 @@ const MainHostel = () => {
           <ImageListing
             images={hostelImages}
             column={isMobile ? 1 : 3}
-            destination="/bedrooms"
+            destination={window.location.href + "/bedrooms"}
           />
         </Box>
 

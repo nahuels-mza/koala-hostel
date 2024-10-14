@@ -55,7 +55,7 @@ const ItemDialog = (props: IItemDialogProps) => {
           />
         </ListItem>
         <Divider />
-        <Button href="/bedrooms" variant="contained" color="primary" size="large" disableElevation>
+        <Button href={window.location.href + "/bedrooms"} variant="contained" color="primary" size="large" disableElevation>
           See More Details
         </Button>
       </List>

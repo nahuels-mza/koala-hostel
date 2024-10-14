@@ -43,7 +43,7 @@ const CarouselDinamyc = () => {
               sx={{
                 overflow: "auto",
                 width: "70%",
-                height: "480px",
+                height: "380px",
                 fontVariant: "h4",
                 textAlign: "left"
               }}>
@@ -57,7 +57,7 @@ const CarouselDinamyc = () => {
               alt={item.title}
               loading="lazy"
               width="60%"
-              height="480px"
+              height="380px"
             />
           </Box>
         ))}

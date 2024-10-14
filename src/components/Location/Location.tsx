@@ -18,7 +18,7 @@ const Location = () => {
     >
       <Link
         target="_blank"
-        href="https://g.page/koala hostel mendoza"
+        href="https://maps.app.goo.gl/eSkZvL8tN7aeYL3z9"
         sx={{ textDecoration: "none", color: "inherit" }}
         className={classes.linkContainer}
       >

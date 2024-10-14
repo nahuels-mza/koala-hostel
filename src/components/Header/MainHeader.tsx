@@ -15,13 +15,13 @@ export default function Header() {
     const options = [{
 
         "name": "Quienes somos",
-        "id": "/ourselves"
+        "id": "/hostel/ourselves"
     }, {
         "name": "Nuestra Agencia",
-        "id": "/agencia"
+        "id": "/hostel/agencia"
     }, {
         "name": "Nuestro Hostel",
-        "id": "/"
+        "id": "/hostel"
     }
     ]
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);

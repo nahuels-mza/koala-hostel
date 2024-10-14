@@ -47,7 +47,7 @@ export default function ItemListingWithImages(props: IImageListingProps) {
                         </video>
                     </Grid>
 
-                    <Grid container flexDirection="row" id="details" xs={isMobile ? "auto" : 5}
+                    <Grid item flexDirection="row" id="details" xs={isMobile ? "auto" : 5}
                         sx={{
                             // backgroundColor: theme => theme.palette.secondary.main,
                             // justifyContent: "center",
