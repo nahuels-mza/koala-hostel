@@ -4,17 +4,16 @@ import { Box } from "@mui/material";
 
 import Message from "../../components/Message/Message";
 import Title from "../../components/Title/MainTitle";
-import ImageListing from "../../components/Items/ImageList";
+import HostelImageListing from "../../components/Items/HostelImageList";
 import Location from "../../components/Location/Location";
 import CarouselDinamyc from "../../components/Carousel/Carousel";
-// import CommentCarousel from "../../components/Carousel/CommentCarousel";
 import BookDateRange from "../../components/Date/Date";
 
 import { hostelImages } from "../../utils/constant";
 import { isMobile } from "../../utils/constant";
 import useStylesHostelPage from "./MainHostel.module";
 
-// import photo from "../../assets/mainPic.jpeg";
+
 
 const MainHostel = () => {
   const { classes } = useStylesHostelPage();
@@ -62,10 +61,10 @@ const MainHostel = () => {
 
 
         <Box className={classes.imageContainer} id="image">
-          <ImageListing
+          <HostelImageListing
             images={hostelImages}
             column={isMobile ? 1 : 3}
-            destination={window.location.href + "/bedrooms"}
+            destination={"/hostel/bedrooms"}
           />
         </Box>
 

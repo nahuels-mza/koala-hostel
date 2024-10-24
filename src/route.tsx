@@ -8,6 +8,7 @@ import AgenciaPage from "./pages/Agencia/Agencia";
 import BedroomPage from "./pages/Bedrooms/Bedroom";
 import FoundersPage from "./pages/Founders/Founders";
 import CommingSoonPage from "./pages/Soon/CommingSoon";
+import DestinationPage from "./pages/Destination/Destination";
 
 const router = createBrowserRouter([
     {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
             {
                 path: "ourselves",
                 element: <FoundersPage />
+            },
+            {
+                path: "destinations/:id",
+                element: <DestinationPage />
             },
         ],
     },

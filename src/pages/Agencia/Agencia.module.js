@@ -2,7 +2,7 @@ import { makeStyles } from "tss-react/mui";
 
 const useStylesAgencia = makeStyles()((theme) => ({
   container: {
-    width: "100%",
+    width: "90%",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -11,22 +11,27 @@ const useStylesAgencia = makeStyles()((theme) => ({
     },
   },
   imageContainer: {
-    width: "100%",
-    margin: "auto",
+    alignItems: "center",
+    width: "90%",
+    marginBottom: "10px",
+
     [theme.breakpoints.down("sm")]: {
-      height: "auto",
+      height: "auto",width: "95%",
     },
+    objectFit: "cover",
+    height:"50%",
+    padding: "20px"
   },
   parallax: {
     minHeight: "100vh",
 
-    backgroundAttachment: "fixed",
-    backgroundPosition: "0% 25%",
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-    [theme.breakpoints.down("sm")]: {
-      backgroundPosition: "30%",
-    },
+    // backgroundAttachment: "fixed",
+    // backgroundPosition: "0% 25%",
+    // backgroundRepeat: "no-repeat",
+    // backgroundSize: "cover",
+    // [theme.breakpoints.down("sm")]: {
+    //   backgroundPosition: "30%",
+    // },
   },
 }));
 

@@ -3,7 +3,7 @@ import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
 
-interface IImageListingProps {
+interface IHostelImageListingProps {
     images: {
         img: string;
         title: string;
@@ -13,11 +13,12 @@ interface IImageListingProps {
     destination: string
 }
 
-export default function ImageListing(props: IImageListingProps) {
-
+// TODO: This a copy of ImageList.tsx but is not used to send param on the url
+// So we need to find a better implementation rather 2  99% identical files
+export default function HostelImageListing(props: IHostelImageListingProps) {
 
     const handleClickOpen = (item: any) => {
-        window.location.href = `${props.destination}/${item.id}`
+        window.location.href = props.destination
     };
 
     return (

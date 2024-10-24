@@ -35,7 +35,14 @@ const useitemStyles = makeStyles()((theme) => ({
     width: "75%",
     flexGrow: 1,
     height: "90%"
-  }
+  },
+  imageListing:{
+    objectFit: "cover",
+    [theme.breakpoints.down("sm")]: {
+        height: "85%"
+    },
+    cursor: "pointer"
+  },
 }));
 
 export default useitemStyles;

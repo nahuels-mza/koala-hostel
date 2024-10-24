@@ -76,65 +76,33 @@ const hostelImages = [
 
 const agenciaImages = [
   {
-    img: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
-    title: "SAN JUAN",
-    description: "@bkristastucchio",
+    id:1,
+    img: "https://picsum.photos/id/134/400/300",
+    title: "Ciudad",
+    description: LorenImpsu2,
+    videoUrl: "https://www.shutterstock.com/shutterstock/videos/1100619309/preview/stock-footage-city-of-mendoza-argentina-aerial-drone-above-green-landscape-and-metropolitan-area-great-wine.webm"
   },
   {
+    id:2,
     img: "https://001e6926.rocketcdn.me/wp-content/uploads/elementor/thumbs/Gastronomia-en-bodegas-q9zp70jjnj8fa4r5u3tsf5hskepvx20va3kv7g226g.jpg",
-    title: "Bodegas y Gastronomia",
-    description: "@rollelflex_graphy726",
+    title: "Bodegas",
+    description: LorenImpsu2,
+    videoUrl: "https://www.shutterstock.com/shutterstock/videos/1035525677/preview/stock-footage-argentina-circa-aerial-over-a-woman-walking-through-a-vineyard-winery-in-argentina.webm"
   },
   {
-    img: "https://images.unsplash.com/photo-1522770179533-24471fcdba45",
-    title: "Camera",
-    description: "@helloimnik",
+    id:3,
+    img: "https://picsum.photos/id/79/400/300",
+    title: "Montaña",
+    description: LorenImpsu2,
+    videoUrl: "https://www.shutterstock.com/shutterstock/videos/3498719143/preview/stock-footage-video-of-sky-center-las-le-as-mendoza-argentina.webm"
   },
   {
-    img: "https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c",
-    title: "Coffee",
-    description: "@nolanissac",
+    id:4,
+    img: image4,
+    title: "Aventura",
+    description: LorenImpsu,
+    videoUrl: "https://www.shutterstock.com/shutterstock/videos/1110814829/preview/stock-footage-san-rafael-argentina-october-video-rafting-in-rio-atuel-in-valle-grande-ca-on-del.webm"
   },
-  {
-    img: "https://images.unsplash.com/photo-1533827432537-70133748f5c8",
-    title: "Hats",
-    description: "@hjrc33",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62",
-    title: "Honey",
-    description: "@arwinneil",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1516802273409-68526ee1bdd6",
-    title: "Basketball",
-    description: "@tjdragotta",
-  },
-  // {
-  //   img: "https://images.unsplash.com/photo-1518756131217-31eb79b20e8f",
-  //   title: "Fern",
-  //   description: "@katie_wasserman",
-  // },
-  // {
-  //   img: "https://images.unsplash.com/photo-1597645587822-e99fa5d45d25",
-  //   title: "Mushrooms",
-  //   description: "@silverdalex",
-  // },
-  // {
-  //   img: "https://images.unsplash.com/photo-1567306301408-9b74779a11af",
-  //   title: "Tomato basil",
-  //   description: "@shelleypauls",
-  // },
-  // {
-  //   img: "https://images.unsplash.com/photo-1471357674240-e1a485acb3e1",
-  //   title: "Sea star",
-  //   description: "@peterlaster",
-  // },
-  // {
-  //   img: "https://images.unsplash.com/photo-1589118949245-7d38baf380d6",
-  //   title: "Bike",
-  //   description: "@southside_customs",
-  // },
 ];
 
 const commentData = [

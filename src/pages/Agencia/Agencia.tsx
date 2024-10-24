@@ -8,27 +8,23 @@ import Title from "../../components/Title/MainTitle";
 import CommentCarousel from "../../components/Carousel/CommentCarousel";
 import { isMobile } from "../../utils/constant";
 
-import { commentData, LorenImpsu } from "../../utils/constant";
+import { agenciaImages, LorenImpsu } from "../../utils/constant";
 import useStylesAgencia from "./Agencia.module";
 
 export default function AgenciaPage() {
   const { classes } = useStylesAgencia();
   // const photo = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSxu09DcOYlXb66MDzNqt0FaOSvd0pMp99FiiYVVgCJA&s'
 
-  const itemList = isMobile ? 2 : 4
+  const itemList = isMobile ? 1 : 2
   return (
-    <Box component="div" className={classes.parallax}>
-      <Box component="section" height="100%" className={classes.imageContainer}>
-        {/* <Box
-          className={classes.parallax}
-          sx={{ backgroundImage: `url(${photo})` }}
-        /> */}
+    <Box component="div" sx={{ textAlign: "-webkit-center" }} className={classes.parallax}>
+      <Box component="section" className={classes.imageContainer}>
         <Message />
-        <Box component="section" height="100%" className={classes.container}>
+        <Box component="section" className={classes.container}>
           <Title title={"Acacias Agencia de Turismo"} subtitle={LorenImpsu} />
         </Box>
-        <Box className={classes.imageContainer}>
-          <ImageListing images={commentData} column={itemList} destination="/destinations" />
+        <Box className={classes.imageContainer} id="imageListin">
+          <ImageListing images={agenciaImages} column={itemList} destination={"/hostel/destinations"} />
         </Box>
         <Box className={classes.imageContainer} display="grid" width={"50%"}>
           <CommentCarousel width="50%" height="25%" />
