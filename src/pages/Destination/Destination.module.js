@@ -44,6 +44,13 @@ const useStylesDestinationPage = makeStyles()((theme) => ({
     objectFit: "contain",
     opacity: 0.6
   },
+  iconWasp: {
+    cursor: "pointer",
+    color: "#128C7E",
+    height: 40,
+    margin: "1rem",
+    fontSize: "3rem !important",
+  },
 }));
 
 export default useStylesDestinationPage

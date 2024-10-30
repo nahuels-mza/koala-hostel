@@ -1,7 +1,9 @@
 import { Box, Typography } from "@mui/material";
 import { useParams } from "react-router-dom";
+import Message from "../../components/Message/Message";
 import { agenciaImages } from "../../utils/constant";
 import useStylesDestinationPage from "./Destination.module"
+
 
 export default function DestinationPage() {
     const { id } = useParams();
@@ -30,6 +32,7 @@ export default function DestinationPage() {
                 id="video">
                 <source src={dataDestination.videoUrl} />
             </video>
+            <Message instagram={false} whatsMessage={dataDestination.wspMessage} />
         </Box>
     );
 }

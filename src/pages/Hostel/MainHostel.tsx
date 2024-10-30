@@ -9,8 +9,7 @@ import Location from "../../components/Location/Location";
 import CarouselDinamyc from "../../components/Carousel/Carousel";
 import BookDateRange from "../../components/Date/Date";
 
-import { hostelImages } from "../../utils/constant";
-import { isMobile } from "../../utils/constant";
+import { hostelImages, isMobile, WhatsAppMessage } from "../../utils/constant";
 import useStylesHostelPage from "./MainHostel.module";
 
 
@@ -85,7 +84,7 @@ const MainHostel = () => {
           <CommentCarousel width="50%" height="50%" />
         </Box> */}
       </Box>
-      <Message />
+      <Message instagram={true} whatsMessage={WhatsAppMessage} />
       <Outlet />
     </Box>
   );

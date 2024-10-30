@@ -19,7 +19,7 @@ export default function AgenciaPage() {
   return (
     <Box component="div" sx={{ textAlign: "-webkit-center" }} className={classes.parallax}>
       <Box component="section" className={classes.imageContainer}>
-        <Message />
+        <Message instagram={true} whatsMessage='' />
         <Box component="section" className={classes.container}>
           <Title title={"Acacias Agencia de Turismo"} subtitle={LorenImpsu} />
         </Box>
