@@ -13,8 +13,7 @@ interface IImageListingProps {
         label: string;
         description: string;
         services: any
-        image: string
-        imageDetail: string;
+        gif: string
     }[]
 }
 export default function ItemListingWithImages(props: IImageListingProps) {
@@ -42,8 +41,8 @@ export default function ItemListingWithImages(props: IImageListingProps) {
                             autoPlay={true} loop={true} muted={true}
                             preload="none" playsInline
                         >
-                            <source src="https://video.wixstatic.com/video/c7248a_2d6fa31080bd4745a1ed5db2d3a0a462/1080p/mp4/file.mp4"
-                                type="video/mp4" />
+                            <source src={item.gif}
+                                type="gif" />
                         </video>
                     </Grid>
 

@@ -40,12 +40,29 @@ const MainHostel = () => {
       </Box>
       <Box className={classes.imageContainer}>
         <Title
-          title={"Acacias Hostel"}
+          title={"Hostel Plaza"}
           subtitle={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
         />
       </Box>
 
       <Box className={classes.container} id="contentContainer">
+
+
+
+        <Box className={classes.imageContainer} id="image">
+          <HostelImageListing
+            images={hostelImages}
+            column={isMobile ? 1 : 3}
+            destination={"/bedrooms"}
+          />
+        </Box>
+
+        <Box className={classes.imageContainer} id="location"
+          sx={{
+            width: "100%"
+          }}>
+          <Location />
+        </Box>
         <Box
           className={classes.imageContainer}
           flexDirection={"row"}
@@ -57,23 +74,6 @@ const MainHostel = () => {
           }}>
           <CarouselDinamyc />
         </Box>
-
-
-        <Box className={classes.imageContainer} id="image">
-          <HostelImageListing
-            images={hostelImages}
-            column={isMobile ? 1 : 3}
-            destination={"/hostel/bedrooms"}
-          />
-        </Box>
-
-        <Box className={classes.imageContainer} id="location"
-          sx={{
-            width: "100%"
-          }}>
-          <Location />
-        </Box>
-
         {/* <Box
           className={classes.imageContainer}
           flexDirection={"row"}

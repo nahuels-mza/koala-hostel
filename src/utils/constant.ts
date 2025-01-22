@@ -1,9 +1,6 @@
-import image1 from "../../src/assets/koala1.jpeg";
-import image2 from "../../src/assets/koala2.jpeg";
-import image3 from "../../src/assets/koala3.jpeg";
-import image4 from "../../src/assets/koala4.jpg";
-import habitacion1 from "../../src/assets/habitacion1.png";
-import habitacion2 from "../../src/assets/habitacion2.png";
+import image1 from "../../src/assets/habPrincipalHome.jpg";
+import image2 from "../../src/assets/habCompartidaHome.jpeg";
+import image3 from "../../src/assets/habIndividualHome.jpg";
 
 const LorenImpsu =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt nisl vitae purus lobortis, quis scelerisque diam tincidunt. Donec eu risus urna. Sed quis enim vitae orci tristique imperdiet eget sed lectus. Suspendisse placerat mi id blandit accumsan. Integer sodales neque nisl, mollis consectetur sapien fringilla vitae. Etiam est sapien, fermentum id quam a, tincidunt vestibulum odio. Nullam dapibus porta elit, vel vestibulum nisl dictum eu. Quisque tincidunt vitae enim eget mollis. Aenean tincidunt massa mauris, sit amet porta libero auctor nec. Phasellus id tincidunt eros, vitae gravida turpis. Nam mattis eget turpis vitae aliquam.Suspendisse mattis ex a velit posuere posuere.In vitae justo scelerisque nulla tincidunt vehicula.Ut vulputate iaculis consequat.Donec in mauris euismod, tempus dolor sed, pretium elit.Curabitur in dui ultrices, tristique leo eu, feugiat tortor.Etiam at auctor dui.Ut fermentum pulvinar turpis, finibus vulputate metus eleifend in.Curabitur posuere eu magna vitae commodo.Pellentesque quis dapibus lectus.Nam elementum dolor vel iaculis consectetur.Praesent feugiat porta velit pulvinar faucibus.Suspendisse sed iaculis metus.Morbi blandit a sem et varius.";
@@ -12,65 +9,23 @@ const LorenImpsu2 =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere odio eget odio tempor, non.";
 
 const WhatsAppMessage= "Hola Plaza Hostel. Queria obtener informacion sobre"
-const service = {
-  wifi: { description: "Free wi-fi", icon: "wifi_outlines_icon" },
-  air: { description: "Air Conditional ", icon: "ac_unit_outlines_icon" },
-  bath: { description: "Bathtub", icon: "bathroom_outlines_icon" },
-  smoke: { description: "No Smoking", icon: "smoke_free_outlines_icon" },
-  bedClothes: { description: "Ropa de cama", icon: "bed_outlined_icon" },
-  heat: {
-    description: "Calefaccion",
-    icon: "local_fire_department_outlined_icon",
-  },
-  fan: { description: "Ventilador", icon: "filter_vintage_outlined_icon" },
-  plug: { description: "Plugs near bed", icon: "power_outlined_icon" },
-};
 
-const bedWithService = [
-  {
-    label: "Litrera",
-    description: LorenImpsu2,
-    services: [service.wifi, service.air],
-    image: image3,
-    imageDetail: habitacion2,
-  },
-  {
-    label: "Litrera Full Service",
-    description: LorenImpsu,
-    services: [
-      service.wifi,
-      service.air,
-      service.bath,
-      service.smoke,
-      service.bedClothes,
-      service.fan,
-    ],
-    image: image3,
-    imageDetail: habitacion1,
-  },
-  {
-    label: "Cama Individual",
-    description: "Cama individual en habitación compartida",
-    services: [service.heat, service.fan, service.plug],
-    image: image3,
-    imageDetail: habitacion1,
-  },
-];
+
 
 const hostelImages = [
   {
     img: image1,
-    title: "Habitaciones individuales",
+    title: "Habitaciones Familiares",
     description: LorenImpsu,
   },
   {
     img: image2,
-    title: "Habitaciones compartidas ",
+    title: "Habitaciones Compartidas ",
     description: LorenImpsu,
   },
   {
     img: image3,
-    title: "Habitaciones familiares",
+    title: "Habitaciones Individuales",
     description: LorenImpsu,
   },
 ];
@@ -102,7 +57,7 @@ const agenciaImages = [
   },
   {
     id:4,
-    img: image4,
+    img: image3,
     title: "Aventura",
     description: LorenImpsu,
     videoUrl: "https://www.shutterstock.com/shutterstock/videos/1110814829/preview/stock-footage-san-rafael-argentina-october-video-rafting-in-rio-atuel-in-valle-grande-ca-on-del.webm",
@@ -127,7 +82,7 @@ const commentData = [
     description: LorenImpsu2,
   },
   {
-    img: image4,
+    img: image3,
     title: "Habitaciones familiares",
     description: LorenImpsu,
   },
@@ -151,4 +106,4 @@ const ownerData = [
 
 const isMobile = "ontouchstart" in window || navigator.maxTouchPoints > 0;
 
-export { bedWithService, hostelImages, agenciaImages, commentData, ownerData, LorenImpsu, isMobile, WhatsAppMessage };
+export { hostelImages, agenciaImages, commentData, ownerData, LorenImpsu, isMobile, WhatsAppMessage };
