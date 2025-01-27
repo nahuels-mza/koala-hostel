@@ -17,16 +17,19 @@ const hostelImages = [
     img: image1,
     title: "Habitaciones Familiares",
     description: LorenImpsu,
+    type: "familiar"
   },
   {
     img: image2,
     title: "Habitaciones Compartidas ",
     description: LorenImpsu,
+    type: "compartida"
   },
   {
     img: image3,
     title: "Habitaciones Individuales",
     description: LorenImpsu,
+    type: "individual"
   },
 ];
 

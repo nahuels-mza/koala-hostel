@@ -24,8 +24,10 @@ const LorenImpsu2 =
       label: "Habitacion Familiar Cuadruple ",
       description: LorenImpsu2,
       services: [service.wifi, service.fan],
-      gif: gifHabitacion1
+      gif: gifHabitacion1,
+      type: "familiar"
     },
+
     {
       label: "Habitacion Familiar Doble",
       description: LorenImpsu,
@@ -37,14 +39,24 @@ const LorenImpsu2 =
         service.bedClothes,
         service.fan,
       ],
-      gif: gifHabitacion1
+      gif: gifHabitacion1,
+      type: "familiar"
     },
     {
-      label: "Habitacion Familiar Cuadruple",
-      description: "Habitacion Familiar para hasta 4 personas",
+      label: "Dormitorio Compartida de 4 camas",
+      description: "Habitacion Cuadruple para compartir hasta 4 personas",
       services: [service.heat, service.fan, service.plug],
-      gif: gifHabitacion1
+      gif: gifHabitacion1,
+      type: "compartida"
     },
+    {
+      label: "Dormitorio Compartida de 8 Camas",
+      description: "Habitacion compartida con camas para 8 personas",
+      services: [service.heat, service.fan, service.plug],
+      gif: gifHabitacion1,
+      type: "compartida"
+    },
+
   ];
 
   export {bedWithService}

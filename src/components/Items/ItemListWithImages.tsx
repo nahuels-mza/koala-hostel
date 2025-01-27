@@ -18,9 +18,6 @@ interface IImageListingProps {
 }
 export default function ItemListingWithImages(props: IImageListingProps) {
     const textWidth = isMobile ? "250px" : "350px"
-
-    const videoHeight = isMobile ? "300px" : "90%"
-    const videoWidth = isMobile ? "350px" : "450px"
     const gridOrder = isMobile ? "column" : "row"
 
     const { classes } = useitemStyles()
@@ -36,20 +33,12 @@ export default function ItemListingWithImages(props: IImageListingProps) {
 
                     }}
                 >
-                    <Grid item id="video" xs={7} alignItems={"center"}>
-                        <video width={videoWidth} height={videoHeight}
-                            autoPlay={true} loop={true} muted={true}
-                            preload="none" playsInline
-                        >
-                            <source src={item.gif}
-                                type="gif" />
-                        </video>
+                    <Grid item id="video" xs={6} alignItems={"center"} padding={"5px"}>
+                        <img src={item.gif} alt={item.description} />
                     </Grid>
 
                     <Grid item flexDirection="row" id="details" xs={isMobile ? "auto" : 5}
                         sx={{
-                            // backgroundColor: theme => theme.palette.secondary.main,
-                            // justifyContent: "center",
                             width: { textWidth },
                             alignContent: "start",
                             height: "fit-content"
