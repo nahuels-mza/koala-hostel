@@ -1,30 +1,34 @@
 import { Box } from "@mui/material";
+import useReservationStyles from "./Reservation.module";
 
 export default function Reserve() {
-  const start = "";
-  const end = "";
-  const base_url =
-    "https://bananadesk.com/booking-engine/panda-hostel-mendoza/";
-  // eslint-disable-next-line
-  const fetchUsersForPage = async () => {
-    try {
-      const response = await fetch(
-        `${base_url}room-type-availability?date_from=${start}&date_to=${end}&room_type=both`,
-        {
-          method: "GET",
-          // headers: new Headers({
-          //     "Content-Type": "application/json",
-          //     Authorization: `Bearer ${token}`,
-          // }),
-        },
-      );
+  const { classes } = useReservationStyles()
 
-      const { data } = await response.json();
-      return data;
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  return (
+    <Box flexDirection={"row"}
+      display={"flex"}
+      justifyContent={"center"}
+    >
+      <Box className={classes.container} id="reserve">
+        Como reservar?
+        <p />
+        1. elegir las fechas
+        <p />
+        2. elegir tipo de camas
+        <p />
+        3. Hacer click en search
+        <p />
+        4. Esto nos llevara directo al motor de reserva
+        <p />
+        5. Elegir las habitaciones
+        <p />
+        6. y pagar
+      </Box>
+      <Box className={classes.container} id="reserve">
 
-  return <Box />;
+        <div id="banana-desk-booking-widget" />
+
+      </Box>
+    </Box>
+  )
 }

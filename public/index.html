@@ -17,7 +17,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-  <title>Acacias Hostel</title>
+  <title>Hostel Plaza</title>
   <meta name="image" content="https://nahuels-mza.github.io/koala-hostel/mainPic.png" />
   <meta name="description" content="Bienvenidos a Koala Hostel" />
   <!-- OpenGraph tags -->
@@ -46,6 +46,26 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+  <script>
+    (function () {
+      var httpRequest = new XMLHttpRequest();
+      httpRequest.open("GET", "https://bananadesk.com/booking-engine/8862/html-snippet", true);
+      if (httpRequest.DONE) {
+
+        httpRequest.onreadystatechange = function () {
+          var REQUEST_FINISHED = 4;
+          var OK_STATUS_CODE = 200;
+          if (httpRequest.readyState == REQUEST_FINISHED && httpRequest.status == OK_STATUS_CODE) {
+            document.getElementById("banana-desk-booking-widget").innerHTML = httpRequest.responseText;
+            var script = /<script>((.|\s)*)<\/script>/.exec(httpRequest.responseText);
+            eval(script);
+          }
+        };
+        httpRequest.send();
+      }
+    })();
+  </script>
 </body>
 
 </html>

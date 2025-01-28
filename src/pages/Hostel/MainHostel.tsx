@@ -46,9 +46,6 @@ const MainHostel = () => {
       </Box>
 
       <Box className={classes.container} id="contentContainer">
-
-
-
         <Box className={classes.imageContainer} id="image">
           <HostelImageListing
             images={hostelImages}
