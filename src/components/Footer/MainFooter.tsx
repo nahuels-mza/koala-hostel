@@ -7,7 +7,7 @@ import XIcon from '@mui/icons-material/X';
 import { Box } from "@mui/material";
 
 export default function Footer() {
-    const whatsMessage = "Hola Acacias Hostel mi Nombre es";
+    const whatsMessage = "Hola Hostel Plaza mi Nombre es";
     return (
         <Box component="footer" sx={{ backgroundColor: 'primary' }} >
             <Container >

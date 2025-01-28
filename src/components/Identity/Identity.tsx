@@ -7,7 +7,7 @@ import Typography from "@mui/material/Typography";
 
 import { ownerData } from "../../utils/constant";
 import useIdentityStyles from "./Identity.module";
-import acacia from "../../assets/acacia.png";
+import acacia from "../../assets/rounded-logo.png";
 import { isMobile } from "../../utils/constant";
 
 const Identity = () => {

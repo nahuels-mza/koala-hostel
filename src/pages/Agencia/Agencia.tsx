@@ -21,10 +21,10 @@ export default function AgenciaPage() {
       <Box component="section" className={classes.imageContainer}>
         <Message instagram={true} whatsMessage='' />
         <Box component="section" className={classes.container}>
-          <Title title={"Acacias Agencia de Turismo"} subtitle={LorenImpsu} />
+          <Title title={"Hostel Plaza Agencia de Turismo"} subtitle={LorenImpsu} />
         </Box>
-        <Box className={classes.imageContainer} id="imageListin">
-          <ImageListing images={agenciaImages} column={itemList} destination={"/hostel/destinations"} />
+        <Box className={classes.imageContainer} id="imageListing">
+          <ImageListing images={agenciaImages} column={itemList} destination={"/destinations"} />
         </Box>
         <Box className={classes.imageContainer} display="grid" width={"50%"}>
           <CommentCarousel width="50%" height="25%" />

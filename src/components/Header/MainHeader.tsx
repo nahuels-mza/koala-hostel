@@ -15,13 +15,13 @@ export default function Header() {
     const options = [{
 
         "name": "Quienes somos",
-        "id": "/hostel/ourselves"
+        "id": "/ourselves"
     }, {
         "name": "Nuestra Agencia",
-        "id": "/hostel/agencia"
+        "id": "/agencia"
     }, {
         "name": "Nuestro Hostel",
-        "id": "/hostel"
+        "id": "/"
     }
     ]
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -47,7 +47,7 @@ export default function Header() {
                         />
                     </Button>
                     <Typography variant="h3" component="div" sx={{ flexGrow: 1 }} align='center'>
-                        Acacias
+                        Hostel Plaza
                     </Typography>
                     <div>
                         <IconButton

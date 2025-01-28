@@ -7,17 +7,12 @@ import MainHostel from "./pages/Hostel/MainHostel";
 import AgenciaPage from "./pages/Agencia/Agencia";
 import BedroomPage from "./pages/Bedrooms/Bedroom";
 import FoundersPage from "./pages/Founders/Founders";
-import CommingSoonPage from "./pages/Soon/CommingSoon";
 import DestinationPage from "./pages/Destination/Destination";
 
 const router = createBrowserRouter([
+
     {
         path: "/",
-        errorElement: <ErrorPage />,
-        element: <CommingSoonPage />,
-    },
-    {
-        path: "/hostel",
         errorElement: <ErrorPage />,
         element: <App />,
         children: [
@@ -27,7 +22,7 @@ const router = createBrowserRouter([
 
             },
             {
-                path: "/hostel",
+                path: "/",
                 element: <MainHostel />
             },
             {
