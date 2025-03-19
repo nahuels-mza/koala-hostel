@@ -2,12 +2,14 @@ import * as React from 'react';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
+import { useNavigate } from 'react-router-dom';
 
 interface IHostelImageListingProps {
     images: {
         img: string;
         title: string;
         description: string;
+        type: string;
     }[]
     column: number
     destination: string
@@ -17,8 +19,9 @@ interface IHostelImageListingProps {
 // So we need to find a better implementation rather 2  99% identical files
 export default function HostelImageListing(props: IHostelImageListingProps) {
 
+    const navigate = useNavigate();
     const handleClickOpen = (item: any) => {
-        window.location.href = props.destination
+        navigate(props.destination, { state: { name: item.type } });
     };
 
     return (

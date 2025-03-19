@@ -2,7 +2,7 @@ import React from "react";
 import Carousel from "react-material-ui-carousel";
 import { Box, Typography } from "@mui/material";
 
-import { commentData } from "../../utils/constant";
+import { servicesData } from "../../utils/constant";
 
 // interface ICarouselDinamycPropos {
 //   height: string
@@ -31,7 +31,7 @@ const CarouselDinamyc = () => {
         }}
 
       >
-        {commentData.map((item, i) => (
+        {servicesData.map((item, i) => (
           <Box component="section" display="flex" flexDirection="row" key={i + "carrousel"}
             sx={{
               cursor: "pointer",

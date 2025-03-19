@@ -28,7 +28,7 @@ export default function Footer() {
                         <Link href="https://www.twitter.com/" color={"#000000de"}>
                             <XIcon />
                         </Link>
-                        <Link href={`https://wa.me/5492616089132?text=${whatsMessage}`} color={"#128C7E"} >
+                        <Link href={`https://wa.me/5492615372767?text=${whatsMessage}`} color={"#128C7E"} >
                             <WhatsApp />
                         </Link>
                     </Box>

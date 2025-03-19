@@ -18,7 +18,7 @@ const Location = () => {
     >
       <Link
         target="_blank"
-        href="https://maps.app.goo.gl/eSkZvL8tN7aeYL3z9"
+        href="https://maps.app.goo.gl/drs1gFV5Nrxxh2GP9"
         sx={{ textDecoration: "none", color: "inherit" }}
         className={classes.linkContainer}
       >

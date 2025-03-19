@@ -7,7 +7,7 @@ import Avatar from "@mui/material/Avatar";
 import { Icon } from "@mui/material";
 import { isMobile } from "../../utils/constant";
 
-import useitemStyles from "./Item.module";
+import useitemListStyles from "./ItemList.module";
 interface IImageListingProps {
     imagesListing: {
         label: string;
@@ -17,10 +17,11 @@ interface IImageListingProps {
     }[]
 }
 export default function ItemListingWithImages(props: IImageListingProps) {
-    const textWidth = isMobile ? "250px" : "350px"
+    window.scrollTo(0, 0);
+    const textWidth = isMobile ? "250px" : "100%"
     const gridOrder = isMobile ? "column" : "row"
 
-    const { classes } = useitemStyles()
+    const { classes } = useitemListStyles()
     return (
         <Box component="section" className={classes.detailsBedroom}>
             {props.imagesListing.map((item, i) => (
@@ -34,26 +35,21 @@ export default function ItemListingWithImages(props: IImageListingProps) {
                     }}
                 >
                     <Grid item id="video" xs={6} alignItems={"center"} padding={"5px"}>
-                        <img src={item.gif} alt={item.description} />
+                        <img src={item.gif} alt={item.description} width={"80%"} height={"70%"} />
                     </Grid>
 
-                    <Grid item flexDirection="row" id="details" xs={isMobile ? "auto" : 5}
+                    <Grid item id="details" xs={isMobile ? "auto" : 5}
                         sx={{
                             width: { textWidth },
                             alignContent: "start",
                             height: "fit-content"
                         }}>
                         <Typography variant="h3" margin="10px">{item.label}</Typography>
-                        <Grid item id="itemdescription" height={"min-content%"}>
-                            <Typography variant="subtitle2" overflow={"auto"} height="250px" >{item.description}</Typography>
+                        <Grid item id="itemdescription" >
+                            <Typography variant="subtitle2" overflow={"auto"}  >{item.description}</Typography>
                         </Grid>
-                        <Grid item id="listicon" height="50%">
-                            <List
-                                sx={{
-                                    // backgroundColor: theme => theme.palette.secondary.main,
-                                    height: "fit-content%"
-                                }}
-                            >
+                        <Grid item id="listicon" >
+                            <List>
                                 <Typography variant="h4">Services</Typography>
 
                                 {item.services.map((service: any) => (

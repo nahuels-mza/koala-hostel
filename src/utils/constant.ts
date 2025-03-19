@@ -68,26 +68,30 @@ const agenciaImages = [
   },
 ];
 
-const commentData = [
+const servicesData = [
   {
     img: "https://picsum.photos/400/300",
     title: "Ciudad",
     description: LorenImpsu2,
+    link: "/agencia"
   },
   {
     img: "https://001e6926.rocketcdn.me/wp-content/uploads/elementor/thumbs/Gastronomia-en-bodegas-q9zp70jjnj8fa4r5u3tsf5hskepvx20va3kv7g226g.jpg",
     title: "Bodegas",
     description: LorenImpsu2,
+    link: "/agencia"
   },
   {
     img: "https://images.unsplash.com/photo-1516802273409-68526ee1bdd6",
     title: "Camera",
     description: LorenImpsu2,
+    link: "/agencia"
   },
   {
     img: image3,
     title: "Habitaciones familiares",
     description: LorenImpsu,
+    link: "/agencia"
   },
 ];
 
@@ -109,4 +113,4 @@ const ownerData = [
 
 const isMobile = "ontouchstart" in window || navigator.maxTouchPoints > 0;
 
-export { hostelImages, agenciaImages, commentData, ownerData, LorenImpsu, isMobile, WhatsAppMessage };
+export { hostelImages, agenciaImages, servicesData, ownerData, LorenImpsu, isMobile, WhatsAppMessage };
