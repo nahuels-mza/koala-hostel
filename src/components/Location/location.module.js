@@ -2,21 +2,20 @@ import { makeStyles } from "tss-react/mui";
 
 const useLocationStyles = makeStyles()((theme) => ({
   containerImage: {
-    position: "relative",
-    bottom: 0,
-    // width: "100%",
+    position: "unset",
     backgroundColor: "#e6e6e699",
+    backgroundPosition: "center",
     minHeight: "400px",
-    justifyContent: "center",
-    alignItems: "center",
-    display: "flex",
-    flexDirection: "column",
-    justify: "center",
+    height: "80%",
+
+    alignContent: "center",
+    objectFit: "none",
+    objectPosition: "center"
+
   },
   locationTitle: {
     border: "solid 1px #5757568f",
     backgroundColor: "#5757568f",
-    padding: "10px",
     color: "white",
     width: "fit-content",
     margin: "auto !important",
@@ -32,11 +31,12 @@ const useLocationStyles = makeStyles()((theme) => ({
   },
   container: {
     position: "relative",
-    width: "100%",
-    height: "250px",
+    width: "80%",
+    height: "80%",
     [theme.breakpoints.down("sm")]: {
       height: "9rem !important",
     },
+    justifyItems:"center"
   },
   linkContainer: {
     [theme.breakpoints.down("sm")]: {

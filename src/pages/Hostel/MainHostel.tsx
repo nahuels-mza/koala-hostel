@@ -38,10 +38,10 @@ const MainHostel = () => {
       <Box id="pageHeader">
         <BookDateRange />
       </Box>
-      <Box className={classes.imageContainer}>
+      <Box className={classes.container}>
         <Title
           title={"Hostel Plaza"}
-          subtitle={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
+          subtitle={"Bienvenidos a Mendoza"}
         />
       </Box>
 
@@ -56,19 +56,16 @@ const MainHostel = () => {
 
         <Box className={classes.imageContainer} id="location"
           sx={{
-            width: "100%"
+            border: "1.5px solid",
+            borderColor: "#145357"
           }}>
           <Location />
         </Box>
         <Box
           className={classes.imageContainer}
-          flexDirection={"row"}
-          gridAutoFlow={"column"}
+
           id="carrousel"
-          sx={{
-            width: "100%",
-            height: "50%"
-          }}>
+        >
           <CarouselDinamyc />
         </Box>
         {/* <Box

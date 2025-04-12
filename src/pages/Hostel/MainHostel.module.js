@@ -11,12 +11,11 @@ const useStylesHostelPage = makeStyles()((theme) => ({
     },
   },
   imageContainer: {
-    maxHeight: "min-content",
-    // margin: "auto",
+    height: "80%",
     [theme.breakpoints.down("sm")]: {
       height: "auto",
     },
-    // maxWidth: "inherit"
+    width: "80%"
   },
   parallax: {
     minHeight: "100vh",

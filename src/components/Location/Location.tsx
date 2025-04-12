@@ -1,34 +1,36 @@
 import React from "react";
-import useLocationStyles from "./location.module";
-import { Box, Link, Typography } from "@mui/material";
+import { Box, Link } from "@mui/material";
+import { isMobile } from "../../utils/constant";
 
 import photo from "../../assets/location.png";
 
 const Location = () => {
-  const { classes } = useLocationStyles();
+  const heightImage = isMobile ? "80%" : "400px"
   return (
     <Box
       id="location_section"
-      component="div"
-      className={classes.containerImage}
+      // className={classes.container}
       sx={{
-        backgroundImage: `url(${photo})`,
-        backgroundColor: "#b9daf27d",
+        // backgroundImage: `url(${photo})`,
+        // backgroundColor: "#b9daf27d",
+        // width: "-webkit-fill-available",
       }}
     >
       <Link
-        target="_blank"
-        href="https://maps.app.goo.gl/drs1gFV5Nrxxh2GP9"
-        sx={{ textDecoration: "none", color: "inherit" }}
-        className={classes.linkContainer}
+        href="https://maps.app.goo.gl/m1vkUNfkHbTMXgmm7"
       >
-        <Typography
-          variant="h2"
-          textAlign="center"
-          className={classes.locationTitle}
-        >
-          Donde estamos
-        </Typography>
+        <img
+          id="location_section"
+          src={photo}
+          alt="Hostel Location"
+          loading="lazy"
+          style={{
+            width: "-webkit-fill-available",
+            height: heightImage,
+            objectFit: "cover",
+            objectPosition: "center top"
+
+          }} />
 
       </Link>
     </Box>
