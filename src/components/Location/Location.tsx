@@ -9,12 +9,6 @@ const Location = () => {
   return (
     <Box
       id="location_section"
-      // className={classes.container}
-      sx={{
-        // backgroundImage: `url(${photo})`,
-        // backgroundColor: "#b9daf27d",
-        // width: "-webkit-fill-available",
-      }}
     >
       <Link
         href="https://maps.app.goo.gl/m1vkUNfkHbTMXgmm7"
@@ -28,7 +22,7 @@ const Location = () => {
             width: "-webkit-fill-available",
             height: heightImage,
             objectFit: "cover",
-            objectPosition: "center top"
+            objectPosition: "center"
 
           }} />
 

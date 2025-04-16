@@ -34,14 +34,14 @@ const MainHostel = () => {
   },);
 
   return (
-    <Box component="div" className={classes.parallax} sx={{ textAlign: "-webkit-center" }} id="hostel ">
+    <Box component="div" className={classes.body} sx={{ textAlign: "-webkit-center" }} id="hostel ">
       <Box id="pageHeader">
         <BookDateRange />
       </Box>
       <Box className={classes.container}>
         <Title
-          title={"Hostel Plaza"}
-          subtitle={"Bienvenidos a Mendoza"}
+          title={"Bien bebidos a Nuestro Hogar"}
+          subtitle={"Algun subtitulo"}
         />
       </Box>
 
@@ -53,30 +53,24 @@ const MainHostel = () => {
             destination={"/bedrooms"}
           />
         </Box>
-
+        <Box className={classes.container} id="contentContainer">
+        </Box>
         <Box className={classes.imageContainer} id="location"
-          sx={{
-            border: "1.5px solid",
-            borderColor: "#145357"
-          }}>
+        >
           <Location />
+        </Box>
+        <Box className={classes.container} id="contentContainer">
         </Box>
         <Box
           className={classes.imageContainer}
-
           id="carrousel"
+          sx={{
+            padding: "10px",
+            backgroundColor: "white"
+          }}
         >
           <CarouselDinamyc />
         </Box>
-        {/* <Box
-          className={classes.imageContainer}
-          flexDirection={"row"}
-          gridAutoFlow={"row"}
-          width={"50%"}
-          height={"50%"}
-        >
-          <CommentCarousel width="50%" height="50%" />
-        </Box> */}
       </Box>
       <Message instagram={true} whatsMessage={WhatsAppMessage} />
       <Outlet />
