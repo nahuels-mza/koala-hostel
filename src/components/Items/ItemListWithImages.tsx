@@ -25,32 +25,29 @@ export default function ItemListingWithImages(props: IImageListingProps) {
     return (
         <Box component="section" className={classes.detailsBedroom}>
             {props.imagesListing.map((item, i) => (
-                <Grid container flexDirection={gridOrder} id="everyitem"
-                    sx={{
-                        backgroundColor: theme => theme.palette.secondary.main,
-                        borderTop: "2.5px solid",
-                        borderTopColor: theme => theme.palette.primary.main,
-                        marginBottom: "2px"
-
-                    }}
+                <Grid container flexDirection={gridOrder} id="everyitem" sx={{
+                    borderColor: "#FEF8EC",
+                    borderStyle: "solid",
+                    borderWidth: "medium"
+                }}
                 >
-                    <Grid item id="video" xs={6} alignItems={"center"} padding={"5px"}>
-                        <img src={item.gif} alt={item.description} width={"80%"} height={"70%"} />
+                    <Grid item id="video" xs={isMobile ? 12 : 6} md={4} alignItems={"center"} padding={"5px"}>
+                        <img src={item.gif} alt={item.description} />
                     </Grid>
 
-                    <Grid item id="details" xs={isMobile ? "auto" : 5}
+                    <Grid item id="details" xs={isMobile ? "auto" : 6}
                         sx={{
                             width: { textWidth },
                             alignContent: "start",
                             height: "fit-content"
                         }}>
-                        <Typography variant="h3" margin="10px">{item.label}</Typography>
+                        <Typography variant="h5" margin="10px">{item.label}</Typography>
                         <Grid item id="itemdescription" >
-                            <Typography variant="subtitle2" overflow={"auto"}  >{item.description}</Typography>
+                            <Typography variant="subtitle1" overflow={"auto"}  >{item.description}</Typography>
                         </Grid>
-                        <Grid item id="listicon" >
+                        <Grid item id="listicon">
                             <List>
-                                <Typography variant="h4">Services</Typography>
+                                <Typography variant="h5">Servicios</Typography>
 
                                 {item.services.map((service: any) => (
                                     <ListItem>
@@ -63,16 +60,10 @@ export default function ItemListingWithImages(props: IImageListingProps) {
                                     </ListItem>
                                 ))}
                             </List>
-
                         </Grid>
-
                     </Grid>
-
                 </Grid>
-
-            ))
-            }
-
+            ))}
         </Box >
     );
 }

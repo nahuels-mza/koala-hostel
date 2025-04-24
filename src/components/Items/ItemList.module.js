@@ -8,12 +8,16 @@ const useitemListStyles = makeStyles()((theme) => ({
     borderTopColor:"#145357",
     marginBottom: "2px",
     alignItems: "flex-start",
-    justifyContent: "space-between"
+    justifyContent: "space-between",
+    borderColor: "red"
   },
   detailsBedroom:{
     width: "75%",
     flexGrow: 1,
-    height: "90%"
+    height: "90%",
+    backgroundColor: "white",
+    borderColor: "#FEF8EC",
+    borderBlock: "1.5px"
   },
 
 

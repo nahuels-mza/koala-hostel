@@ -12,8 +12,6 @@ import BookDateRange from "../../components/Date/Date";
 import { hostelImages, isMobile, WhatsAppMessage } from "../../utils/constant";
 import useStylesHostelPage from "./MainHostel.module";
 
-
-
 const MainHostel = () => {
   const { classes } = useStylesHostelPage();
 

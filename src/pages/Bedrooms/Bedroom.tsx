@@ -10,7 +10,7 @@ export default function BedroomPage() {
     const type = location.state.name
 
     const bedType = bedWithService.filter(a => a.type === type)
-    console.log(bedType)
+
 
     if (bedType.length === 0) {
         return (
@@ -21,8 +21,14 @@ export default function BedroomPage() {
     }
     return (
         <Box component="section">
-            <Title title={"Nuestras Habitaciones"} subtitle={"Mayor Comodidad"} />
-            <Box sx={{ textAlign: "-webkit-center" }}>
+            <Box sx={{ backgroundColor: theme => theme.palette.secondary.main, }}>
+                <Title title={"Nuestras Habitaciones"} subtitle={"Mayor Comodidad"} />
+            </Box>
+            <Box sx={{
+                textAlign: "-webkit-center",
+                backgroundColor: theme => theme.palette.secondary.main,
+                borderBlockColor: "red"
+            }}>
                 <ItemListingWithImages imagesListing={bedType} />
             </Box>
 
