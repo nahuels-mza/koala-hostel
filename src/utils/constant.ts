@@ -1,8 +1,10 @@
-import image1 from "../../src/assets/habPrincipalHome.jpg";
-import image2 from "../../src/assets/habCompartidaHome.jpeg";
+import habPrincipal from "../../src/assets/habPrincipalHome.jpg";
+import habCompartida from "../../src/assets/habCompartidaHome.jpg";
 import image3 from "../../src/assets/habIndividualHome.jpg";
-import desayuno from "../../src/assets/desayuno.jpeg";
-import equipaje from "../../src/assets/guardaequipaje.png";
+import mendozaLogo from "../../src/assets/servicios/mendozaLogo.jpg"
+import desayuno from "../../src/assets/servicios/desayuno.jpeg";
+import equipaje from "../../src/assets/servicios/guardaequipaje.png";
+import patio from "../../src/assets/servicios/patioColonial.jpg";
 
 const LorenImpsu =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt nisl vitae purus lobortis, quis scelerisque diam tincidunt. Donec eu risus urna. Sed quis enim vitae orci tristique imperdiet eget sed lectus. Suspendisse placerat mi id blandit accumsan. Integer sodales neque nisl, mollis consectetur sapien fringilla vitae. Etiam est sapien, fermentum id quam a, tincidunt vestibulum odio. Nullam dapibus porta elit, vel vestibulum nisl dictum eu. Quisque tincidunt vitae enim eget mollis. Aenean tincidunt massa mauris, sit amet porta libero auctor nec. Phasellus id tincidunt eros, vitae gravida turpis. Nam mattis eget turpis vitae aliquam.Suspendisse mattis ex a velit posuere posuere.In vitae justo scelerisque nulla tincidunt vehicula.Ut vulputate iaculis consequat.Donec in mauris euismod, tempus dolor sed, pretium elit.Curabitur in dui ultrices, tristique leo eu, feugiat tortor.Etiam at auctor dui.Ut fermentum pulvinar turpis, finibus vulputate metus eleifend in.Curabitur posuere eu magna vitae commodo.Pellentesque quis dapibus lectus.Nam elementum dolor vel iaculis consectetur.Praesent feugiat porta velit pulvinar faucibus.Suspendisse sed iaculis metus.Morbi blandit a sem et varius.";
@@ -16,13 +18,13 @@ const WhatsAppMessage= "Hola Plaza Hostel. Queria obtener informacion sobre"
 
 const hostelImages = [
   {
-    img: image1,
+    img: habPrincipal,
     title: "Habitaciones Familiares",
     description: LorenImpsu,
     type: "familiar"
   },
   {
-    img: image2,
+    img: habCompartida,
     title: "Habitaciones Compartidas ",
     description: LorenImpsu,
     type: "compartida"
@@ -84,14 +86,14 @@ const servicesData = [
     link: "https://bounce.com/en/s/location/d6a41810-df04-4ef0-9ae3-ee1a9e564e3f"
   },
   {
-    img: "https://images.unsplash.com/photo-1516802273409-68526ee1bdd6",
-    title: "Camera",
-    description: LorenImpsu2,
+    img: patio,
+    title: "Patio Colonial",
+    description: "Desayuna, Almueza o Cena bajo nuestro parral. El inicio del vino esta en nuestra casa",
     link: "/agencia"
   },
   {
-    img: image3,
-    title: "Habitaciones familiares",
+    img: mendozaLogo,
+    title: "Conoce Mendoza",
     description: LorenImpsu2,
     link: "/agencia"
   },

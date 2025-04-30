@@ -1,5 +1,6 @@
 import gifHabitacion1 from "../assets/habitacion1/habitacion1.gif"
 
+
 const LorenImpsu2 =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere odio eget odio tempor, non.";
 
@@ -22,7 +23,7 @@ const LorenImpsu2 =
       label: "Habitacion Familiar Cuadruple ",
       description: LorenImpsu2,
       services: [service.wifi, service.fan],
-      gif: gifHabitacion1,
+      gif: "./habitacion1Video.mp4",
       type: "familiar"
     },
 
@@ -37,18 +38,18 @@ const LorenImpsu2 =
         service.bedClothes,
         service.fan,
       ],
-      gif: gifHabitacion1,
+      gif: "./habitacion2Video.mp4",
       type: "familiar"
     },
     {
       label: "Dormitorio Compartida de 4 camas",
       description: "Habitacion Cuadruple para compartir hasta 4 personas. Con vista al patio interno",
       services: [service.heat, service.fan, service.plug],
-      gif: gifHabitacion1,
+      gif: "./habitacionCompartida1.mp4",
       type: "compartida"
     },
     {
-      label: "Dormitorio Femennino Compartida de 4 camas",
+      label: "Dormitorio Femenino Compartida de 4 camas",
       description: "Habitacion sólo para mujéres, cuádruple para compartir hasta 4 personas. Sus ventanas dan vista al boulevard principal",
       services: [service.heat, service.fan, service.plug, service.bedClothes,],
       gif: gifHabitacion1,

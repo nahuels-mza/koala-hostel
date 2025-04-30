@@ -7,6 +7,7 @@ import Avatar from "@mui/material/Avatar";
 import { Icon } from "@mui/material";
 import { isMobile } from "../../utils/constant";
 
+
 import useitemListStyles from "./ItemList.module";
 interface IImageListingProps {
     imagesListing: {
@@ -31,8 +32,10 @@ export default function ItemListingWithImages(props: IImageListingProps) {
                     borderWidth: "medium"
                 }}
                 >
-                    <Grid item id="video" xs={isMobile ? 12 : 6} md={4} alignItems={"center"} padding={"5px"}>
-                        <img src={item.gif} alt={item.description} />
+                    <Grid item id="video" xs={isMobile ? 12 : 6} alignItems={"center"} >
+                        <video autoPlay controls muted loop playsInline preload="none" width={"80%"} height={"80%"}>
+                            <source src={item.gif} type="video/mp4" />
+                        </video>
                     </Grid>
 
                     <Grid item id="details" xs={isMobile ? "auto" : 6}
@@ -41,7 +44,7 @@ export default function ItemListingWithImages(props: IImageListingProps) {
                             alignContent: "start",
                             height: "fit-content"
                         }}>
-                        <Typography variant="h5" margin="10px">{item.label}</Typography>
+                        <Typography variant="h4" margin="10px">{item.label}</Typography>
                         <Grid item id="itemdescription" >
                             <Typography variant="subtitle1" overflow={"auto"}  >{item.description}</Typography>
                         </Grid>

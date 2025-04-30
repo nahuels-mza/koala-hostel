@@ -40,7 +40,7 @@ export default function Header() {
                     <Button href={'/'}>
                         <Box
                             component="img"
-                            sx={{ height: 64 }}
+                            sx={{ height: 64, borderImage: "round" }}
                             src={Logo}
                             color={'inherit'}
 

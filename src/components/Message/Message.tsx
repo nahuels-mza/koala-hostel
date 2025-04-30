@@ -25,7 +25,7 @@ const Message = (props: IMessages) => {
 
       <Fab>
         <Button
-          href={`https://wa.me/5492616089132?text=${whatsMessage}`}
+          href={`https://wa.me/5492615372767?text=${whatsMessage}`}
         >
           <WhatsAppIcon className={classes.iconWasp} />
         </Button>
