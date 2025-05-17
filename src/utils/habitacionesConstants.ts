@@ -52,14 +52,14 @@ const LorenImpsu2 =
       label: "Dormitorio Femenino Compartida de 4 camas",
       description: "Habitacion sólo para mujéres, cuádruple para compartir hasta 4 personas. Sus ventanas dan vista al boulevard principal",
       services: [service.heat, service.fan, service.plug, service.bedClothes,],
-      gif: gifHabitacion1,
+      gif: "./habitacionFemenina.mp4",
       type: "compartida"
     },
     {
       label: "Dormitorio Compartida de 8 Camas",
       description: "Habitacion compartida con camas para 8 personas. Con vista al patio interno",
       services: [service.heat, service.fan, service.plug],
-      gif: gifHabitacion1,
+      gif: "./habitacionOctuple.mp4",
       type: "compartida"
     },
 

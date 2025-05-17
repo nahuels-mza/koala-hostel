@@ -1,6 +1,6 @@
 import habPrincipal from "../../src/assets/habPrincipalHome.jpg";
 import habCompartida from "../../src/assets/habCompartidaHome.jpg";
-import image3 from "../../src/assets/habIndividualHome.jpg";
+import image3 from "../../src/assets/backgroud.png";
 import mendozaLogo from "../../src/assets/servicios/mendozaLogo.jpg"
 import desayuno from "../../src/assets/servicios/desayuno.jpeg";
 import equipaje from "../../src/assets/servicios/guardaequipaje.png";
@@ -75,8 +75,8 @@ const agenciaImages = [
 const servicesData = [
   {
     img: desayuno,
-    title: "Free Breackfast",
-    description: "Disfruta de un combo sensillo pero completo para desayunar. ",
+    title: "Free Breakfast",
+    description: "Disfruta de un desayuno clásico y sensillo pero completo para desayunar. También podes elegir entre desayunos mas deliciosos",
     link: "/agencia"
   },
   {
@@ -94,7 +94,7 @@ const servicesData = [
   {
     img: mendozaLogo,
     title: "Conoce Mendoza",
-    description: LorenImpsu2,
+    description: "¡No te pierdas las mejores actividades que la ciudad tiene preparadas para vos! Desde eventos culturales hasta propuestas recreativas, hay algo para todos los gustos.",
     link: "/agencia"
   },
 ];

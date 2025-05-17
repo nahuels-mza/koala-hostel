@@ -10,8 +10,22 @@ import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import { isMobile } from "../../utils/constant";
 
 export default function BookDateRange() {
-    const today = dayjs(new Date());
+    const [startDate, setStartDate] = useState<string>();
+    const [endDate, setEndDate] = useState<string>();
+    const [todayStart, setTodayStart] = useState<dayjs.Dayjs>();
+
     const gridOrder = isMobile ? "column" : "row"
+
+    const handleDateOnChange = (type: 'start' | 'end', date: dayjs.Dayjs | null) => {
+        if (!date) return
+        const dateSet = `${date.year()}-${date.month() + 1}-${date.date()}`;
+        if (type === 'start') {
+            setStartDate(dateSet)
+            setTodayStart(date)
+        } else {
+            setEndDate(dateSet)
+        }
+    }
 
     return (
         <Box
@@ -25,8 +39,7 @@ export default function BookDateRange() {
             alignItems="center"
         >
             <Box
-
-                sx={{ "text-align-last": "center", justifyContent: "center" }}
+                sx={{ "text-align-last": "center", padding: "2px" }}
                 id="dates"
             >
                 <LocalizationProvider dateAdapter={AdapterDayjs}>
@@ -34,17 +47,19 @@ export default function BookDateRange() {
                         <Box paddingBottom={"5px"} paddingTop={"5px"} >
                             <MobileDatePicker
                                 label="Llegada"
-                                defaultValue={dayjs(today)}
+                                defaultValue={dayjs(todayStart)}
                                 disablePast
                                 maxDate={dayjs().add(2, "month")}
+                                onChange={(value) => handleDateOnChange('start', value)}
                             />
                         </Box>
                         <Box paddingTop={"5px"}>
                             <MobileDatePicker
                                 label="Salida"
-                                defaultValue={dayjs().add(7, "day")}
-                                disablePast
+                                value={dayjs(startDate).add(1, "day")}
+                                minDate={dayjs(startDate).add(1, "day")}
                                 maxDate={dayjs().add(2, "month")}
+                                onChange={(value) => handleDateOnChange('end', value)}
                             />
                         </Box>
                     </Grid>
@@ -53,7 +68,7 @@ export default function BookDateRange() {
             <Box padding={1}>
                 <Button
                     endIcon={<OpenInNewIcon />}
-                    href="https://banana-hotels.com/new-search/hostel-plaza/2025-04-25/2025-04-26/both"
+                    href={`https://banana-hotels.com/new-search/hostel-plaza/${startDate}/${endDate}/both`}
                     variant="contained"
                     color="primary"
                     size="large"

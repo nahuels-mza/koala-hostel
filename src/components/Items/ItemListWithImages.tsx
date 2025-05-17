@@ -20,7 +20,7 @@ interface IImageListingProps {
 export default function ItemListingWithImages(props: IImageListingProps) {
     window.scrollTo(0, 0);
     const textWidth = isMobile ? "250px" : "100%"
-    const gridOrder = isMobile ? "column" : "row"
+    const gridOrder = isMobile ? "column-reverse" : "row"
 
     const { classes } = useitemListStyles()
     return (
@@ -33,7 +33,7 @@ export default function ItemListingWithImages(props: IImageListingProps) {
                 }}
                 >
                     <Grid item id="video" xs={isMobile ? 12 : 6} alignItems={"center"} >
-                        <video autoPlay controls muted loop playsInline preload="none" width={"80%"} height={"80%"}>
+                        <video autoPlay controls muted loop playsInline preload="none" width={"80%"}>
                             <source src={item.gif} type="video/mp4" />
                         </video>
                     </Grid>
