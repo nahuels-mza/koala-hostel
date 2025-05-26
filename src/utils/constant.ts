@@ -12,7 +12,7 @@ const LorenImpsu =
 const LorenImpsu2 =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere odio eget odio tempor, non.";
 
-const WhatsAppMessage= "Hola Plaza Hostel. Queria obtener informacion sobre"
+const WhatsAppMessage= "Hola Hostel Plaza. Queria obtener informacion sobre"
 
 
 

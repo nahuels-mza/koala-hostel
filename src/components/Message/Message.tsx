@@ -13,7 +13,7 @@ interface IMessages {
 const Message = (props: IMessages) => {
   const { classes } = useMessageStyles();
   // TODO ADD FORMAT HERE
-  const whatsMessage = props.whatsMessage ? props.whatsMessage : "Hola Plaza Hostel mi Nombre es";
+  const whatsMessage = props.whatsMessage ? props.whatsMessage : "Hola Hostel Plaza mi Nombre es";
   const displayProp = props.instagram ? 'in-line' : 'none'
   return (
     <Box

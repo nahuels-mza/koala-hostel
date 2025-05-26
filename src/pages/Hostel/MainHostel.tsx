@@ -39,7 +39,7 @@ const MainHostel = () => {
       <Box className={classes.container}>
         <Title
           title={"Bien bebidos a Nuestro Hogar"}
-          subtitle={"Algun subtitulo"}
+          subtitle={""}
         />
       </Box>
 
