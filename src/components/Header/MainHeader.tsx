@@ -74,7 +74,7 @@ export default function Header() {
                                     key={option.name} selected={option.name === ''}
                                     onClick={handleClose}
                                     sx={{ backgroundColor: theme => theme.palette.secondary.main }}>
-                                    <Link href={option.id} color="inherit" underline="none">
+                                    <Link href={`#${option.id}`} color="inherit" underline="none">
                                         {option.name}
                                     </Link>
                                 </MenuItem>

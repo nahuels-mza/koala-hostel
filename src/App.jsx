@@ -2,6 +2,8 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import MainLayout from "./pages/MainLayout/MainLayout";
 import "./index.css";
 import React from "react";
+import { RouterProvider } from "react-router-dom";
+import router from "./route";
 
 const theme = createTheme({
   palette: {
@@ -20,7 +22,7 @@ const theme = createTheme({
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
-      <MainLayout />
+      <RouterProvider router={router} />
     </ThemeProvider>
   );
 };

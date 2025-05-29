@@ -1,8 +1,8 @@
 {
-  "name": "panda-hostel",
-  "version": "0.1.0",
+  "name": "hostel-plaza",
+  "version": "1.0.0",
   "private": true,
-  "homepage": "https://nahuels-mza.github.io/",
+  "homepage": "https://hostelplaza.com.ar/",
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
