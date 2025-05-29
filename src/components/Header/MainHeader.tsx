@@ -17,9 +17,6 @@ export default function Header() {
         "name": "Quienes somos",
         "id": "/ourselves"
     }, {
-        "name": "Nuestra Agencia",
-        "id": "/agencia"
-    }, {
         "name": "Nuestro Hostel",
         "id": "/"
     }
@@ -70,7 +67,7 @@ export default function Header() {
                         >
 
                             {options.map((option) => (
-                                <MenuItem disabled={window.location.pathname === option.id}
+                                <MenuItem disabled={window.location.hash === `#${option.id}`}
                                     key={option.name} selected={option.name === ''}
                                     onClick={handleClose}
                                     sx={{ backgroundColor: theme => theme.palette.secondary.main }}>

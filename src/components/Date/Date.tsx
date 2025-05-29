@@ -10,8 +10,8 @@ import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import { isMobile } from "../../utils/constant";
 
 export default function BookDateRange() {
-    const [startDate, setStartDate] = useState<string>();
-    const [endDate, setEndDate] = useState<string>();
+    const [startDate, setStartDate] = useState<string>(dayjs(new Date()).format("YYYY-MM-DD"));
+    const [endDate, setEndDate] = useState<string>(dayjs(new Date()).add(1, 'day').format("YYYY-MM-DD"));
     const [todayStart, setTodayStart] = useState<dayjs.Dayjs>();
 
     const gridOrder = isMobile ? "column" : "row"
