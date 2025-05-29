@@ -1,5 +1,5 @@
 import * as React from "react";
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 import App from "./App"
 import ErrorPage from "./pages/error";
 import Reserve from "./pages/Reservation/Reservation";
@@ -8,21 +8,20 @@ import AgenciaPage from "./pages/Agencia/Agencia";
 import BedroomPage from "./pages/Bedrooms/Bedroom";
 import FoundersPage from "./pages/Founders/Founders";
 import DestinationPage from "./pages/Destination/Destination";
+import MainLayout from "./pages/MainLayout/MainLayout";
 
-const router = createBrowserRouter([
-
+const router = createHashRouter([
     {
         path: "/",
         errorElement: <ErrorPage />,
-        element: <App />,
+        element: <MainLayout />,
         children: [
             {
                 path: "agencia",
                 element: <AgenciaPage />
-
             },
             {
-                path: "/",
+                path: "",
                 element: <MainHostel />
             },
             {
