@@ -1,6 +1,5 @@
 import * as React from "react";
 import { createHashRouter } from "react-router-dom";
-import App from "./App"
 import ErrorPage from "./pages/error";
 import Reserve from "./pages/Reservation/Reservation";
 import MainHostel from "./pages/Hostel/MainHostel";
