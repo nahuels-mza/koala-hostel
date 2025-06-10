@@ -64,6 +64,26 @@ export default function ItemListingWithImages(props: IImageListingProps) {
                                 ))}
                             </List>
                         </Grid>
+                        <Grid item id="policy">
+                            <Typography variant="subtitle2" overflow={"auto"} textAlign={"left"} >
+                                Hostel Plaza Policy and Conditions:
+                                <br></br>
+                                <br></br>
+                                Rates for Foreign Guests: All rates listed are tax-exempt for foreign guests who present a valid passport and immigration stamp at check-in. Payment can be made in US dollars or Argentine pesos via cash, card, or bank transfer.
+                                Rates for Domestic Guests: Argentine nationals are subject to a 21% VAT (Value Added Tax) which will be added to the listed rates.
+                                <br></br>
+                                Booking and Cancellation Policies
+                                <br></br>
+                                A valid credit card or deposit is required to confirm your reservation.
+                                Cancellations made at least 48 hours prior to check-in will not incur charges. Cancellations within 48 hours or no-shows will result in a charge equal to the first night’s stay.
+                                <br></br>
+                                Check-in and Check-out:
+                                <br></br>
+                                Check-in: From 12:00 PM.
+                                Check-out: By 10:00 AM.
+                                Late check-outs may incur additional charges.
+                            </Typography>
+                        </Grid>
                     </Grid>
                 </Grid>
             ))}
