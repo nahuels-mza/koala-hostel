@@ -4,12 +4,9 @@ import Carousel from "react-material-ui-carousel";
 import { allImages, isMobile } from "../../utils/constant";
 import { Box, Grid, Typography } from "@mui/material";
 
-interface ICommentCarouselDinamycPropos {
-  height: string
-  width: string
-}
 
-const CommentCarousel = (props: ICommentCarouselDinamycPropos) => {
+
+const CommentCarousel = () => {
 
   function pcList(data: string[]) {
     const element = [];
@@ -49,7 +46,7 @@ const CommentCarousel = (props: ICommentCarouselDinamycPropos) => {
               <Grid item xs={12} sm={4} >
 
                 <img
-                  src={img.split(',')[0]}
+                  src={img.split(',')[1]}
                   alt={`Slide ${index + 1}`}
                   style={{ width: '50vw', borderRadius: 8, height: "auto" }}
                 />

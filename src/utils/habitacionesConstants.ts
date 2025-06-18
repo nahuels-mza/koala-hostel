@@ -39,7 +39,7 @@ const bedWithService = [
     type: "familiar",
   },
   {
-    label: "Dormitorio Compartida de 4 camas",
+    label: "Dormitorio Compartido de 4 camas",
     description:
       "Habitacion Cuadruple para compartir hasta 4 personas. Con vista al patio interno",
     services: [service.heat, service.fan, service.plug],
@@ -47,7 +47,7 @@ const bedWithService = [
     type: "compartida",
   },
   {
-    label: "Dormitorio Femenino Compartida de 4 camas",
+    label: "Dormitorio Femenino Compartido de 4 camas",
     description:
       "Habitacion sólo para mujéres, cuádruple para compartir hasta 4 personas. Sus ventanas dan vista al boulevard principal",
     services: [service.heat, service.fan, service.plug, service.bedClothes],
@@ -55,7 +55,7 @@ const bedWithService = [
     type: "compartida",
   },
   {
-    label: "Dormitorio Compartida de 8 Camas",
+    label: "Dormitorio Compartido de 8 Camas",
     description:
       "Habitacion compartida con camas para 8 personas. Con vista al patio interno",
     services: [service.heat, service.fan, service.plug],

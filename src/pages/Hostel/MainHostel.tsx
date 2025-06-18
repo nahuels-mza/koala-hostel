@@ -53,12 +53,6 @@ const MainHostel = () => {
         </Box>
         <Box className={classes.container} id="contentContainer">
         </Box>
-        <Box className={classes.imageContainer} id="location"
-        >
-          <Location />
-        </Box>
-        <Box className={classes.container} id="contentContainer">
-        </Box>
         <Box
           className={classes.imageContainer}
           id="carrousel"
@@ -68,6 +62,12 @@ const MainHostel = () => {
           }}
         >
           <CarouselDinamyc />
+        </Box>
+        <Box className={classes.container} id="contentContainer">
+        </Box>
+        <Box className={classes.imageContainer} id="location"
+        >
+          <Location />
         </Box>
       </Box>
       <Message instagram={true} whatsMessage={WhatsAppMessage} />

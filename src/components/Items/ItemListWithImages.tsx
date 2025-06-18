@@ -7,8 +7,8 @@ import Avatar from "@mui/material/Avatar";
 import { Icon } from "@mui/material";
 import { isMobile } from "../../utils/constant";
 
-
 import useitemListStyles from "./ItemList.module";
+import Message from "../../components/Message/Message";
 interface IImageListingProps {
     imagesListing: {
         label: string;
@@ -21,6 +21,7 @@ export default function ItemListingWithImages(props: IImageListingProps) {
     window.scrollTo(0, 0);
     const textWidth = isMobile ? "250px" : "100%"
     const gridOrder = isMobile ? "column-reverse" : "row"
+    // const type = props.imagesListing[0].type
 
     const { classes } = useitemListStyles()
     return (
@@ -45,9 +46,7 @@ export default function ItemListingWithImages(props: IImageListingProps) {
                             height: "fit-content"
                         }}>
                         <Typography variant="h4" margin="10px">{item.label}</Typography>
-                        <Grid item id="itemdescription" >
-                            <Typography variant="subtitle1" overflow={"auto"}  >{item.description}</Typography>
-                        </Grid>
+
                         <Grid item id="listicon">
                             <List>
                                 <Typography variant="h5">Servicios</Typography>
@@ -65,12 +64,19 @@ export default function ItemListingWithImages(props: IImageListingProps) {
                             </List>
                         </Grid>
                         <Grid item id="policy">
-                            <Typography variant="subtitle2" overflow={"auto"} textAlign={"left"} >
+                            <Typography variant="subtitle1" overflow={"auto"} textAlign={"left"} >
                                 Hostel Plaza Policy and Conditions:
+                            </Typography>
+                            <Typography variant="subtitle2" overflow={"auto"} textAlign={"left"} >
                                 <br></br>
                                 <br></br>
-                                Rates for Foreign Guests: All rates listed are tax-exempt for foreign guests who present a valid passport and immigration stamp at check-in. Payment can be made in US dollars or Argentine pesos via cash, card, or bank transfer.
+                                Rates for Foreign Guests:
+                                <br></br>
+                                All rates listed are tax-exempt for foreign guests who present a valid passport and immigration stamp at check-in.
+                                Payment can be made in US dollars or Argentine pesos via cash, card, or bank transfer.
+                                <br></br>
                                 Rates for Domestic Guests: Argentine nationals are subject to a 21% VAT (Value Added Tax) which will be added to the listed rates.
+                                <br></br>
                                 <br></br>
                                 Booking and Cancellation Policies
                                 <br></br>
@@ -79,14 +85,16 @@ export default function ItemListingWithImages(props: IImageListingProps) {
                                 <br></br>
                                 Check-in and Check-out:
                                 <br></br>
-                                Check-in: From 12:00 PM.
-                                Check-out: By 10:00 AM.
+                                <br></br>
+                                Check-in: From 12:00 PM. --- Check-out: By 10:00 AM.
+                                <br></br>
                                 Late check-outs may incur additional charges.
                             </Typography>
                         </Grid>
                     </Grid>
                 </Grid>
             ))}
+            <Message instagram={false} whatsMessage="I'd like to Book a Room" />
         </Box >
     );
 }

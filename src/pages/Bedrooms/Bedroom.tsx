@@ -7,7 +7,6 @@ import { bedWithService } from "../../utils/habitacionesConstants";
 import CommingSoonPage from "../Soon/CommingSoon";
 import BookDateRange from "../../components/Date/Date";
 import useStylesHostelPage from "../Hostel/MainHostel.module";
-import Message from "../../components/Message/Message";
 
 export default function BedroomPage() {
     const { classes } = useStylesHostelPage();
@@ -54,7 +53,6 @@ export default function BedroomPage() {
             }}>
                 <ItemListingWithImages imagesListing={bedType} />
             </Box>
-            <Message instagram={false} whatsMessage="I'd like to Book a Room" />
         </Box>
     );
 }
