@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.ddf424d5.css",
-    "main.js": "/static/js/main.a3e00525.js",
+    "main.js": "/static/js/main.29231b5d.js",
     "static/js/488.4266461a.chunk.js": "/static/js/488.4266461a.chunk.js",
     "static/media/guardaequipaje.png": "/static/media/guardaequipaje.77aa822c811ec3f8f543.png",
+    "static/media/home2.jpg": "/static/media/home2.44870ef3b7a6358c6e4f.jpg",
     "static/media/habPrincipalHome.jpg": "/static/media/habPrincipalHome.15b61be52cea98255d35.jpg",
     "static/media/turismo4.jpg": "/static/media/turismo4.48389443a453c263efc7.jpg",
     "static/media/turismo3.jpg": "/static/media/turismo3.9a36a11d488f5f6f6ea9.jpg",
@@ -25,15 +26,15 @@
     "static/media/material-icons.woff2": "/static/media/material-icons.0c35d18bf06992036b69.woff2",
     "static/media/founders.jpeg": "/static/media/founders.e094a1f2ba89f6ecdbf3.jpeg",
     "static/media/backgroud.png": "/static/media/backgroud.0a42ba674f6803f5c783.png",
-    "static/media/mendozaLogo.jpg": "/static/media/mendozaLogo.3fd67ebfb17abd4e5333.jpg",
+    "static/media/servicio_psa.jpg": "/static/media/servicio_psa.11de115598ab5f73ae8e.jpg",
     "static/media/rounded-logo.png": "/static/media/rounded-logo.db29cae83b664e7d4144.png",
     "index.html": "/index.html",
     "main.ddf424d5.css.map": "/static/css/main.ddf424d5.css.map",
-    "main.a3e00525.js.map": "/static/js/main.a3e00525.js.map",
+    "main.29231b5d.js.map": "/static/js/main.29231b5d.js.map",
     "488.4266461a.chunk.js.map": "/static/js/488.4266461a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ddf424d5.css",
-    "static/js/main.a3e00525.js"
+    "static/js/main.29231b5d.js"
   ]
 }
