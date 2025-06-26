@@ -32,7 +32,7 @@ const router = createHashRouter([
                 element: <BedroomPage />
             },
             {
-                path: "ourselves",
+                path: "about",
                 element: <FoundersPage />
             },
             {

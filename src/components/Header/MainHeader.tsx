@@ -15,7 +15,7 @@ export default function Header() {
     const options = [{
 
         "name": "Quienes somos",
-        "id": "/ourselves"
+        "id": "/about"
     }, {
         "name": "Nuestro Hostel",
         "id": "/"

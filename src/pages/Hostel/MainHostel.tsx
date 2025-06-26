@@ -10,6 +10,7 @@ import CarouselDinamyc from "../../components/Carousel/Carousel";
 import BookDateRange from "../../components/Date/Date";
 
 import { hostelImages, isMobile, WhatsAppMessage } from "../../utils/constant";
+import photo from "../../assets/home2.jpg"
 import useStylesHostelPage from "./MainHostel.module";
 
 const MainHostel = () => {
@@ -36,6 +37,8 @@ const MainHostel = () => {
       <Box id="pageHeader">
         <BookDateRange />
       </Box>
+      <Box className={classes.parallax} sx={{ backgroundImage: `url(${photo})` }} />
+
       <Box className={classes.container}>
         <Title
           title={"Bien bebidos a Nuestro Hogar"}

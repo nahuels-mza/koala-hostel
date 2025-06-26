@@ -46,9 +46,9 @@ const CommentCarousel = () => {
               <Grid item xs={12} sm={4} >
 
                 <img
-                  src={img.split(',')[1]}
+                  src={img.split(' ')[0]}
                   alt={`Slide ${index + 1}`}
-                  style={{ width: '50vw', borderRadius: 8, height: "auto" }}
+                  style={{ width: '50vw', borderRadius: 8 }}
                 />
               </Grid>
             </Grid>

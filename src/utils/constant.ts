@@ -2,6 +2,7 @@ import habPrincipal from "../../src/assets/habPrincipalHome.jpg";
 import habCompartida from "../../src/assets/habCompartidaHome.jpg";
 import image3 from "../../src/assets/backgroud.png";
 import mendozaLogo from "../../src/assets/servicios/mendozaLogo.jpg";
+import psa from "../../src/assets/servicios/servicio_psa.jpg"
 import desayuno from "../../src/assets/servicios/desayuno.jpeg";
 import equipaje from "../../src/assets/servicios/guardaequipaje.png";
 import patio from "../../src/assets/servicios/patioColonial.jpg";
@@ -106,10 +107,10 @@ const servicesData = [
     link: "/agencia",
   },
   {
-    img: mendozaLogo,
-    title: "Conoce Mendoza",
+    img: psa,
+    title: "Agua Pura - Agua Segura",
     description:
-      "¡No te pierdas las mejores actividades que la ciudad tiene preparadas para vos! Desde eventos culturales hasta propuestas recreativas, hay algo para todos los gustos.",
+      "Vas a tener agua purificada y segura para beber y cocinar, directamente desde tu llave. Nuestro purificador reduce aquellos componentes que puedan resultar perjudiciales para la salud o ser causantes de mal sabor, olor y color.",
     link: "/agencia",
   },
 ];
