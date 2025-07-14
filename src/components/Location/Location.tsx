@@ -1,11 +1,11 @@
 import React from "react";
 import { Box, Link } from "@mui/material";
-import { isMobile } from "../../utils/constant";
+import useLocationStyles from "./location.module";
 
-import photo from "../../assets/location.png";
+import photo from "../../assets/location_test.jpeg"
 
 const Location = () => {
-  const heightImage = isMobile ? "80%" : "400px"
+  const style = useLocationStyles()
   return (
     <Box
       id="location_section"
@@ -14,17 +14,12 @@ const Location = () => {
         href="https://maps.app.goo.gl/m1vkUNfkHbTMXgmm7"
       >
         <img
+          className={style.classes.containerImage}
           id="location_section"
           src={photo}
           alt="Hostel Location"
           loading="lazy"
-          style={{
-            width: "-webkit-fill-available",
-            height: heightImage,
-            objectFit: "cover",
-            objectPosition: "center"
-
-          }} />
+        />
 
       </Link>
     </Box>

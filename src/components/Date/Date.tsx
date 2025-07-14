@@ -3,7 +3,7 @@ import dayjs from "dayjs";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 
-import { MobileDatePicker } from "@mui/x-date-pickers/MobileDatePicker";
+import { DesktopDatePicker } from '@mui/x-date-pickers/DesktopDatePicker';
 
 import { Box, Button, Grid } from "@mui/material";
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
@@ -45,7 +45,7 @@ export default function BookDateRange() {
                 <LocalizationProvider dateAdapter={AdapterDayjs}>
                     <Grid display="flex" flexDirection={gridOrder}>
                         <Box paddingBottom={"5px"} paddingTop={"5px"} >
-                            <MobileDatePicker
+                            <DesktopDatePicker
                                 label="Llegada"
                                 defaultValue={dayjs(todayStart)}
                                 disablePast
@@ -54,7 +54,7 @@ export default function BookDateRange() {
                             />
                         </Box>
                         <Box paddingTop={"5px"}>
-                            <MobileDatePicker
+                            <DesktopDatePicker
                                 label="Salida"
                                 value={dayjs(startDate).add(1, "day")}
                                 minDate={dayjs(startDate).add(1, "day")}

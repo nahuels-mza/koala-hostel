@@ -1,11 +1,13 @@
 import React from "react";
 import Carousel from "react-material-ui-carousel";
-import { Box, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
+import useCarouselStyles from "./Carousel.module";
 import { servicesData, isMobile } from "../../utils/constant";
 
 const CarouselDinamyc = () => {
   const heightImage = isMobile ? "80%" : "400px"
   const flexOrder = isMobile ? "column" : "row"
+  const style = useCarouselStyles()
   return (
 
     <Carousel
@@ -24,14 +26,15 @@ const CarouselDinamyc = () => {
         textAlign: 'right',
         id: "carrousel",
         height: heightImage,
-
       }}
 
     >
       {servicesData.map((item, i) => (
         <Box component="section" display="flex" flexDirection={flexOrder} key={i + "carrousel"}
-        >
-          <Box display="flex" flexDirection="column" >
+          sx={{
+            textAlign: "-webkit-center",
+          }}>
+          <Grid item display="flex" flexDirection="column" margin={"10px"} flexGrow="1" width="100%" height={heightImage}>
             <Typography
               sx={{
                 fontSize: "xx-large",
@@ -48,7 +51,7 @@ const CarouselDinamyc = () => {
               }}>
               {item.description}
             </Typography>
-          </Box>
+          </Grid>
 
           <img
             key={i + "image"}
@@ -56,13 +59,7 @@ const CarouselDinamyc = () => {
             srcSet={item.img}
             alt={item.title}
             loading="lazy"
-            style={{
-              width: "-webkit-fill-available",
-              maxWidth: "60%",
-              maxHeight: heightImage,
-              objectFit: "cover",
-              objectPosition: "center"
-            }}
+            className={style.classes.carouselConteiner}
           />
         </Box>
       ))}

@@ -46,33 +46,33 @@ const MainHostel = () => {
         />
       </Box>
 
-      <Box className={classes.container} id="contentContainer">
-        <Box className={classes.imageContainer} id="image">
-          <HostelImageListing
-            images={hostelImages}
-            column={isMobile ? 1 : 3}
-            destination={"/bedrooms"}
-          />
-        </Box>
-        <Box className={classes.container} id="contentContainer">
-        </Box>
-        <Box
-          className={classes.imageContainer}
-          id="carrousel"
-          sx={{
-            padding: "10px",
-            backgroundColor: "white"
-          }}
-        >
-          <CarouselDinamyc />
-        </Box>
-        <Box className={classes.container} id="contentContainer">
-        </Box>
-        <Box className={classes.imageContainer} id="location"
-        >
-          <Location />
-        </Box>
+      {/* <Box className={classes.container} id="contentContainer"> */}
+      <Box className={classes.imageContainer} id="image">
+        <HostelImageListing
+          images={hostelImages}
+          column={isMobile ? 1 : 3}
+          destination={"/bedrooms"}
+        />
       </Box>
+      <Box className={classes.container} id="contentContainer">
+      </Box>
+      <Box
+        className={classes.imageContainer}
+        id="carrousel"
+        sx={{
+          padding: "10px",
+          backgroundColor: "white"
+        }}
+      >
+        <CarouselDinamyc />
+      </Box>
+      <Box className={classes.container} id="contentContainer">
+      </Box>
+      <Box className={classes.imageContainer} id="location"
+      >
+        <Location />
+      </Box>
+      {/* </Box> */}
       <Message instagram={true} whatsMessage={WhatsAppMessage} />
       <Outlet />
     </Box>

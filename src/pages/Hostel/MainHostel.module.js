@@ -4,35 +4,36 @@ const useStylesHostelPage = makeStyles()((theme) => ({
   container: {
     // maxWidth: "75%",
     width:"-webkit-fill-available",
-    padding: "4px",
+    padding: "8px",
     alignItems: "center",
     [theme.breakpoints.down("sm")]: {
       maxWidth: "100% !important",
       height: "80%"
     },
-
+    borderRadius: 8,
   },
+
   parallax: {
     [theme.breakpoints.up("lg")]: {
       minHeight: "100vh",
     },
     backgroundAttachment: "fixed",
-    backgroundPosition: "0% 25%",
+    backgroundPosition: "0% 35%",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     [theme.breakpoints.down("sm")]: {
       height: "100%",
       minHeight: "80vh",
-      maxWidth: "100% !important",
       backgroundAttachment: "local",
-
+      backgroundPosition: "0% 45%",
     },
   },
   imageContainer: {
     [theme.breakpoints.down("sm")]: {
-      height: "80%",
+      height: "70%",
     },
     height: "auto",
+    borderRadius: 8,
   },
   body: {
     minHeight: "100vh",

@@ -1,17 +1,15 @@
 import { makeStyles } from "tss-react/mui";
+import { isMobile } from "../../utils/constant";
+const heightImage = isMobile ? "80%" : "400px"
 
 const useLocationStyles = makeStyles()((theme) => ({
   containerImage: {
-    position: "unset",
-    backgroundColor: "#e6e6e699",
-    backgroundPosition: "center",
-    minHeight: "400px",
-    height: "80%",
-
-    alignContent: "center",
+    width: "-webkit-fill-available",
+    height: heightImage,
     objectFit: "none",
-    objectPosition: "center"
-
+    [theme.breakpoints.down("sm")]: {
+      objectFit: "fill"
+    }
   },
   locationTitle: {
     border: "solid 1px #5757568f",
@@ -21,14 +19,7 @@ const useLocationStyles = makeStyles()((theme) => ({
     margin: "auto !important",
     borderRadius: "30px",
   },
-  icon: {
-    fill: "#5757568f !important",
-    cursor: "pointer",
-    fontSize: "3rem !important",
-    [theme.breakpoints.down("sm")]: {
-      fontSize: "2rem !important",
-    },
-  },
+
   container: {
     position: "relative",
     width: "80%",

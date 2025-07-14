@@ -110,7 +110,7 @@ const servicesData = [
     img: psa,
     title: "Agua Pura - Agua Segura",
     description:
-      "Vas a tener agua purificada y segura para beber y cocinar, directamente desde tu llave. Nuestro purificador reduce aquellos componentes que puedan resultar perjudiciales para la salud o ser causantes de mal sabor, olor y color.",
+      "Vas a tener agua purificada y segura para beber y cocinar, directamente desde tu llave. Nuestro purificador reduce aquellos componentes que puedan resultar perjudiciales para la salud.",
     link: "/agencia",
   },
 ];
