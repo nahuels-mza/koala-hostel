@@ -28,4 +28,3 @@ jobs:
           git config  user.email "calderonahuel@gmail.com"
           git config  user.name "Nahuel Calderon"
           git remote set-url origin git@github.com:nahuels-mza/koala-hostel.git
-          npm run deploy

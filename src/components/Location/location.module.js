@@ -8,7 +8,9 @@ const useLocationStyles = makeStyles()((theme) => ({
     height: heightImage,
     objectFit: "none",
     [theme.breakpoints.down("sm")]: {
-      objectFit: "fill"
+      objectFit: "initial",
+      objectPosition: "top",
+      zoom: "50%"
     }
   },
   locationTitle: {

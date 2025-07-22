@@ -1,9 +1,8 @@
 import habPrincipal from "../../src/assets/habPrincipalHome.jpg";
 import habCompartida from "../../src/assets/habCompartidaHome.jpg";
 import image3 from "../../src/assets/backgroud.png";
-import mendozaLogo from "../../src/assets/servicios/mendozaLogo.jpg";
 import psa from "../../src/assets/servicios/servicio_psa.jpg"
-import desayuno from "../../src/assets/servicios/desayuno.jpeg";
+import desayuno from "../../src/assets/servicios/desayuno1.jpeg";
 import equipaje from "../../src/assets/servicios/guardaequipaje.png";
 import patio from "../../src/assets/servicios/patioColonial.jpg";
 import foto1 from "../../src/assets/servicios/turismo1.jpg"
@@ -11,6 +10,12 @@ import foto2 from "../../src/assets/servicios/turismo2.jpg"
 import foto3 from "../../src/assets/servicios/turismo3.jpg"
 import foto4 from "../../src/assets/servicios/turismo4.jpg"
 import foto5 from "../../src/assets/servicios/turismo4.jpg"
+import bar1 from "../../src/assets/servicios/bar1.jpg"
+import bar2 from "../../src/assets/servicios/bar2.jpg"
+import cowork from "../../src/assets/servicios/cowork.jpg"
+import eventos from "../../src/assets/servicios/eventos.jpg"
+import eventos1 from "../../src/assets/servicios/eventos1.jpg"
+import patio1 from "../../src/assets/servicios/patio.jpg"
 
 
 const LorenImpsu =
@@ -81,15 +86,12 @@ const agenciaImages = [
   },
 ];
 
-const servicesData = [
+const principalCrouselPC = [
   {
-    img: desayuno,
-    // https://drive.google.com/file/d/1-lzYsaGG68U1zCNU0syXREu1J_phmuPc/view?usp=sharing ?sz=w640&id=${file.id}
-    // img: "https://drive.google.com/uc?id=1-lzYsaGG68U1zCNU0syXREu1J_phmuPc",
-    // img: "https://drive.usercontent.google.com/download?id=1-lzYsaGG68U1zCNU0syXREu1J_phmuPc&authuser=0",
-    title: "Free Breakfast",
+    img: eventos,
+    title: "Degustaciones. Peña Folkloricas. Cafe Rave ",
     description:
-      "Disfruta de un desayuno clásico y sensillo pero completo para desayunar. También podes elegir entre desayunos mas deliciosos",
+      "Siempre tenemos una actividad especial para compartir, Siempre diferentes.",
     link: "/agencia",
   },
   {
@@ -100,6 +102,38 @@ const servicesData = [
     link: "https://bounce.com/en/s/location/d6a41810-df04-4ef0-9ae3-ee1a9e564e3f",
   },
   {
+    img: psa,
+    title: "Agua Pura - Agua Segura",
+    description:
+      "Vas a tener agua purificada y segura para beber y cocinar, directamente desde tu llave. Nuestro purificador reduce aquellos componentes que puedan resultar perjudiciales para la salud.",
+    link: "/agencia",
+  },
+  {
+    img: cowork,
+    title: "Tranquilidad para trabajar",
+    description:
+      "Tu lugar en el hostel relajado para poder trabajar. Comodidad y tranquilidad para seguir conectado  .",
+    link: "/agencia",
+  },
+  {
+    img: patio,
+    title: "Patio Colonial",
+    description:
+      "Desayuna, Almueza o Cena bajo nuestro parral. El inicio del vino esta en nuestra casa",
+    link: "/agencia",
+  },
+
+]
+
+const principalCarouselMobile = [
+  {
+    img: desayuno,
+    title: "Free Breakfast",
+    description:
+      "Disfruta de un desayuno clásico y sensillo pero completo para desayunar. También podes elegir entre desayunos mas deliciosos",
+    link: "/agencia",
+  },
+  {
     img: patio,
     title: "Patio Colonial",
     description:
@@ -107,10 +141,31 @@ const servicesData = [
     link: "/agencia",
   },
   {
-    img: psa,
-    title: "Agua Pura - Agua Segura",
+    img: bar2,
+    title: "Bar Tele ",
     description:
-      "Vas a tener agua purificada y segura para beber y cocinar, directamente desde tu llave. Nuestro purificador reduce aquellos componentes que puedan resultar perjudiciales para la salud.",
+      "Un lugar para tomar algo mientras elegis que leer, que compartir o elegir que ver entre todas las plataformas digitales mas usadas.",
+    link: "/agencia",
+  },
+  {
+    img: cowork,
+    title: "Tranquilidad para trabajar",
+    description:
+      "Tu lugar en el hostel relajado para poder trabajar. Comodidad y tranquilidad para seguir conectado  .",
+    link: "/agencia",
+  },
+  {
+    img: eventos1,
+    title: "Degustaciones. Peña Folkloricas. Cafe Rave ",
+    description:
+      "Siempre tenemos una actividad especial para compartir, Siempre diferentes.",
+    link: "/agencia",
+  },
+  {
+    img: patio1,
+    title: "Todas las estaciones, Todo el año ",
+    description:
+      "Invierno, Primavera, Verano, Otoño. Cada estación es diferente en Mendoza y en nuestro Hostel.",
     link: "/agencia",
   },
 ];
@@ -139,7 +194,12 @@ const allImages = [
   foto3,
   foto4,
   habCompartida,
-  foto5
+  foto5,
+  bar1,
+  bar2,
+  cowork,
+  patio1,
+  eventos
 ];
 
 const isMobile = "ontouchstart" in window || navigator.maxTouchPoints > 0;
@@ -147,7 +207,8 @@ const isMobile = "ontouchstart" in window || navigator.maxTouchPoints > 0;
 export {
   hostelImages,
   agenciaImages,
-  servicesData,
+  principalCarouselMobile,
+  principalCrouselPC,
   ownerData,
   LorenImpsu,
   isMobile,
