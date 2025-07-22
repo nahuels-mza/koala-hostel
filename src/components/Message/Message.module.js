@@ -2,16 +2,6 @@ import { makeStyles } from "tss-react/mui";
 // import { padding } from "@mui/system";
 
 const useMessageStyles = makeStyles()((theme) => ({
-  container: {
-    position: "relative",
-    bottom: 0,
-    backgroundColor: "#ffff",
-    minHeight: "200px",
-    justifyContent: "center",
-    alignItems: "center",
-    display: "flex",
-    flexDirection: "column",
-  },
 
   iconWasp: {
     cursor: "pointer",
@@ -25,6 +15,7 @@ const useMessageStyles = makeStyles()((theme) => ({
     color: "#C13584 ",
     fontSize: "3rem !important",
     margin: "1rem",
+    height: 40,
   },
   Message: {
     "& svg": {

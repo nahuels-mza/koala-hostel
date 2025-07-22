@@ -47,7 +47,7 @@ export default function BookDateRange() {
                         <Box paddingBottom={"5px"} paddingTop={"5px"} >
                             <DesktopDatePicker
                                 label="Llegada"
-                                defaultValue={dayjs(todayStart)}
+                                value={dayjs(todayStart)}
                                 disablePast
                                 maxDate={dayjs().add(2, "month")}
                                 onChange={(value) => handleDateOnChange('start', value)}

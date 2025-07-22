@@ -13,7 +13,7 @@ interface IMessages {
 const Message = (props: IMessages) => {
   const { classes } = useMessageStyles();
   // TODO ADD FORMAT HERE
-  const whatsMessage = props.whatsMessage ? props.whatsMessage : "Hola Hostel Plaza mi Nombre es";
+  const whatsMessage = props.whatsMessage ? props.whatsMessage : "Hola Hostel Plaza mi nombre es";
   const displayProp = props.instagram ? 'in-line' : 'none'
   return (
     <Box
@@ -23,7 +23,7 @@ const Message = (props: IMessages) => {
       right="0"
     >
 
-      <Fab>
+      <Fab id="whats" sx={{ display: displayProp, backgroundColor: "#08491ef0" }}>
         <Button
           href={`https://wa.me/5492615372767?text=${whatsMessage}`}
         >
@@ -32,7 +32,7 @@ const Message = (props: IMessages) => {
       </Fab>
 
 
-      <Fab id="insta" sx={{ display: displayProp }}>
+      <Fab id="insta" sx={{ display: displayProp, backgroundColor: "#e8d0d6b8" }}>
         <Button
           href="https://www.instagram.com/hostel.plaza"
         >
