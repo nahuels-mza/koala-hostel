@@ -1,5 +1,4 @@
 import { Box, Grid, Typography } from "@mui/material";
-import Title from "../../components/Title/MainTitle";
 import { isMobile } from "../../utils/constant";
 import founders from "../../assets/founders.jpeg"
 import CommentCarouselMobile from "../../components/Carousel/CommentCarousel";
