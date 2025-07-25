@@ -2,17 +2,19 @@ import React from "react";
 import Carousel from "react-material-ui-carousel";
 import { Box, Grid, Typography } from "@mui/material";
 import useCarouselStyles from "./Carousel.module";
-import { principalCarouselMobile, principalCrouselPC, isMobile } from "../../utils/constant";
+import {
+  principalCarouselMobile,
+  principalCrouselPC,
+  isMobile,
+} from "../../utils/constant";
 
 const CarouselDinamyc = () => {
-  const heightImage = isMobile ? "80%" : "400px"
-  const flexOrder = isMobile ? "column" : "row"
-  const style = useCarouselStyles()
-  const phtos = isMobile ? principalCarouselMobile : principalCrouselPC
+  const heightImage = isMobile ? "80%" : "400px";
+  const flexOrder = isMobile ? "column" : "row";
+  const style = useCarouselStyles();
+  const phtos = isMobile ? principalCarouselMobile : principalCrouselPC;
   return (
-
     <Carousel
-
       autoPlay={true}
       interval={3000}
       animation="slide"
@@ -24,36 +26,56 @@ const CarouselDinamyc = () => {
         },
       }}
       sx={{
-        textAlign: 'right',
+        textAlign: "right",
         id: "carrousel",
         height: heightImage,
       }}
-
     >
       {phtos.map((item, i) => (
-        <Box component="section" display="flex" flexDirection={flexOrder} key={i + "carrousel"} height={heightImage}
+        <Box
+          component="section"
+          display="flex"
+          flexDirection={flexOrder}
+          key={i + "carrousel"}
+          height={heightImage}
         >
-          <Grid item display="flex" flexDirection="column" margin={"10px"} flexGrow="1" width="100%" height={heightImage}>
+          <Grid
+            item
+            display="flex"
+            flexDirection="column"
+            margin={"10px"}
+            flexGrow="1"
+            width="100%"
+            height={heightImage}
+          >
             <Typography
               sx={{
                 fontSize: "xx-large",
                 textAlign: "left",
                 height: heightImage,
-              }}>
+              }}
+            >
               {item.title}
             </Typography>
-            <Typography key={i + "descriptcion"}
+            <Typography
+              key={i + "descriptcion"}
               sx={{
                 fontVariant: "h4",
                 textAlign: "left",
-                height: heightImage
-              }}>
+                height: heightImage,
+              }}
+            >
               {item.description}
             </Typography>
           </Grid>
-          <Grid item display="flex" height={isMobile ? heightImage : "40px"} sx={{
-            width: "100%"
-          }}>
+          <Grid
+            item
+            display="flex"
+            height={isMobile ? heightImage : "40px"}
+            sx={{
+              width: "100%",
+            }}
+          >
             <img
               key={i + "image"}
               src={item.img}
@@ -67,7 +89,6 @@ const CarouselDinamyc = () => {
         </Box>
       ))}
     </Carousel>
-
   );
 };
 

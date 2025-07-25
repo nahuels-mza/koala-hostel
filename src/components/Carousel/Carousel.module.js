@@ -2,8 +2,8 @@ import { makeStyles } from "tss-react/mui";
 
 const useCarouselStyles = makeStyles()((theme) => ({
   carouselConteiner: {
-    height:  "400px",
-    objectFit:  "cover",
+    height: "400px",
+    objectFit: "cover",
     objectPosition: "center",
     flexGrow: "0",
     width: "100%",
@@ -11,8 +11,7 @@ const useCarouselStyles = makeStyles()((theme) => ({
       height: "40vh",
       objectFit: "scale-down",
       width: "-webkit-fill-available",
-    }
-
+    },
   },
   image: {
     [theme.breakpoints.down("sm")]: {
