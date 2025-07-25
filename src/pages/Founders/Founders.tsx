@@ -9,8 +9,10 @@ export default function FoundersPage() {
 
     return (
         <Box sx={{ backgroundColor: theme => theme.palette.secondary.main, }}>
-            <Title title={"Discover the Magic of a Historic House"} subtitle="" />
-            <Box component="section" sx={{ justifyItems: "center", backgroundColor: theme => theme.palette.secondary.main }} id="grilla">
+            <Typography variant="h3" textAlign="center" padding="4px">
+                Discover the Magic of a Historic House
+            </Typography>
+            <Box component="section" sx={{ justifyItems: "center", backgroundColor: "white" }} id="grilla">
 
                 <Grid container sx={{
                     borderColor: "#FEF8EC",
@@ -54,7 +56,7 @@ export default function FoundersPage() {
                     </Grid>
                 </Grid>
             </Box>
-            <Typography variant="h3" textAlign="center" padding="4px">
+            <Typography variant="h3" textAlign="center" padding="4px" sx={{ justifyItems: "center", backgroundColor: theme => theme.palette.secondary.main }}>
                 Bienvenidos A Nuestra Casa
             </Typography>
             {isMobile ? <CommentCarouselMobile /> : <CommentCarouselWeb />}
