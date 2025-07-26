@@ -62,6 +62,14 @@ const bedWithService = [
     gif: "./habitacionOctuple.mp4",
     type: "compartida",
   },
+  {
+    label: "Habitacion Privada doble",
+    description:
+      "Habitacion privada doble con baño privado ",
+    services: [service.heat, service.fan, service.plug],
+    gif: "./habitacionIndividual2.mp4",
+    type: "individual",
+  },
 ];
 
 export { bedWithService };

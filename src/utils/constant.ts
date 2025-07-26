@@ -1,5 +1,6 @@
 import habPrincipal from "../../src/assets/habPrincipalHome.jpg";
 import habCompartida from "../../src/assets/habCompartidaHome.jpg";
+import habPrivada from "../../src/assets/habIndividualHome.jpg"
 import image3 from "../../src/assets/backgroud.png";
 import psa from "../../src/assets/servicios/servicio_psa.jpg";
 import desayuno from "../../src/assets/servicios/desayuno1.jpeg";
@@ -41,7 +42,7 @@ const hostelImages = [
     type: "compartida",
   },
   {
-    img: image3,
+    img: habPrivada,
     title: "Habitaciones Individuales",
     description: LorenImpsu,
     type: "individual",
