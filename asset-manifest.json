@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ddf424d5.css",
-    "main.js": "/static/js/main.621aeeb1.js",
+    "main.js": "/static/js/main.05252d86.js",
     "static/js/488.4266461a.chunk.js": "/static/js/488.4266461a.chunk.js",
     "static/media/patio5.jpg": "/static/media/patio5.c430c45c9e6c18e54ecd.jpg",
     "static/media/patio3.jpg": "/static/media/patio3.89a8c3d5caaa49566401.jpg",
@@ -22,6 +22,7 @@
     "static/media/eventos1.jpg": "/static/media/eventos1.c8cabba589cbcd164d77.jpg",
     "static/media/material-icons-two-tone.woff": "/static/media/material-icons-two-tone.3baa5b8f3469222b822d.woff",
     "static/media/habCompartidaHome.jpg": "/static/media/habCompartidaHome.0baf19fb2ce4af9555f0.jpg",
+    "static/media/habIndividualHome.jpg": "/static/media/habIndividualHome.55e0a72fec1a61050987.jpg",
     "static/media/desayuno1.jpeg": "/static/media/desayuno1.42197eb4af5099172535.jpeg",
     "static/media/material-icons-two-tone.woff2": "/static/media/material-icons-two-tone.4ef4218c522f1eb6b5b1.woff2",
     "static/media/location_test.jpeg": "/static/media/location_test.649ca748e6a591a25ef9.jpeg",
@@ -39,11 +40,11 @@
     "static/media/rounded-logo.png": "/static/media/rounded-logo.db29cae83b664e7d4144.png",
     "index.html": "/index.html",
     "main.ddf424d5.css.map": "/static/css/main.ddf424d5.css.map",
-    "main.621aeeb1.js.map": "/static/js/main.621aeeb1.js.map",
+    "main.05252d86.js.map": "/static/js/main.05252d86.js.map",
     "488.4266461a.chunk.js.map": "/static/js/488.4266461a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ddf424d5.css",
-    "static/js/main.621aeeb1.js"
+    "static/js/main.05252d86.js"
   ]
 }
