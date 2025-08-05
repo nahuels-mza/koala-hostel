@@ -1,6 +1,6 @@
 import habPrincipal from "../../src/assets/habPrincipalHome.jpg";
 import habCompartida from "../../src/assets/habCompartidaHome.jpg";
-import habPrivada from "../../src/assets/habIndividualHome.jpg"
+import habPrivada from "../../src/assets/habIndividualHome.jpg";
 import image3 from "../../src/assets/backgroud.png";
 import psa from "../../src/assets/servicios/servicio_psa.jpg";
 import desayuno from "../../src/assets/servicios/desayuno1.jpeg";
@@ -19,6 +19,7 @@ import patio5 from "../../src/assets/servicios/patio5.jpg";
 import patio6 from "../../src/assets/servicios/patio6.jpg";
 import patio7 from "../../src/assets/servicios/patio7.jpg";
 import patio8 from "../../src/assets/servicios/patio8.jpg";
+import { locale } from "./locale";
 
 const LorenImpsu =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt nisl vitae purus lobortis, quis scelerisque diam tincidunt. Donec eu risus urna. Sed quis enim vitae orci tristique imperdiet eget sed lectus. Suspendisse placerat mi id blandit accumsan. Integer sodales neque nisl, mollis consectetur sapien fringilla vitae. Etiam est sapien, fermentum id quam a, tincidunt vestibulum odio. Nullam dapibus porta elit, vel vestibulum nisl dictum eu. Quisque tincidunt vitae enim eget mollis. Aenean tincidunt massa mauris, sit amet porta libero auctor nec. Phasellus id tincidunt eros, vitae gravida turpis. Nam mattis eget turpis vitae aliquam.Suspendisse mattis ex a velit posuere posuere.In vitae justo scelerisque nulla tincidunt vehicula.Ut vulputate iaculis consequat.Donec in mauris euismod, tempus dolor sed, pretium elit.Curabitur in dui ultrices, tristique leo eu, feugiat tortor.Etiam at auctor dui.Ut fermentum pulvinar turpis, finibus vulputate metus eleifend in.Curabitur posuere eu magna vitae commodo.Pellentesque quis dapibus lectus.Nam elementum dolor vel iaculis consectetur.Praesent feugiat porta velit pulvinar faucibus.Suspendisse sed iaculis metus.Morbi blandit a sem et varius.";
@@ -26,25 +27,22 @@ const LorenImpsu =
 const LorenImpsu2 =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere odio eget odio tempor, non.";
 
-const WhatsAppMessage = "Hola Hostel Plaza. Queria obtener informacion sobre";
+const WhatsAppMessage = locale("wspIntro");
 
 const hostelImages = [
   {
     img: habPrincipal,
-    title: "Habitaciones Familiares",
-    description: LorenImpsu,
+    title: locale("habPrincipal"),
     type: "familiar",
   },
   {
     img: habCompartida,
-    title: "Habitaciones Compartidas ",
-    description: LorenImpsu,
+    title: locale("habCompartida"),
     type: "compartida",
   },
   {
     img: habPrivada,
-    title: "Habitaciones Individuales",
-    description: LorenImpsu,
+    title: locale("habPrivada"),
     type: "individual",
   },
 ];
@@ -187,15 +185,15 @@ const ownerData = [
 ];
 
 const allImagesCarouselMobile = [
-    patio,
-    patio1,
-    patio2,
-    patio3,
-    patio4,
-    patio5,
-    patio6,
-    patio7,
-    patio8,
+  patio,
+  patio1,
+  patio2,
+  patio3,
+  patio4,
+  patio5,
+  patio6,
+  patio7,
+  patio8,
 ];
 
 function pcList(data: string[]) {

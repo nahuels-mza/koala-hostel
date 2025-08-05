@@ -3,10 +3,11 @@ import { useLocation } from 'react-router-dom';
 import { Box } from "@mui/material";
 import Title from "../../components/Title/MainTitle";
 import ItemListingWithImages from "../../components/Items/ItemListWithImages";
-import { bedWithService } from "../../utils/habitacionesConstants";
 import CommingSoonPage from "../Soon/CommingSoon";
 import BookDateRange from "../../components/Date/Date";
 import useStylesHostelPage from "../Hostel/MainHostel.module";
+import { bedWithService } from "../../utils/habitacionesConstants";
+import { locale } from "../../utils/locale";
 
 export default function BedroomPage() {
     const { classes } = useStylesHostelPage();
@@ -45,7 +46,7 @@ export default function BedroomPage() {
                 borderTop: "solid",
                 borderTopColor: "#145357"
             }}>
-                <Title title={"Nuestras Habitaciones"} subtitle={"Mayor Comodidad"} />
+                <Title title={locale("bedroomsMainTitle")} subtitle={locale("bedroomsMainSubtitle")} />
             </Box>
             <Box sx={{
                 textAlign: "-webkit-center",

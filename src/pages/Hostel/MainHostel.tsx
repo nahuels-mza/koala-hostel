@@ -10,6 +10,7 @@ import CarouselDinamyc from "../../components/Carousel/Carousel";
 import BookDateRange from "../../components/Date/Date";
 
 import { hostelImages, isMobile, WhatsAppMessage } from "../../utils/constant";
+import { locale } from "../../utils/locale"
 import photo from "../../assets/home2.jpg"
 import useStylesHostelPage from "./MainHostel.module";
 
@@ -41,7 +42,7 @@ const MainHostel = () => {
 
       <Box className={classes.container}>
         <Title
-          title={"Bien bebidos a Nuestro Hogar"}
+          title={locale("home")}
           subtitle={""}
         />
       </Box>

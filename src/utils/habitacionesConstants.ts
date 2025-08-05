@@ -1,3 +1,5 @@
+import { locale } from "./locale";
+
 const LorenImpsu2 =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere odio eget odio tempor, non.";
 
@@ -17,7 +19,7 @@ const service = {
 
 const bedWithService = [
   {
-    label: "Habitacion Familiar Cuadruple ",
+    label: locale("habFamCuadruple"),
     description: LorenImpsu2,
     services: [service.wifi, service.fan],
     gif: "./habitacion1Video.mp4",
@@ -25,7 +27,7 @@ const bedWithService = [
   },
 
   {
-    label: "Habitacion Familiar Doble",
+    label: locale("habFamDoouble"),
     description: LorenImpsu2,
     services: [
       service.wifi,
@@ -39,33 +41,32 @@ const bedWithService = [
     type: "familiar",
   },
   {
-    label: "Dormitorio Compartido de 4 camas",
+    label: locale("habCompartidaCuadruple"),
     description:
-      "Habitacion Cuadruple para compartir hasta 4 personas. Con vista al patio interno",
+    "Habitacion Cuadruple para compartir hasta 4 personas. Con vista al patio interno",
     services: [service.heat, service.fan, service.plug],
     gif: "./habitacionCompartida1.mp4",
     type: "compartida",
   },
   {
-    label: "Dormitorio Femenino Compartido de 4 camas",
+    label: locale("habFemenina"),
     description:
-      "Habitacion sólo para mujéres, cuádruple para compartir hasta 4 personas. Sus ventanas dan vista al boulevard principal",
+    "Habitacion sólo para mujéres, cuádruple para compartir hasta 4 personas. Sus ventanas dan vista al boulevard principal",
     services: [service.heat, service.fan, service.plug, service.bedClothes],
     gif: "./habitacionFemenina.mp4",
     type: "compartida",
   },
   {
-    label: "Dormitorio Compartido de 8 Camas",
+    label: locale("habCompartidaOcho"),
     description:
-      "Habitacion compartida con camas para 8 personas. Con vista al patio interno",
+    "Habitacion compartida con camas para 8 personas. Con vista al patio interno",
     services: [service.heat, service.fan, service.plug],
     gif: "./habitacionOctuple.mp4",
     type: "compartida",
   },
   {
-    label: "Habitacion Privada doble",
-    description:
-      "Habitacion privada doble con baño privado ",
+    label: locale("habPrivadaDoble"),
+    description: "Habitacion privada doble con baño privado ",
     services: [service.heat, service.fan, service.plug],
     gif: "./habitacionIndividual2.mp4",
     type: "individual",

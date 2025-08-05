@@ -9,15 +9,15 @@ import MenuItem from '@mui/material/MenuItem';
 import { Button, Link, Menu } from '@mui/material';
 
 import Logo from '../../assets/rounded-logo.png'
-
+import { locale } from '../../utils/locale';
 export default function Header() {
 
     const options = [{
 
-        "name": "Quienes somos",
+        "name": locale("menuAbout"),
         "id": "/about"
     }, {
-        "name": "Nuestro Hostel",
+        "name": locale("menuHostel"),
         "id": "/"
     }
     ]

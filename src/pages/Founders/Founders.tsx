@@ -3,6 +3,7 @@ import { isMobile } from "../../utils/constant";
 import founders from "../../assets/founders.jpeg"
 import CommentCarouselMobile from "../../components/Carousel/CommentCarousel";
 import CommentCarouselWeb from "../../components/Carousel/CommentCarouselWeb";
+import { locale } from "../../utils/locale";
 
 export default function FoundersPage() {
 
@@ -56,7 +57,7 @@ export default function FoundersPage() {
                 </Grid>
             </Box>
             <Typography variant="h3" textAlign="center" padding="4px" sx={{ justifyItems: "center", backgroundColor: theme => theme.palette.secondary.main }}>
-                Bienvenidos A Nuestra Casa
+                {locale("founderCarousel")}
             </Typography>
             {isMobile ? <CommentCarouselMobile /> : <CommentCarouselWeb />}
 

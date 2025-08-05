@@ -6,6 +6,7 @@ import ListItemAvatar from "@mui/material/ListItemAvatar";
 import Avatar from "@mui/material/Avatar";
 import { Icon } from "@mui/material";
 import { isMobile } from "../../utils/constant";
+import { locale } from "../../utils/locale";
 
 import useitemListStyles from "./ItemList.module";
 import Message from "../../components/Message/Message";
@@ -49,7 +50,7 @@ export default function ItemListingWithImages(props: IImageListingProps) {
 
                         <Grid item id="listicon">
                             <List>
-                                <Typography variant="h5">Servicios</Typography>
+                                <Typography variant="h5">{locale("habServicios")}</Typography>
 
                                 {item.services.map((service: any) => (
                                     <ListItem>
@@ -65,30 +66,29 @@ export default function ItemListingWithImages(props: IImageListingProps) {
                         </Grid>
                         <Grid item id="policy">
                             <Typography variant="subtitle1" overflow={"auto"} textAlign={"left"} >
-                                Hostel Plaza Policy and Conditions:
+                                {locale("bedroomsPolicy")}
                             </Typography>
                             <Typography variant="subtitle2" overflow={"auto"} textAlign={"left"} >
                                 <br></br>
+                                {locale("bedroomsRateTitleUs")}
                                 <br></br>
-                                Rates for Foreign Guests:
+                                {locale("bedroomsRateDescUs")}
                                 <br></br>
-                                All rates listed are tax-exempt for foreign guests who present a valid passport and immigration stamp at check-in.
-                                Payment can be made in US dollars or Argentine pesos via cash, card, or bank transfer.
+                                {locale("bedroomsRateTitleArs")}
                                 <br></br>
-                                Rates for Domestic Guests: Argentine nationals are subject to a 21% VAT (Value Added Tax) which will be added to the listed rates.
+                                {locale("bedroomsRateDescArs")}
                                 <br></br>
                                 <br></br>
-                                Booking and Cancellation Policies
+                                {locale("bedroomsCancelationTitle")}
                                 <br></br>
-                                A valid credit card or deposit is required to confirm your reservation.
-                                Cancellations made at least 48 hours prior to check-in will not incur charges. Cancellations within 48 hours or no-shows will result in a charge equal to the first night’s stay.
+                                {locale("bedroomsCancelationDesc")}
+                                <br></br>
                                 <br></br>
                                 Check-in and Check-out:
                                 <br></br>
-                                <br></br>
                                 Check-in: From 12:00 PM. --- Check-out: By 10:00 AM.
                                 <br></br>
-                                Late check-outs may incur additional charges.
+                                {locale("bedroomsLateCheckOut")}
                             </Typography>
                         </Grid>
                     </Grid>

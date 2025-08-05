@@ -52,7 +52,6 @@ const CarouselDinamyc = () => {
               sx={{
                 fontSize: "xx-large",
                 textAlign: "left",
-                height: heightImage,
               }}
             >
               {item.title}
@@ -62,7 +61,6 @@ const CarouselDinamyc = () => {
               sx={{
                 fontVariant: "h4",
                 textAlign: "left",
-                height: heightImage,
               }}
             >
               {item.description}

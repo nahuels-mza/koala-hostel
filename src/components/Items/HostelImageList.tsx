@@ -3,12 +3,12 @@ import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
 import { useNavigate } from 'react-router-dom';
+import { locale } from '../../utils/locale';
 
 interface IHostelImageListingProps {
     images: {
         img: string;
         title: string;
-        description: string;
         type: string;
     }[]
     column: number
@@ -30,6 +30,7 @@ export default function HostelImageListing(props: IHostelImageListingProps) {
                 {props.images.map((item) => (
                     <ImageListItem key={item.img} rows={2} style={{ cursor: "pointer" }}
                         onClick={() => handleClickOpen(item)}>
+
                         <img
                             srcSet={item.img}
                             src={item.img}

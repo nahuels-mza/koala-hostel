@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import dayjs from "dayjs";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
-
 import { DesktopDatePicker } from '@mui/x-date-pickers/DesktopDatePicker';
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
 import { Box, Button, Grid } from "@mui/material";
-import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import { isMobile } from "../../utils/constant";
+import { locale } from "../../utils/locale";
 
 export default function BookDateRange() {
     const [startDate, setStartDate] = useState<string>(dayjs(new Date()).format("YYYY-MM-DD"));
@@ -46,7 +46,7 @@ export default function BookDateRange() {
                     <Grid display="flex" flexDirection={gridOrder}>
                         <Box paddingBottom={"5px"} paddingTop={"5px"} >
                             <DesktopDatePicker
-                                label="Llegada"
+                                label={locale("dateL")}
                                 value={dayjs(todayStart)}
                                 disablePast
                                 maxDate={dayjs().add(2, "month")}
@@ -55,7 +55,7 @@ export default function BookDateRange() {
                         </Box>
                         <Box paddingTop={"5px"}>
                             <DesktopDatePicker
-                                label="Salida"
+                                label={locale("dateS")}
                                 value={dayjs(startDate).add(1, "day")}
                                 minDate={dayjs(startDate).add(1, "day")}
                                 maxDate={dayjs().add(2, "month")}
